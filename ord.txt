@@ -1,0 +1,3429 @@
+[
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "나미",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "롤로노아 조로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "몽키 · D · 루피",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "버기",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "상디",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "우솝",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "토니토니 쵸파",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "해군 총병",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 1,
+        "category": "普通",
+        "name": "해군 칼병",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "CP9 블루노",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "CP9 후쿠로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "니코 로빈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "베포",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "브룩",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "이나즈마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "저격왕 우솝",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "좀비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "타시기",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "토니토니 쵸파 럼블볼강화",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "페로나",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "포트거스 · D · 에이스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "프랑키",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 2,
+        "category": "不平凡",
+        "name": "하찌",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "X-드레이크",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "갓 에넬",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "겟코 모리아",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "娜美大風車",
+        "korean": "나미",
+        "base": "",
+        "materials": [
+            "娜美",
+            "惡龍"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "니코 로빈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "로브 루치",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "羅賓",
+        "korean": "로빈",
+        "base": "",
+        "materials": [
+            "羅賓",
+            "克洛船長"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "롤로노아 조로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "魯夫二檔",
+        "korean": "루피 기어세컨드",
+        "base": "",
+        "materials": [
+            "魯夫",
+            "香吉士"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "마르코",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "몽키 · D · 루피",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "바솔로뮤 쿠마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "바질 호킨스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "巴其魔鬼彈",
+        "korean": "버기",
+        "base": "",
+        "materials": [
+            "巴奇",
+            "摩奇"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "봉쿠레",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "布魯克",
+        "korean": "브룩",
+        "base": "",
+        "materials": [
+            "布魯克",
+            "龍馬"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "category": "特別",
+        "name": "薇薇",
+        "korean": "비비",
+        "base": "",
+        "materials": [
+            "薇薇",
+            "卡魯"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "category": "特別",
+        "name": "香吉士整形踢",
+        "korean": "상디",
+        "base": "",
+        "materials": [
+            "香吉士",
+            "哲普"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "스모커",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "스쿼드",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "金獅子",
+        "korean": "시키",
+        "base": "",
+        "materials": [
+            "金獅子",
+            "章魚"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "category": "特別",
+        "name": "惡龍",
+        "korean": "아론",
+        "base": "",
+        "materials": [
+            "惡龍",
+            "小八"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "압살롬",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "艾斯",
+        "korean": "에이스",
+        "base": "",
+        "materials": [
+            "艾斯",
+            "斯摩格"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "category": "特別",
+        "name": "瓦波爾",
+        "korean": "와포루",
+        "base": "",
+        "materials": [
+            "瓦波爾",
+            "多爾頓"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "category": "特別",
+        "name": "騙人布波音列島",
+        "korean": "우솝",
+        "base": "",
+        "materials": [
+            "騙人布",
+            "強高"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "유스타스 키드",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "이나즈마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "索隆賞金獵人",
+        "korean": "조로 삼도류",
+        "base": "",
+        "materials": [
+            "索隆",
+            "達絲琪"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "징베",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "챠카",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "喬巴混蛋強化(初階)",
+        "korean": "쵸파",
+        "base": "",
+        "materials": [
+            "喬巴",
+            "多爾頓"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "카포네 갱 벳지",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "캡틴 크로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "克洛船長",
+        "korean": "크로",
+        "base": "",
+        "materials": [
+            "克洛",
+            "強高"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "크로커 다일",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "킬러",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "토니토니 쵸파",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "트라팔가 로우",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "파이러츠 도킹 5",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "포트거스 · D · 에이스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "特別",
+        "name": "佛朗基",
+        "korean": "프랑키",
+        "base": "",
+        "materials": [
+            "佛朗基",
+            "巴奇"
+        ],
+        "spec": "",
+        "level": 3
+    },
+    {
+        "level": 3,
+        "category": "特別",
+        "name": "헤르메포",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "X-드레이크",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "거프",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "검호 류마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "고대의 배",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "娜美黑雲",
+        "korean": "나미 크리마텍트",
+        "base": "",
+        "materials": [
+            "娜美",
+            "阿布薩羅姆",
+            "巴其"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "돈키호테 도플라밍고",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "羅賓奧哈拉",
+        "korean": "로빈 오하라",
+        "base": "",
+        "materials": [
+            "羅賓",
+            "沙鱷MR.0",
+            "青雉"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "稀有",
+        "name": "魯夫三檔",
+        "korean": "루피 기어써드",
+        "base": "",
+        "materials": [
+            "魯夫二檔",
+            "騙人布",
+            "貝爾梅爾"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "마르코",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "마샬 · D · 티치",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "마인 오즈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "麥哲倫",
+        "korean": "마젤란",
+        "base": "",
+        "materials": [
+            "麥哲倫",
+            "漢妮拔",
+            "希留"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "모몬가",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "몽키 · D · 루피",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "密佛格",
+        "korean": "미호크",
+        "base": "",
+        "materials": [
+            "密佛格",
+            "索隆",
+            "達絲琪"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "稀有",
+        "name": "巴索羅米·熊",
+        "korean": "바르토로메오",
+        "base": "",
+        "materials": [
+            "大熊暴君",
+            "戰桃丸",
+            "糖果"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "稀有",
+        "name": "巴吉斯",
+        "korean": "바제스",
+        "base": "",
+        "materials": [
+            "吉貝爾",
+            "黑鬍子",
+            "艾斯"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "바질 호킨스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "班德·戴肯",
+        "korean": "반더데켄",
+        "base": "",
+        "materials": [
+            "戴肯",
+            "惡龍",
+            "海賊船"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "베이비 5",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "벤 베크만",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "보르살리노",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "보아 핸콕",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "브룩",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "布魯克音樂家",
+        "korean": "브룩 음악가",
+        "base": "",
+        "materials": [
+            "布魯克",
+            "龍馬",
+            "拉布"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "비비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "사보",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "사카즈키",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "상디",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "香吉士惡魔風腳",
+        "korean": "상디 디아블잠브",
+        "base": "",
+        "materials": [
+            "香吉士",
+            "哲普",
+            "麥哲倫"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "샹크스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "센토마루",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "슈가",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "시류",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "[히든] 실버즈 레일리",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "엠포리오 이완코브",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "와이퍼",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "우솝",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "騙人布火鳥星",
+        "korean": "우솝 저격왕",
+        "base": "",
+        "materials": [
+            "騙人布",
+            "卡aku",
+            "克洛船長"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "유스타스 키드",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "伊娃科夫",
+        "korean": "이완코브",
+        "base": "",
+        "materials": [
+            "伊娃科夫",
+            "閃電革命軍",
+            "巴其"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "제프",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "조로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "索隆阿修羅",
+        "korean": "조로 귀기",
+        "base": "",
+        "materials": [
+            "索隆",
+            "達絲琪",
+            "香吉士"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "죠즈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "쥬라클 미호크",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "喬巴狂暴化",
+        "korean": "쵸파 가드포인트",
+        "base": "",
+        "materials": [
+            "喬巴",
+            "瓦波爾",
+            "Dr.古蕾娃"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "카쿠",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "쿠잔",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "克洛克達爾 MR.0",
+        "korean": "크로커다일",
+        "base": "",
+        "materials": [
+            "沙鱷MR.0",
+            "薇薇",
+            "羅賓"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "稀有",
+        "name": "基德超新星",
+        "korean": "키드 초신성",
+        "base": "",
+        "materials": [
+            "基德船長",
+            "殺手",
+            "卡波涅·培基"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "킨에몬",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "토니토니 쵸파",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "트라팔가 로우",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 4,
+        "category": "稀有",
+        "name": "페로나",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "稀有",
+        "name": "佛朗基改造人",
+        "korean": "프랑키 꾸뻬드방",
+        "base": "",
+        "materials": [
+            "佛朗基",
+            "卡aku",
+            "海賊船"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "稀有",
+        "name": "漢考克",
+        "korean": "핸콕",
+        "base": "",
+        "materials": [
+            "漢考克",
+            "瑪莉哥德",
+            "桑達索尼亞"
+        ],
+        "spec": "",
+        "level": 4
+    },
+    {
+        "category": "傳說",
+        "name": "黑鬍子",
+        "korean": "검은수염",
+        "base": "",
+        "materials": [
+            "黑鬍子",
+            "克洛克達爾",
+            "巴吉魯·霍金斯"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "겟코 모리아",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "골.D.에이스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "나미",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "네코마무시",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "多佛朗明哥",
+        "korean": "도플라밍고",
+        "base": "",
+        "materials": [
+            "砂糖",
+            "巴吉斯",
+            "貝爾梅爾"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "龍 (多拉格)",
+        "korean": "드래곤",
+        "base": "",
+        "materials": [
+            "伊娃科夫",
+            "巴索羅米·熊",
+            "娜美"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "라분",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "雷利",
+        "korean": "레일리",
+        "base": "",
+        "materials": [
+            "路奇",
+            "漢考克",
+            "雷利"
+        ],
+        "spec": "前置高階材料兵",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "羅白路奇",
+        "korean": "로브 루치",
+        "base": "",
+        "materials": [
+            "路奇",
+            "卡aku",
+            "巴索羅米·熊"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "羅",
+        "korean": "로우",
+        "base": "",
+        "materials": [
+            "羅",
+            "巴吉魯·霍金斯",
+            "德雷克"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "롤로노아 조로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "馬可",
+        "korean": "마르코",
+        "base": "",
+        "materials": [
+            "馬可",
+            "艾斯",
+            "喬巴"
+        ],
+        "spec": "不死鳥型態",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "마샬 · D · 티치",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "莫利亞",
+        "korean": "모리아",
+        "base": "",
+        "materials": [
+            "培羅娜",
+            "阿布薩羅姆",
+            "龍馬"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "몽키.D.드래곤",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "몽키 · D · 루피",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "巴特洛馬",
+        "korean": "바르토로메오",
+        "base": "",
+        "materials": [
+            "卡文迪許",
+            "薇薇",
+            "魯夫"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "바솔로뮤 쿠마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "보아 핸콕",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "블랙마리아",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "빈스모크 레이쥬",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "薩波",
+        "korean": "사보",
+        "base": "",
+        "materials": [
+            "巴吉斯",
+            "克比",
+            "赫爾梅波"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "상디",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "샬롯 브륄레",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "샬롯 크래커",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "紅髮傑克",
+        "korean": "샹크스",
+        "base": "",
+        "materials": [
+            "班·貝克曼",
+            "密佛格",
+            "巴其"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "戰國",
+        "korean": "센고쿠",
+        "base": "",
+        "materials": [
+            "斯摩格",
+            "克比",
+            "羅伯·路奇"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "슈가",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "스모커",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "시노부",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "시저 크라운",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "金獅子獅鬼",
+        "korean": "시키",
+        "base": "",
+        "materials": [
+            "克洛船長",
+            "羅",
+            "香吉士"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "실버즈 레일리",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "아마츠키 토키",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "青雉",
+        "korean": "아오키지",
+        "base": "",
+        "materials": [
+            "青雉",
+            "達絲琪",
+            "麥哲倫"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "赤犬",
+        "korean": "아카이누",
+        "base": "",
+        "materials": [
+            "赤犬",
+            "斯摩格",
+            "克洛克達爾"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "에드워드 뉴게이트",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "烏爾堤",
+        "korean": "울티",
+        "base": "",
+        "materials": [
+            "佩吉萬",
+            "德雷克",
+            "騙人布"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "장군좀비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "捷風 (Z)",
+        "korean": "제파",
+        "base": "",
+        "materials": [
+            "阿茵",
+            "修藏",
+            "達絲琪"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "吉貝爾",
+        "korean": "징베",
+        "base": "",
+        "materials": [
+            "惡龍",
+            "小八",
+            "克洛克達爾"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "쵸파",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "卡爾加拉",
+        "korean": "카르가라",
+        "base": "",
+        "materials": [
+            "懷帕",
+            "惡龍",
+            "索隆"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "코비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "克力架",
+        "korean": "크래커",
+        "base": "",
+        "materials": [
+            "佩洛斯佩羅",
+            "娜美",
+            "喬巴"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "黃猿",
+        "korean": "키자루",
+        "base": "",
+        "materials": [
+            "黃猿",
+            "戰桃丸",
+            "阿布薩羅姆"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "皇 (KING)",
+        "korean": "킹",
+        "base": "",
+        "materials": [
+            "昆因",
+            "傑克",
+            "卡波涅·培基"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "達絲琪",
+        "korean": "타시기",
+        "base": "",
+        "materials": [
+            "達絲琪",
+            "斯摩格",
+            "克比"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "category": "傳說",
+        "name": "織姬 (托奇)",
+        "korean": "토키",
+        "base": "",
+        "materials": [
+            "日和",
+            "小菊",
+            "錦衛門"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "트라팔가 로우",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "藤虎",
+        "korean": "후지토라",
+        "base": "",
+        "materials": [
+            "達絲琪",
+            "巴索羅米·熊",
+            "索隆"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "후지토라 잇쇼우",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "傳說",
+        "name": "白鬍子",
+        "korean": "흰수염",
+        "base": "",
+        "materials": [
+            "馬可",
+            "斯庫亞德",
+            "巴索羅米·熊"
+        ],
+        "spec": "",
+        "level": 5
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "히루루크의 묘비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 5,
+        "category": "傳說",
+        "name": "히바리",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "갓 에넬",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "검호 류마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "劍豪 密佛格",
+        "korean": "검호 미호크",
+        "base": "",
+        "materials": [
+            "密佛格",
+            "紅髮傑克",
+            "鑽石喬茲"
+        ],
+        "spec": "指令: mihawk",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "귀죽의 베르고",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "紅髮號",
+        "korean": "레드포스호",
+        "base": "",
+        "materials": [
+            "紅髮傑克",
+            "巴其魔鬼彈",
+            "海賊船"
+        ],
+        "spec": "指令: redforce",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "蕾貝卡",
+        "korean": "레베카",
+        "base": "",
+        "materials": [
+            "巴吉斯",
+            "砂糖"
+        ],
+        "spec": "指令: rebecca",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "綠牛",
+        "korean": "료쿠규",
+        "base": "",
+        "materials": [
+            "龍馬",
+            "伊娃科夫",
+            "巴特洛馬",
+            "巴索羅米·熊"
+        ],
+        "spec": "指令: ryokugyu",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "龍馬",
+        "korean": "류마",
+        "base": "",
+        "materials": [
+            "索隆賞金獵人",
+            "龍馬",
+            "布魯克"
+        ],
+        "spec": "指令: ryuma",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "莫比迪克號",
+        "korean": "모비딕호",
+        "base": "",
+        "materials": [
+            "鑽石喬茲",
+            "馬可",
+            "艾斯",
+            "海賊船"
+        ],
+        "spec": "指令: mobydick",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "班德·戴肯",
+        "korean": "반더데켄",
+        "base": "",
+        "materials": [
+            "班德·戴肯",
+            "黑鬍子",
+            "惡龍",
+            "海賊船"
+        ],
+        "spec": "指令: decken",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "芭拉蒂 (海上餐廳)",
+        "korean": "발라티에",
+        "base": "",
+        "materials": [
+            "哲普",
+            "魯夫二檔",
+            "海賊船"
+        ],
+        "spec": "指令: baratie",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "方舟箴言",
+        "korean": "방주맥심",
+        "base": "",
+        "materials": [
+            "瓦波爾",
+            "騙人布波音列島",
+            "卡波涅·培基",
+            "海賊船"
+        ],
+        "spec": "指令: maxim",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "威爾可",
+        "korean": "베르고",
+        "base": "",
+        "materials": [
+            "巴特洛馬",
+            "香吉士惡魔風腳",
+            "馮克雷",
+            "騙人布火焰彈"
+        ],
+        "spec": "指令: vergo",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "벤담",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "馮克雷",
+        "korean": "봉쿠레",
+        "base": "",
+        "materials": [
+            "漢考克",
+            "馮克雷",
+            "巴其魔鬼彈",
+            "閃電革命軍"
+        ],
+        "spec": "指令: bonkurei",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "雨之希留",
+        "korean": "비의 시류",
+        "base": "",
+        "materials": [
+            "希留",
+            "班·貝克曼",
+            "麥哲倫"
+        ],
+        "spec": "指令: shiryu",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "薩波",
+        "korean": "사보",
+        "base": "",
+        "materials": [
+            "魔人歐斯",
+            "羅",
+            "薩波"
+        ],
+        "spec": "指令: sabo",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "사우전드 써니호",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "史翠西",
+        "korean": "스튜시",
+        "base": "",
+        "materials": [
+            "卡aku",
+            "戰桃丸",
+            "砂糖"
+        ],
+        "spec": "指令: stussy",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "千陽號",
+        "korean": "써니호",
+        "base": "",
+        "materials": [
+            "基德船長",
+            "卡aku",
+            "海賊船"
+        ],
+        "spec": "指令: sunny",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "青雉",
+        "korean": "아오키지",
+        "base": "",
+        "materials": [
+            "青雉",
+            "鑽石喬茲",
+            "莫利亞"
+        ],
+        "spec": "指令: aokiji",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "赤犬",
+        "korean": "아카이누",
+        "base": "",
+        "materials": [
+            "赤犬",
+            "班德·戴肯",
+            "殺手",
+            "斯庫亞德"
+        ],
+        "spec": "指令: akainu",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "엠포리오 이완코브",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "伊娃科夫",
+        "korean": "이완코브",
+        "base": "",
+        "materials": [
+            "伊娃科夫",
+            "克洛克達爾 MR.0",
+            "巴其魔鬼彈"
+        ],
+        "spec": "指令: ivankov",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "쥬라클 미호크",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "加洛特",
+        "korean": "캐럿",
+        "base": "",
+        "materials": [
+            "喬巴混蛋強化",
+            "艾涅爾",
+            "阿布薩羅姆 x2",
+            "雷利"
+        ],
+        "spec": "指令: carrot",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "쿠잔",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "隱藏",
+        "name": "小菊",
+        "korean": "키쿠",
+        "base": "",
+        "materials": [
+            "錦衛門",
+            "索隆賞金獵人",
+            "基德超新星"
+        ],
+        "spec": "指令: kiku",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "殺手",
+        "korean": "킬러",
+        "base": "",
+        "materials": [
+            "基德船長",
+            "赫爾梅波",
+            "殺手",
+            "巴吉魯·霍金斯"
+        ],
+        "spec": "指令: killer",
+        "level": 6
+    },
+    {
+        "category": "隱藏",
+        "name": "費雪·泰格",
+        "korean": "피셔타이거",
+        "base": "",
+        "materials": [
+            "班德·戴肯",
+            "漢考克",
+            "帕拉戴斯5",
+            "雷利"
+        ],
+        "spec": "指令: tiger",
+        "level": 6
+    },
+    {
+        "level": 6,
+        "category": "隱藏",
+        "name": "해적선",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "歪曲",
+        "name": "巴吉斯",
+        "korean": "바제스",
+        "base": "",
+        "materials": [
+            "薩波",
+            "巴吉斯",
+            "CP9梟",
+            "小八"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "歪曲",
+        "name": "黑色瑪利亞",
+        "korean": "블랙마리아",
+        "base": "",
+        "materials": [
+            "黑色瑪利亞",
+            "布魯克音樂家",
+            "羅賓奧哈拉"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "歪曲",
+        "name": "艾斯",
+        "korean": "에이스",
+        "base": "",
+        "materials": [
+            "艾斯",
+            "麥哲倫",
+            "斯庫亞德"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "歪曲",
+        "name": "可雅拉",
+        "korean": "코알라",
+        "base": "",
+        "materials": [
+            "吉貝爾",
+            "薇薇",
+            "羅賓"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "歪曲",
+        "name": "昆因",
+        "korean": "퀸",
+        "base": "",
+        "materials": [
+            "皇 (KING)",
+            "香吉士惡魔風腳",
+            "佛朗基"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "歪曲",
+        "name": "培羅娜",
+        "korean": "페로나",
+        "base": "",
+        "materials": [
+            "莫利亞",
+            "密佛格",
+            "阿布薩羅姆",
+            "狙擊王",
+            "培羅娜"
+        ],
+        "spec": "木材 3 個",
+        "level": 7
+    },
+    {
+        "category": "變化",
+        "name": "娜美天候棒",
+        "korean": "나미",
+        "base": "",
+        "materials": [
+            "娜美",
+            "布魯克"
+        ],
+        "spec": "消耗木材變化",
+        "level": 8
+    },
+    {
+        "level": 8,
+        "category": "變化",
+        "name": "돈키호테 도플라밍고",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 8,
+        "category": "變化",
+        "name": "베이비 5",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "變化",
+        "name": "貝爾梅爾",
+        "korean": "벨메일",
+        "base": "",
+        "materials": [
+            "娜美",
+            "阿布薩羅姆"
+        ],
+        "spec": "消耗木材變化",
+        "level": 8
+    },
+    {
+        "level": 8,
+        "category": "變化",
+        "name": "비비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "變化",
+        "name": "艾斯2番隊隊長",
+        "korean": "에이스",
+        "base": "",
+        "materials": [
+            "艾斯",
+            "斯庫亞德"
+        ],
+        "spec": "消耗木材變化",
+        "level": 8
+    },
+    {
+        "category": "變化",
+        "name": "喬巴混蛋強化",
+        "korean": "쵸파",
+        "base": "",
+        "materials": [
+            "喬巴",
+            "瓦波爾"
+        ],
+        "spec": "消耗木材變化",
+        "level": 8
+    },
+    {
+        "level": 8,
+        "category": "變化",
+        "name": "카쿠",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "變化",
+        "name": "加洛特斯隆型態",
+        "korean": "캐럿",
+        "base": "",
+        "materials": [
+            "加洛特",
+            "雷利"
+        ],
+        "spec": "消耗木材變化",
+        "level": 8
+    },
+    {
+        "level": 8,
+        "category": "變化",
+        "name": "캐럿 스론",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "限制",
+        "name": "雷德費爾德",
+        "korean": "레드필드",
+        "base": "喬巴混蛋強化",
+        "materials": [
+            "巴特洛馬",
+            "馮克雷"
+        ],
+        "spec": "5,000金 + 5木 (限41波前)",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "蕾貝卡",
+        "korean": "레베카",
+        "base": "蕾貝卡",
+        "materials": [
+            "砂糖",
+            "多佛朗明哥"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "馬可",
+        "korean": "마르코",
+        "base": "馬可幻獸種不死鳥",
+        "materials": [
+            "喬巴混蛋強化"
+        ],
+        "spec": "不死鳥羽毛+5000金+5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "卡塔庫栗",
+        "korean": "샬롯 카타쿠리",
+        "base": "克力架",
+        "materials": [
+            "香吉士惡魔風腳",
+            "魯夫三檔",
+            "卡波涅·培基"
+        ],
+        "spec": "30,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "阿忍",
+        "korean": "시노부",
+        "base": "阿忍",
+        "materials": [
+            "漢考克",
+            "海賊船"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "阿茵",
+        "korean": "아인",
+        "base": "青雉",
+        "materials": [
+            "班·貝克曼",
+            "威爾可",
+            "阿布薩羅姆 x3"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "亞爾麗塔",
+        "korean": "알비다",
+        "base": "黑色瑪利亞",
+        "materials": [
+            "克洛克達爾 MR.0",
+            "密佛格",
+            "巴其魔鬼彈"
+        ],
+        "spec": "特性點4+5,000金+5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "艾涅爾",
+        "korean": "에넬",
+        "base": "方舟箴言",
+        "materials": [
+            "凱薩",
+            "娜美天候棒",
+            "海賊船"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "克洛克達爾",
+        "korean": "크로커다일",
+        "base": "克洛克達爾 MR.0",
+        "materials": [
+            "薇薇",
+            "赤犬"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "category": "限制",
+        "name": "皇 (KING)",
+        "korean": "킹",
+        "base": "皇",
+        "materials": [
+            "黑鬍子",
+            "古代船"
+        ],
+        "spec": "5,000金 + 5木",
+        "level": 9
+    },
+    {
+        "level": 9,
+        "category": "限制",
+        "name": "패트릭 레드필드",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "黑鬍子",
+        "korean": "검은수염",
+        "base": "",
+        "materials": [
+            "黑鬍子",
+            "白鬍子",
+            "巴吉魯·霍金斯"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "娜美",
+        "korean": "나미",
+        "base": "",
+        "materials": [
+            "娜美",
+            "金獅子獅鬼",
+            "娜美天候棒",
+            "惡龍"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "니코 로빈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "닥터 베가펑크 (베어)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "닥터 베가펑크 (샤크)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "닥터 베가펑크 (스네이크)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "닥터 베가펑크 (호크)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "대령 타시기",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "多佛朗明哥",
+        "korean": "도플라밍고",
+        "base": "",
+        "materials": [
+            "多佛朗明哥",
+            "芭蕾咪5",
+            "威爾可",
+            "砂糖",
+            "狙擊王"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "로브 루치",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "羅賓",
+        "korean": "로빈",
+        "base": "",
+        "materials": [
+            "羅伯·路奇",
+            "黑色瑪利亞",
+            "克洛克達爾",
+            "羅賓"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "羅",
+        "korean": "로우",
+        "base": "",
+        "materials": [
+            "羅",
+            "凱薩",
+            "培波 x2"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "롤로노아 조로",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "롤로노아 조로 (강화)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "롤로노아 조로 (염왕)",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "綠牛",
+        "korean": "료쿠규",
+        "base": "",
+        "materials": [
+            "綠牛",
+            "藤虎",
+            "魯夫二檔"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "路奇",
+        "korean": "루치",
+        "base": "",
+        "materials": [
+            "羅伯·路奇",
+            "薩波",
+            "羅賓奧哈拉"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "魯夫",
+        "korean": "루피",
+        "base": "",
+        "materials": [
+            "魯夫惡夢",
+            "巴特洛馬",
+            "瓦波爾"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "루피 - 기어포스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "마샬 · D · 티치",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "몽키 · D · 루피",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "바솔로뮤 쿠마",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "巴吉魯·霍金斯",
+        "korean": "바질 호킨스",
+        "base": "",
+        "materials": [
+            "索隆",
+            "克比",
+            "黃猿",
+            "稻草人"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "貝加龐克 (S-熊)",
+        "korean": "베어",
+        "base": "",
+        "materials": [
+            "S-熊",
+            "史翠西",
+            "黃猿"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "布魯克",
+        "korean": "브룩",
+        "base": "",
+        "materials": [
+            "拉布",
+            "龍馬",
+            "培羅娜消極公主",
+            "莫利亞"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "薩波",
+        "korean": "사보",
+        "base": "",
+        "materials": [
+            "馬可幻獸種不死鳥",
+            "薩波",
+            "巴吉斯",
+            "艾斯",
+            "海賊船"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "香吉士",
+        "korean": "상디",
+        "base": "",
+        "materials": [
+            "香吉士",
+            "克力架",
+            "娜美天候棒"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "貝加龐克 (S-鯊)",
+        "korean": "샤크",
+        "base": "",
+        "materials": [
+            "S-鯊",
+            "史翠西",
+            "黃猿"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "紅髮傑克",
+        "korean": "샹크스",
+        "base": "",
+        "materials": [
+            "紅髮傑克",
+            "劍豪密佛格",
+            "基德船長",
+            "魯夫二檔"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "貝加龐克 (S-蛇)",
+        "korean": "스네이크",
+        "base": "",
+        "materials": [
+            "S-蛇",
+            "史翠西",
+            "黃猿"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "蛇人魯夫",
+        "korean": "스네이크맨",
+        "base": "",
+        "materials": [
+            "魯夫惡夢",
+            "紅髮號",
+            "薩波",
+            "艾斯"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "白星",
+        "korean": "시라호시",
+        "base": "",
+        "materials": [
+            "吉貝爾",
+            "班德·戴肯",
+            "薇薇"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "아라마키",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "青雉",
+        "korean": "아오키지",
+        "base": "",
+        "materials": [
+            "捷風",
+            "青雉",
+            "羅賓奧哈拉",
+            "達絲琪"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "赤犬",
+        "korean": "아카이누",
+        "base": "",
+        "materials": [
+            "雲雀",
+            "赤犬",
+            "艾斯2番隊隊長"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "大和",
+        "korean": "야마토",
+        "base": "",
+        "materials": [
+            "烏爾堤",
+            "織姬 (托奇)",
+            "漢考克",
+            "娜美天候棒",
+            "艾斯2番隊隊長"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "騙人布",
+        "korean": "우솝",
+        "base": "",
+        "materials": [
+            "卡爾加拉",
+            "砂糖",
+            "班·貝克曼",
+            "培羅娜"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "索隆",
+        "korean": "조로",
+        "base": "",
+        "materials": [
+            "索隆",
+            "劍豪密佛格",
+            "巴特洛馬",
+            "培羅娜"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "珠寶·波妮",
+        "korean": "주얼리 보니",
+        "base": "",
+        "materials": [
+            "史翠西",
+            "大熊暴君",
+            "羅羅亞·索隆",
+            "卡波涅·培基"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "吉貝爾",
+        "korean": "징베",
+        "base": "",
+        "materials": [
+            "吉貝爾",
+            "拉布",
+            "艾斯2番隊隊長"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "喬巴",
+        "korean": "쵸파",
+        "base": "",
+        "materials": [
+            "烏爾堤",
+            "喬巴混蛋強化",
+            "喬巴"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "克比",
+        "korean": "코비",
+        "base": "",
+        "materials": [
+            "雲雀",
+            "克比",
+            "卡普",
+            "赫爾梅波"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "쿠잔",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "基德",
+        "korean": "키드",
+        "base": "",
+        "materials": [
+            "貓蝮蛇",
+            "殺手",
+            "羅",
+            "魯夫二檔",
+            "基德超新星"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "黃猿",
+        "korean": "키자루",
+        "base": "",
+        "materials": [
+            "藤虎",
+            "雷利",
+            "黃猿",
+            "惡龍",
+            "巴吉魯·霍金斯"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "達絲琪",
+        "korean": "타시기",
+        "base": "",
+        "materials": [
+            "克比",
+            "凱薩",
+            "斯摩格",
+            "達絲琪"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "level": 10,
+        "category": "超越",
+        "name": "트라팔가 로우",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "超越",
+        "name": "佛朗基",
+        "korean": "프랑키",
+        "base": "",
+        "materials": [
+            "大熊暴君",
+            "芭蕾咪5",
+            "卡aku",
+            "帕拉戴斯5"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "貝加龐克 (S-鷹)",
+        "korean": "호크",
+        "base": "",
+        "materials": [
+            "S-鷹",
+            "史翠西",
+            "黃猿"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "超越",
+        "name": "藤虎",
+        "korean": "후지토라",
+        "base": "",
+        "materials": [
+            "藤虎",
+            "小菊",
+            "莫利亞",
+            "達絲琪"
+        ],
+        "spec": "+ 大熊超越",
+        "level": 10
+    },
+    {
+        "category": "不滅",
+        "name": "卡普",
+        "korean": "거프",
+        "base": "",
+        "materials": [
+            "龍",
+            "斯摩格",
+            "克比"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "골 · D · 로져",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "금사자 시키",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "더글라스 불릿",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "不滅",
+        "name": "多拉格 (龍)",
+        "korean": "드래곤",
+        "base": "",
+        "materials": [
+            "龍",
+            "大熊暴君",
+            "貓蝮蛇"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "雷利",
+        "korean": "레일리",
+        "base": "",
+        "materials": [
+            "雷利",
+            "魯夫惡夢",
+            "漢考克"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "羅傑",
+        "korean": "로져",
+        "base": "",
+        "materials": [
+            "艾斯",
+            "戰國",
+            "斯摩格"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "몽키 · D · 거프",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "몽키 · D · 드래곤",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "不滅",
+        "name": "巴雷特",
+        "korean": "불릿",
+        "base": "",
+        "materials": [
+            "金獅子獅鬼",
+            "斯摩格",
+            "黑鬍子"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "BIG MOM",
+        "korean": "빅맘",
+        "base": "",
+        "materials": [
+            "蕾玖",
+            "克力架",
+            "烏爾堤"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "戰國",
+        "korean": "센고쿠",
+        "base": "",
+        "materials": [
+            "戰國",
+            "蕾玖",
+            "羅伯·路奇"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "賈班",
+        "korean": "스코퍼 가반",
+        "base": "",
+        "materials": [
+            "紅髮傑克",
+            "索隆",
+            "蕾玖"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "獅鬼 (金獅子)",
+        "korean": "시키",
+        "base": "",
+        "materials": [
+            "金獅子獅鬼",
+            "香吉士",
+            "卡爾加拉"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "실버즈 레일리",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 11,
+        "category": "不滅",
+        "name": "에드워드 뉴게이트",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "不滅",
+        "name": "捷特 (Z)",
+        "korean": "제트",
+        "base": "",
+        "materials": [
+            "捷風",
+            "黑色瑪利亞",
+            "砂糖"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "海道 (凱多)",
+        "korean": "카이도",
+        "base": "",
+        "materials": [
+            "莫利亞",
+            "龍",
+            "皇 (KING)"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "不滅",
+        "name": "白鬍子",
+        "korean": "흰수염",
+        "base": "",
+        "materials": [
+            "白鬍子",
+            "巴特洛馬",
+            "馬可幻獸種不死鳥"
+        ],
+        "spec": "木材 10 個",
+        "level": 11
+    },
+    {
+        "category": "永遠",
+        "name": "泰佐羅",
+        "korean": "길드 테조로",
+        "base": "",
+        "materials": [
+            "卡爾加拉",
+            "史翠西",
+            "綠牛"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "네펠타리 비비",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "永遠",
+        "name": "太陽神尼卡 (魯超基底)",
+        "korean": "니카 (루초)",
+        "base": "",
+        "materials": [
+            "魯夫",
+            "羅",
+            "基德船長",
+            "艾斯"
+        ],
+        "spec": "太陽神痕跡 + 木材 5",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "太陽神尼卡 (蛇超基底)",
+        "korean": "니카 (뱀초)",
+        "base": "",
+        "materials": [
+            "蛇人魯夫",
+            "羅",
+            "基德船長",
+            "艾斯"
+        ],
+        "spec": "太陽神痕跡 + 木材 5",
+        "level": 12
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "루피 - 기어피프스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "永遠",
+        "name": "龍馬",
+        "korean": "류마",
+        "base": "",
+        "materials": [
+            "羅",
+            "雨之希留",
+            "龍馬"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "密佛格",
+        "korean": "미호크",
+        "base": "",
+        "materials": [
+            "培羅娜高樹公主",
+            "劍豪密佛格",
+            "希留",
+            "海賊船 x2"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "巴其",
+        "korean": "버기",
+        "base": "",
+        "materials": [
+            "娜美",
+            "伊娃科夫",
+            "紅髮傑克",
+            "麥哲倫",
+            "巴其魔鬼彈",
+            "馮克雷",
+            "阿布薩羅姆"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "보아 핸콕",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "永遠",
+        "name": "薇薇",
+        "korean": "비비",
+        "base": "",
+        "materials": [
+            "克洛克達爾[限制級]",
+            "薇薇",
+            "魯夫三檔",
+            "班·貝克曼",
+            "羅賓奧哈拉",
+            "帕拉戴斯5"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "艾斯",
+        "korean": "에이스",
+        "base": "",
+        "materials": [
+            "艾斯",
+            "馬可幻獸種不死鳥"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "光月御田",
+        "korean": "오뎅",
+        "base": "",
+        "materials": [
+            "織姬 (托奇)",
+            "阿忍",
+            "小菊",
+            "馬可不死鳥"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "永遠",
+        "name": "美音 (Uta)",
+        "korean": "우타",
+        "base": "",
+        "materials": [
+            "紅髮傑克",
+            "莫利亞",
+            "馮克雷",
+            "雷利",
+            "布魯克音樂家",
+            "魯夫"
+        ],
+        "spec": "美音耳機 + 木材 5",
+        "level": 12
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "쥬라클 미호크",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "永遠",
+        "name": "卡文迪許",
+        "korean": "카번딧슈",
+        "base": "",
+        "materials": [
+            "羅",
+            "殺手",
+            "蕾貝卡",
+            "克洛船長"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "카벤딧슈",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "코즈키 오뎅",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "level": 12,
+        "category": "永遠",
+        "name": "포트거스.D.에이스",
+        "materials": [],
+        "spec": ""
+    },
+    {
+        "category": "永遠",
+        "name": "漢考克",
+        "korean": "핸콕",
+        "base": "",
+        "materials": [
+            "漢考克",
+            "費雪·泰格",
+            "魯夫三檔",
+            "莫利亞",
+            "吉貝爾"
+        ],
+        "spec": "木材 5 個",
+        "level": 12
+    },
+    {
+        "category": "神祕",
+        "name": "五條悟",
+        "korean": "고죠 사토루",
+        "base": "K'",
+        "materials": [
+            "隨機專用單位 1個",
+            "可雅拉",
+            "赤犬",
+            "砂糖",
+            "海賊船"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "禰豆子",
+        "korean": "네즈코",
+        "base": "羽川翼",
+        "materials": [
+            "羅伯·路奇",
+            "蕾貝卡",
+            "布魯克音樂家"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "兩儀式",
+        "korean": "료우기 시키",
+        "base": "諫山黃泉",
+        "materials": [
+            "雨之希留",
+            "龍馬",
+            "娜美"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "波風水門",
+        "korean": "미나토",
+        "base": "鳴人仙人模式",
+        "materials": [
+            "加洛特斯隆",
+            "阿忍"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "朽木白哉",
+        "korean": "뱌쿠야",
+        "base": "黑崎一護",
+        "materials": [
+            "隨機專用單位 1個",
+            "艾斯",
+            "密佛格"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "重裝小兔 (布洛妮婭)",
+        "korean": "부릉냐",
+        "base": "理之律者",
+        "materials": [
+            "蕾玖",
+            "千陽號",
+            "芭蕾咪5"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "Sans",
+        "korean": "샌즈",
+        "base": "惠惠",
+        "materials": [
+            "威爾可",
+            "青雉",
+            "卡aku"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "安妮亞·佛傑",
+        "korean": "아냐 포저",
+        "base": "伊麗莎白",
+        "materials": [
+            "砂糖",
+            "史翠西"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "八雲紫",
+        "korean": "야쿠모 유카리",
+        "base": "夜神月",
+        "materials": [
+            "隨機專用單位 1個",
+            "培羅娜高樹公主",
+            "巴索羅米·熊"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "魂魄妖夢",
+        "korean": "콘파쿠 요우무",
+        "base": "燕",
+        "materials": [
+            "隨機專用單位 1個",
+            "捷風",
+            "薇薇"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "空條承太郎",
+        "korean": "쿠죠 죠타로",
+        "base": "上條當麻",
+        "materials": [
+            "織姬 (托奇)",
+            "戰國",
+            "魯夫二檔"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "龍捲",
+        "korean": "타츠마키",
+        "base": "四葉!",
+        "materials": [
+            "皇 (KING)",
+            "大熊暴君"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    },
+    {
+        "category": "神祕",
+        "name": "日熊",
+        "korean": "히그마",
+        "base": "千斗伊斯茲",
+        "materials": [
+            "隨機專用單位 1個",
+            "貓蝮蛇",
+            "紅髮傑克"
+        ],
+        "spec": "幸運代幣 + 10,000金 + 7木",
+        "level": 18
+    }
+]
