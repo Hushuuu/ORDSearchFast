@@ -993,6 +993,26 @@ function initApp() {
   } else if (page === 'maintenance') {
     initMaintenancePage(records);
   }
+
+  showMaintenanceNav();
 }
 
 window.addEventListener('DOMContentLoaded', initApp);
+
+
+function setCanMaintain(value) {
+  localStorage.setItem('canMaintain', value ? 'true' : 'false');
+}
+function getIfCanMaintain() {
+  const canMaintain = localStorage.getItem('canMaintain');
+  return canMaintain === 'true';
+}
+function showMaintenanceNav(){
+  if (!getIfCanMaintain()) {
+    return;
+  }
+  const navLink = document.querySelector('.nav-link[data-page="maintenance"]');
+  if (navLink) {
+    navLink.style.display = 'block';
+  }
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 資料維護</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/css/tom-select.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/tom-select.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body data-page="maintenance">
   <div class="app-shell">
     <header class="topbar">
@@ -17,7 +19,7 @@
       <nav class="nav-tabs" aria-label="主要導覽">
         <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
         <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
-        <a class="nav-link" data-page="maintenance" href="maintenance.html">資料維護</a>
+        <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
       </nav>
     </header>
 
@@ -117,8 +119,9 @@
     </section>
   </div>
 
-  <script src="ord_data.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/js/tom-select.complete.min.js"></script>
-  <script src="app.js"></script>
+  <script src="js/ord_data.js"></script>
+  <script src="js/tom-select.complete.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>
