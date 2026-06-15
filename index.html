@@ -1,431 +1,73 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>航海王隨機防禦 (ORD) 單位與合成速查</title>
-    <style>
-        :root {
-            --bg-color: #1a1a1a;
-            --container-bg: #262626;
-            --text-color: #e0e0e0;
-            --border-color: #404040;
-            --primary-color: #ff9900;
-            --primary-hover: #cc7a00;
-        }
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang TC", "Heiti TC", "Microsoft JhengHei", sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: var(--container-bg);
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        h1 {
-            text-align: center;
-            color: var(--primary-color);
-            margin-bottom: 25px;
-        }
-        .search-box {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-        .search-box > * {
-            min-height: 46px;
-        }
-        input[type="text"] {
-            flex: 1;
-            min-width: 280px;
-            padding: 12px 15px;
-            border: 2px solid var(--border-color);
-            border-radius: 6px;
-            background-color: #1a1a1a;
-            color: #fff;
-            font-size: 16px;
-        }
-        select {
-            padding: 12px 15px;
-            border: 2px solid var(--border-color);
-            border-radius: 6px;
-            background-color: #1a1a1a;
-            color: #fff;
-            font-size: 15px;
-            min-width: 150px;
-        }
-        select:focus,
-        input[type="text"]:focus {
-            border-color: var(--primary-color);
-            outline: none;
-        }
-        button {
-            padding: 12px 24px;
-            background-color: var(--primary-color);
-            color: #000;
-            font-weight: bold;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background-color: var(--primary-hover);
-        }
-        .error-message {
-            color: #ff4d4d;
-            background: rgba(255,77,77,0.1);
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            display: none;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-color);
-        }
-        th {
-            background-color: #333;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-        tr:hover {
-            background-color: #333;
-        }
-        .category-badge {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #fff;
-        }
-        /* 階級顏色識別 */
-        .badge-神祕 { background-color: #e60073; }
-        .badge-限制 { background-color: #9933ff; }
-        .badge-永遠 { background-color: #00cccc; }
-        .badge-不滅 { background-color: #cc0000; }
-        .badge-超越 { background-color: #ff6600; }
-        .badge-歪曲 { background-color: #739900; }
-        .badge-隱藏 { background-color: #009933; }
-        .badge-傳說 { background-color: #3366cc; }
-        .badge-變化 { background-color: #8c8c8c; }
-        .badge-稀有 { background-color: #3399ff; }
-        .badge-特別 { background-color: #996633; }
-        .badge-不平凡 { background-color: #555555; }
-        .badge-普通 { background-color: #707070; }
-        
-        .material-item {
-            display: inline-block;
-            background: #404040;
-            padding: 3px 8px;
-            margin: 2px;
-            border-radius: 4px;
-            font-size: 14px;
-            cursor: pointer;
-            border: 1px solid transparent;
-            transition: all 0.2s;
-        }
-        .material-item:hover {
-            background: var(--primary-color);
-            color: #000;
-            border-color: #fff;
-        }
-        .spec-text {
-            font-size: 13px;
-            color: #b3b3b3;
-            font-style: italic;
-        }
-        .loading {
-            text-align: center;
-            padding: 20px;
-            font-size: 18px;
-            color: var(--primary-color);
-        }
-        .toolbar-meta {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            align-items: center;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-        }
-        .summary-text {
-            color: #c7c7c7;
-            font-size: 14px;
-        }
-        .helper-note {
-            color: #9d9d9d;
-            font-size: 13px;
-            text-align: right;
-        }
-        .level-chip,
-        .source-chip {
-            display: inline-block;
-            padding: 2px 8px;
-            margin-top: 6px;
-            border-radius: 999px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        .level-chip {
-            background: rgba(255, 153, 0, 0.16);
-            color: #ffbf66;
-        }
-        .source-chip {
-            background: rgba(255, 255, 255, 0.08);
-            color: #d9d9d9;
-            margin-left: 6px;
-        }
-        .muted-text {
-            color: #888;
-            font-size: 13px;
-        }
-        @media (max-width: 900px) {
-            .search-box {
-                flex-direction: column;
-            }
-            .search-box > * {
-                width: 100%;
-            }
-            .toolbar-meta {
-                align-items: flex-start;
-            }
-            .helper-note {
-                text-align: left;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORD 速查列表</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="lookup">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">🏴‍☠️ ORD 航海王防禦戰</div>
+        <div class="brand-subtitle">本機直接開啟可用的速查 / 合成樹 / 資料維護工具</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="maintenance" href="maintenance.html">資料維護</a>
+      </nav>
+    </header>
 
-<div class="container">
-    <h1>🏴‍☠️ ORD 航海王防禦戰 單位 / 合成速查系統</h1>
-    
-    <div id="errorNotification" class="error-message"></div>
+    <section class="panel">
+      <div class="panel-header">
+        <h1 class="panel-title">速查列表</h1>
+        <p class="panel-desc">支援直接搜尋角色 / 素材 / 角色 ID。名稱與素材都可點擊快速回查，功能按鈕可直接切到合成樹頁。</p>
+      </div>
+      <div class="panel-body">
+        <div class="controls-grid">
+          <label class="field-group">
+            <span class="field-label">搜尋</span>
+            <input id="searchInput" class="field-input" type="text" placeholder="輸入中文、英文、韓文、材料或 ID">
+          </label>
+          <label class="field-group">
+            <span class="field-label">稀有度</span>
+            <select id="levelFilter" class="field-select"></select>
+          </label>
+          <div class="field-group">
+            <span class="field-label">操作</span>
+            <div class="controls-actions">
+              <button id="clearButton" type="button" class="secondary">重置條件</button>
+            </div>
+          </div>
+        </div>
 
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="請輸入角色名稱或關鍵字（支援中文 / 韓文，例：尼卡、루피、레일리）...">
-        <select id="categoryFilter">
-            <option value="">全部階級</option>
-        </select>
-        <select id="sourceFilter">
-            <option value="all">全部資料</option>
-            <option value="recipe">僅顯示合成</option>
-            <option value="base">僅顯示基礎 / 列表資料</option>
-        </select>
-        <button id="clearBtn">重置清單</button>
-    </div>
+        <div class="summary-bar">
+          <div id="summaryText" class="summary-text">載入中...</div>
+          <div class="helper-text">提示：點角色名或材料可直接把關鍵字帶回搜尋框。</div>
+        </div>
 
-    <div class="toolbar-meta">
-        <div id="resultSummary" class="summary-text">讀取資料中...</div>
-    </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>稀有度</th>
+                <th>單位名稱（中 / 英 / 韓）</th>
+                <th>所需材料</th>
+                <th>金鑰</th>
+                <th>備註</th>
+                <th>功能</th>
+              </tr>
+            </thead>
+            <tbody id="lookupTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <div id="loadingStatus" class="loading">正在從外部讀取 ord_recipes.json 資料庫...</div>
-
-    <table id="recipeTable" style="display: none;">
-        <thead>
-            <tr>
-                <th style="width: 12%;">階級</th>
-                <th style="width: 25%;">單位名稱 / 韓文</th>
-                <th style="width: 43%;">所需材料單位 (點擊可快速追蹤下一層)</th>
-                <th style="width: 20%;">特殊指令 / 消耗條件</th>
-            </tr>
-        </thead>
-        <tbody id="recipeList">
-        </tbody>
-    </table>
-</div>
-
-<script>
-    // 全域變數用來儲存從 JSON 獲取的配方資料
-    let recipesDatabase = [];
-
-    const searchInput = document.getElementById('searchInput');
-    const recipeTable = document.getElementById('recipeTable');
-    const recipeList = document.getElementById('recipeList');
-    const loadingStatus = document.getElementById('loadingStatus');
-    const errorNotification = document.getElementById('errorNotification');
-    const clearBtn = document.getElementById('clearBtn');
-    const categoryFilter = document.getElementById('categoryFilter');
-    const sourceFilter = document.getElementById('sourceFilter');
-    const resultSummary = document.getElementById('resultSummary');
-
-    // 初始化：網頁載入時去讀取同目錄下的 json 檔案
-    window.addEventListener('DOMContentLoaded', loadJsonData);
-
-    async function loadJsonData() {
-        try {
-            // 發送非同步請求讀取 json
-            //const response = await fetch('ord_recipes.json');
-            const response = await fetch('ord_recipes_normalized_tw.json');
-            
-            if (!response.ok) {
-                throw new Error(`無法讀取 JSON 檔案，HTTP 狀態碼: ${response.status}`);
-            }
-            
-            recipesDatabase = await response.json();
-            hydrateFilters(recipesDatabase);
-            
-            // 隱藏加載提示，顯示表格
-            loadingStatus.style.display = 'none';
-            recipeTable.style.display = 'table';
-            
-            // 初次渲染全部資料
-            renderRecipes(recipesDatabase);
-        } catch (error) {
-            console.error('讀取配方檔案發生錯誤:', error);
-            loadingStatus.style.display = 'none';
-            errorNotification.innerHTML = '';
-            errorNotification.innerText = `❌ 錯誤：${error.message}。\n提醒：請確保網頁檔與 'ord_recipes.json' 放在同一個資料夾。如果是雙擊點開 HTML 檔案，部分舊版瀏覽器可能因安全限制封鎖本地請求，建議使用 VS Code Live Server 或最新版 Chrome / Edge 開啟。`;
-            errorNotification.style.display = 'block';
-        }
-    }
-
-    function hydrateFilters(data) {
-        const categories = [...new Set(data.map(item => item.category).filter(Boolean))];
-        categories.forEach(category => {
-            const option = document.createElement('option');
-            option.value = category;
-            option.textContent = category;
-            categoryFilter.appendChild(option);
-        });
-    }
-
-    function updateSummary(currentCount, totalCount) {
-        const selectedCategory = categoryFilter.value ? `｜階級：${categoryFilter.value}` : '';
-        const selectedSourceMap = {
-            all: '全部資料',
-            recipe: '僅合成',
-            base: '僅基礎 / 列表'
-        };
-        resultSummary.textContent = `目前顯示 ${currentCount} / ${totalCount} 筆${selectedCategory}｜來源：${selectedSourceMap[sourceFilter.value]}`;
-    }
-
-    // 將資料渲染成 HTML 表格
-    function renderRecipes(data) {
-        recipeList.innerHTML = '';
-        updateSummary(data.length, recipesDatabase.length);
-        
-        if (data.length === 0) {
-            recipeList.innerHTML = `<tr><td colspan="4" style="text-align:center; color:#999;">沒有找到符合條件的合成角色。</td></tr>`;
-            return;
-        }
-
-        data.forEach(item => {
-            const tr = document.createElement('tr');
-            
-            // 階級徽章
-            const badgeClass = `category-badge badge-${item.category || '預設'}`;
-            const categoryTd = `<td><span class="${badgeClass}">${item.category}</span></td>`;
-            
-            // 名字與基礎基底提示
-            let nameContent = `<strong>${item.name}</strong>`;
-            if (item.korean && item.korean !== item.name) {
-                nameContent += `<br><span style="color:#888; font-size:13px;">${item.korean}</span>`;
-            }
-            if (item.base) {
-                nameContent += `<br><span style="color:#aaa; font-size:12px;">🏠基底: ${item.base}</span>`;
-            }
-            if (item.level) {
-                nameContent += `<br><span class="level-chip">Lv.${item.level}</span>`;
-            }
-            nameContent += item.materials && item.materials.length > 0
-                ? `<span class="source-chip">合成</span>`
-                : `<span class="source-chip">列表</span>`;
-            const nameTd = `<td>${nameContent}</td>`;
-            
-            // 材料解析 (將字串陣列轉為可點擊的小標籤)
-            let materialsTd = '<td>';
-            if (item.materials && item.materials.length > 0) {
-                item.materials.forEach(mat => {
-                    materialsTd += `<span class="material-item" onclick='quickSearch(${JSON.stringify(mat)})'>${mat}</span>`;
-                });
-            } else {
-                materialsTd += `<span class="muted-text">(列表頁補齊資料 / 無合成材料)</span>`;
-            }
-            materialsTd += '</td>';
-            
-            // 特殊備註與快捷指令
-            const specTd = `<td><span class="spec-text">${item.spec || '-'}</span></td>`;
-            
-            tr.innerHTML = categoryTd + nameTd + materialsTd + specTd;
-            recipeList.appendChild(tr);
-        });
-    }
-
-    // 關鍵字過濾功能
-    function filterRecipes() {
-        const keyword = searchInput.value.trim().toLowerCase();
-
-        const filtered = recipesDatabase.filter(item => {
-            const matchesCategory = !categoryFilter.value || item.category === categoryFilter.value;
-            const matchesSource =
-                sourceFilter.value === 'all' ||
-                (sourceFilter.value === 'recipe' && item.materials && item.materials.length > 0) ||
-                (sourceFilter.value === 'base' && (!item.materials || item.materials.length === 0));
-
-            if (!matchesCategory || !matchesSource) {
-                return false;
-            }
-
-            if (!keyword) {
-                return true;
-            }
-
-            const nameMatch = item.name.toLowerCase().includes(keyword);
-            const koreanMatch = item.korean ? item.korean.toLowerCase().includes(keyword) : false;
-            const baseMatch = item.base ? item.base.toLowerCase().includes(keyword) : false;
-            const specMatch = item.spec ? item.spec.toLowerCase().includes(keyword) : false;
-            const categoryMatch = item.category ? item.category.toLowerCase().includes(keyword) : false;
-            const levelMatch = item.level ? String(item.level).includes(keyword) : false;
-            const materialMatch = item.materials ? item.materials.some(mat => mat.toLowerCase().includes(keyword)) : false;
-            
-            return nameMatch || koreanMatch || baseMatch || specMatch || categoryMatch || levelMatch || materialMatch;
-        });
-
-        renderRecipes(filtered);
-    }
-
-    // 點擊素材標籤時的黑科技「材料向下追溯功能」
-    function quickSearch(name) {
-        // 【修正】點擊材料時，自動重置下拉選單的篩選條件，避免因階級或來源衝突導致找不到東西
-        categoryFilter.value = '';
-        sourceFilter.value = 'all';
-
-        // 去除多餘括號或後綴，只保留純角色名字搜尋（例如 "克洛克達爾[限制級]" 轉為 "克洛克達爾"）
-        const pureName = name.split('[')[0].split(' x')[0].trim();
-        searchInput.value = pureName;
-        filterRecipes();
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // 自動平滑滾動回頂端查看結果
-    }
-
-    // 事件綁定
-    searchInput.addEventListener('input', filterRecipes);
-    categoryFilter.addEventListener('change', filterRecipes);
-    sourceFilter.addEventListener('change', filterRecipes);
-    
-    clearBtn.addEventListener('click', () => {
-        searchInput.value = '';
-        categoryFilter.value = '';
-        sourceFilter.value = 'all';
-        renderRecipes(recipesDatabase);
-    });
-</script>
-
+  <script src="ord_data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

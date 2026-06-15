@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORD 合成樹</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/css/tom-select.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="tree">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">🌳 ORD 合成樹</div>
+        <div class="brand-subtitle">預設先展開第一層，可逐層點擊收合/展開；向上配方改成隱藏式單層檢視</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="maintenance" href="maintenance.html">資料維護</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h1 class="panel-title">合成樹</h1>
+        <p class="panel-desc">可輸入角色名稱或角色 ID。若同名資料跨多個稀有度，請搭配稀有度篩選鎖定要展開的那一筆。</p>
+      </div>
+      <div class="panel-body">
+        <div class="controls-grid">
+          <label class="field-group">
+            <span class="field-label">角色名稱 / ID</span>
+            <select id="treeSearchSelect" class="field-select"></select>
+          </label>
+          <label class="field-group">
+            <span class="field-label">稀有度</span>
+            <select id="treeLevelFilter" class="field-select"></select>
+          </label>
+          <div class="field-group">
+            <span class="field-label">操作</span>
+            <div class="controls-actions">
+              <button id="loadTreeButton" type="button">展開合成樹</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-bar">
+          <div id="treeResultTitle" class="summary-text">尚未選擇角色</div>
+          <div class="helper-text">搜尋改成頁內即時篩選，不再依賴原生下拉 datalist。</div>
+        </div>
+
+        <div class="tree-panel-stack" style="margin-top: 18px;">
+          <div id="treeRootSummary"></div>
+          <div id="downwardContainer"></div>
+          <div class="controls-actions">
+            <button id="toggleUpwardButton" type="button" class="secondary is-hidden">顯示向上 1 層</button>
+          </div>
+          <div id="upwardContainer" class="is-hidden"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="ord_data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/js/tom-select.complete.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

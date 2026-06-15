@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORD 資料維護</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/css/tom-select.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="maintenance">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">🛠️ ORD 資料維護</div>
+        <div class="brand-subtitle">可編輯完整欄位、增刪資料，並匯出最新 JSON</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="maintenance" href="maintenance.html">資料維護</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h1 class="panel-title">資料維護</h1>
+        <p class="panel-desc">左側挑資料，右側改欄位。材料用搜尋選單加入，可重複 append；適合夥伴也改成可搜尋的多選介面。</p>
+      </div>
+      <div class="panel-body">
+        <div class="page-grid">
+          <div>
+            <label class="field-group">
+              <span class="field-label">搜尋資料</span>
+              <input id="maintenanceSearchInput" class="field-input" type="text" placeholder="搜尋名稱、ID、材料">
+            </label>
+            <div class="summary-bar">
+              <div id="maintenanceSummary" class="summary-text">載入中...</div>
+            </div>
+            <div id="maintenanceList" class="record-list" style="margin-top: 14px;"></div>
+          </div>
+
+          <div>
+            <div class="form-grid">
+              <label class="field-group">
+                <span class="field-label">角色 / 物品 ID</span>
+                <input id="fieldCharacterId" class="field-input" type="text">
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">稀有度</span>
+                <select id="fieldLevel" class="field-select"></select>
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">中文名稱</span>
+                <input id="fieldName" class="field-input" type="text">
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">韓文名稱</span>
+                <input id="fieldKrName" class="field-input" type="text">
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">英文名稱</span>
+                <input id="fieldEnName" class="field-input" type="text">
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">金鑰代碼</span>
+                <input id="fieldKeyCode" class="field-input" type="text">
+              </label>
+
+              <label class="field-group">
+                <span class="field-label">專長定位</span>
+                <input id="fieldMajor" class="field-input" type="text">
+              </label>
+
+              <label class="field-group full-span">
+                <span class="field-label">備註</span>
+                <textarea id="fieldRemark" class="field-textarea"></textarea>
+              </label>
+
+              <label class="field-group full-span">
+                <span class="field-label">materials（搜尋後加入）</span>
+                <div class="picker-shell">
+                  <div class="picker-inline">
+                    <select id="materialPickerSelect" class="field-select"></select>
+                    <button id="clearMaterialsButton" type="button" class="secondary">清空材料</button>
+                  </div>
+                  <div id="fieldMaterialsChips" class="selected-chip-list"></div>
+                </div>
+              </label>
+
+              <label class="field-group full-span">
+                <span class="field-label">suitable_partners（可搜尋多選）</span>
+                <select id="partnerPickerSelect" class="field-select" multiple></select>
+              </label>
+            </div>
+
+            <div class="controls-actions" style="margin-top: 18px;">
+              <button id="saveRecordButton" type="button" class="success">儲存目前資料</button>
+              <button id="addRecordButton" type="button">新增資料</button>
+              <button id="deleteRecordButton" type="button" class="danger">刪除資料</button>
+              <button id="exportJsonButton" type="button" class="secondary">匯出 JSON</button>
+              <button id="resetToastButton" type="button" class="secondary">清除訊息</button>
+            </div>
+
+            <div id="maintenanceToast" class="toast"></div>
+
+            <div class="preview-card">
+              <pre id="maintenancePreview">尚未選擇資料。</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="ord_data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.6.1/dist/js/tom-select.complete.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
