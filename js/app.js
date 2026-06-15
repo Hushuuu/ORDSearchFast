@@ -12,7 +12,9 @@ const LEVEL_LABELS = {
   10: '超越',
   11: '不朽',
   12: '永恆',
-  18: '神秘'
+  16: '隨機限定',
+  18: '神秘',
+  23: '熾天使',
 };
 
 function cloneData(data) {
@@ -294,7 +296,7 @@ function initQuickLookup(records) {
             <td data-label="備註">${record.remark ? escapeHtml(record.remark) : '<span class="muted">未填寫</span>'}</td>
             <td data-label="功能">
               <div class="inline-actions">
-                <a class="link-button" href="tree.html?character=${encodeURIComponent(record.character_id)}">查看合成樹</a>
+                <a class="link-button" href="tree.html?character=${encodeURIComponent(record.character_id)}">合成樹</a>
               </div>
             </td>
           </tr>

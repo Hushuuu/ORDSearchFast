@@ -61,6 +61,7 @@ button,
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  padding: 3px;
 }
 
 button:hover,
