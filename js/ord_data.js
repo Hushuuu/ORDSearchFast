@@ -332,7 +332,7 @@ window.ORD_DATA = [
   {
     "character_id": "2-7",
     "level": 2,
-    "name": "閃電",
+    "name": "雷電",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -923,7 +923,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-21",
     "level": 3,
-    "name": "閃電 革命軍",
+    "name": "雷電 革命軍",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -1997,7 +1997,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-38",
     "level": 4,
-    "name": "懷帕",
+    "name": "瓦夷帕 空島",
     "kr_name": "",
     "en_name": "",
     "materials": [

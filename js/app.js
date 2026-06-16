@@ -358,14 +358,14 @@ function initTreePage(records) {
         maxOptions: 400,
         create: false,
         persist: false,
-        placeholder: '搜尋角色名稱或 character_id',
+        placeholder: '搜尋角色名稱',
         render: createTomSelectRenderConfig(),
         dropdownParent: 'body',
       })
     : null;
   let selectedCharacterId = '';
 
-  fillLevelSelect(levelFilter, '全部稀有度');
+  fillLevelSelect(levelFilter, '全部');
 
   function getFilteredTreeRecords() {
     const levelValue = levelFilter.value;

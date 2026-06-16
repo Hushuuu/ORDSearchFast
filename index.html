@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 速查列表</title>
-  <link rel="stylesheet" href="css/styles.css?v=260616004">
+  <link rel="stylesheet" href="css/styles.css?v=260616005">
 </head>
 
 <body data-page="lookup">
@@ -31,12 +31,12 @@
       <div class="panel-body">
         <div class="controls-grid">
           <label class="field-group">
-            <span class="field-label">搜尋</span>
-            <input id="searchInput" class="field-input" type="text" placeholder="輸入中文、英文、韓文、材料或 ID">
-          </label>
-          <label class="field-group">
             <span class="field-label">稀有度</span>
             <select id="levelFilter" class="field-select"></select>
+          </label>
+          <label class="field-group">
+            <span class="field-label">搜尋</span>
+            <input id="searchInput" class="field-input" type="text" placeholder="輸入中文、英文、韓文、或材料">
           </label>
           <div class="field-group">
             <span class="field-label">操作</span>
@@ -56,7 +56,7 @@
             <thead>
               <tr>
                 <th>稀有度</th>
-                <th>單位名稱（中 / 英 / 韓）</th>
+                <th>名稱</th>
                 <th>所需材料</th>
                 <th>金鑰</th>
                 <th>備註</th>
@@ -70,8 +70,8 @@
     </section>
   </div>
 
-  <script src="js/ord_data.js?v=260616004"></script>
-  <script src="js/app.js?v=260616004"></script>
+  <script src="js/ord_data.js?v=260616005"></script>
+  <script src="js/app.js?v=260616005"></script>
 </body>
 
 </html>
