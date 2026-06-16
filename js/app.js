@@ -44,6 +44,17 @@ function compareRecords(left, right) {
   if (left.level !== right.level) {
     return Number(left.level || 0) - Number(right.level || 0);
   }
+  // 1. 先比較 characterId (啟用 numeric: true，讓電腦看懂 1-2 < 1-13)
+  const levelCompare = String(left.character_id || '').localeCompare(
+    String(right.character_id || ''), 
+    undefined, 
+    { numeric: true, sensitivity: 'base' }
+  );
+
+  // 如果 level 不一樣，就直接回傳 level 的比較結果
+  if (levelCompare !== 0) {
+    return levelCompare;
+  }
 
   return String(left.name || '').localeCompare(String(right.name || ''), 'zh-Hant');
 }

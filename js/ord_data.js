@@ -1,17 +1,5 @@
 window.ORD_DATA = [
   {
-    "character_id": "0-6",
-    "level": 0,
-    "name": "太陽神的蹤跡",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [],
-    "key_code": "",
-    "remark": "尼卡用",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "0-1",
     "level": 0,
     "name": "木材",
@@ -24,22 +12,10 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "0-13",
+    "character_id": "0-2",
     "level": 0,
-    "name": "古代船",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [],
-    "key_code": "",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "0-4",
-    "level": 0,
-    "name": "沙鱷 MR.0",
-    "kr_name": "",
+    "name": "鳳凰羽毛",
+    "kr_name": "불사조의 깃털",
     "en_name": "",
     "materials": [],
     "key_code": "",
@@ -50,8 +26,8 @@ window.ORD_DATA = [
   {
     "character_id": "0-3",
     "level": 0,
-    "name": "秋水",
-    "kr_name": "",
+    "name": "名刀秋水",
+    "kr_name": "명검 흑도 슈스이",
     "en_name": "",
     "materials": [],
     "key_code": "",
@@ -63,19 +39,55 @@ window.ORD_DATA = [
     "character_id": "0-5",
     "level": 0,
     "name": "綠血",
-    "kr_name": "",
-    "en_name": "",
+    "kr_name": "그린블러드",
+    "en_name": "Greenblood",
     "materials": [],
     "key_code": "",
-    "remark": "熾天使用",
+    "remark": "熾天使",
     "major": "",
     "suitable_partners": []
   },
   {
-    "character_id": "0-2",
+    "character_id": "0-6",
     "level": 0,
-    "name": "鳳凰羽毛",
-    "kr_name": "",
+    "name": "太陽神的蹤跡",
+    "kr_name": "태양신의 흔적 니카 조합용 아이템",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "尼卡用",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "0-7",
+    "level": 0,
+    "name": "UTA的耳機",
+    "kr_name": "우타의 헤드셋 우타 조합용 아이템",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "UTA用",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "0-8",
+    "level": 0,
+    "name": "天賦點數",
+    "kr_name": "특성포인트",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "0-9",
+    "level": 0,
+    "name": "幸運代幣",
+    "kr_name": "행운의 토큰",
     "en_name": "",
     "materials": [],
     "key_code": "",
@@ -86,24 +98,12 @@ window.ORD_DATA = [
   {
     "character_id": "0-32",
     "level": 0,
-    "name": "隨機專用單位 1個",
-    "kr_name": "",
+    "name": "隨機專用單位",
+    "kr_name": "랜덤전용유닛",
     "en_name": "",
     "materials": [],
     "key_code": "",
     "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "0-7",
-    "level": 0,
-    "name": "UTA的耳機",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [],
-    "key_code": "",
-    "remark": "合成UTA用",
     "major": "",
     "suitable_partners": []
   },
@@ -156,18 +156,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "1-7",
-    "level": 1,
-    "name": "砲兵",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [],
-    "key_code": "",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "1-5",
     "level": 1,
     "name": "索隆",
@@ -185,6 +173,18 @@ window.ORD_DATA = [
     "name": "喬巴",
     "kr_name": "쵸파",
     "en_name": "Chopper",
+    "materials": [],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "1-7",
+    "level": 1,
+    "name": "砲兵",
+    "kr_name": "",
+    "en_name": "",
     "materials": [],
     "key_code": "",
     "remark": "",
@@ -218,7 +218,7 @@ window.ORD_DATA = [
   {
     "character_id": "2-1",
     "level": 2,
-    "name": "小八",
+    "name": "小八魚人",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -609,7 +609,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-7",
     "level": 3,
-    "name": "史庫亞德",
+    "name": "史庫亞德 大漩渦蜘蛛",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -631,7 +631,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-8",
     "level": 3,
-    "name": "吉貝爾",
+    "name": "吉貝爾 甚平",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -854,7 +854,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-18",
     "level": 3,
-    "name": "海賊合體5號",
+    "name": "海賊合體5號 佛朗基",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -1008,7 +1008,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-25",
     "level": 3,
-    "name": "喬巴 頭腦強化 特別",
+    "name": "喬巴 頭腦強化",
     "kr_name": "喬巴",
     "en_name": "",
     "materials": [
@@ -1074,7 +1074,7 @@ window.ORD_DATA = [
   {
     "character_id": "3-28",
     "level": 3,
-    "name": "馮·克雷",
+    "name": "馮·克雷 Mr.2",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -1096,9 +1096,9 @@ window.ORD_DATA = [
   {
     "character_id": "3-29",
     "level": 3,
-    "name": "赫爾梅波",
+    "name": "赫爾梅波 貝魯梅伯",
     "kr_name": "",
-    "en_name": "",
+    "en_name": "Helmeppo",
     "materials": [
       {
         "material_id": "2-2"
@@ -1314,11 +1314,11 @@ window.ORD_DATA = [
     "character_id": "4-7",
     "level": 4,
     "name": "古船",
-    "kr_name": "",
+    "kr_name": "고대의 배 스토리 7라운드 보상",
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "故事第七回合獎勵",
     "major": "",
     "suitable_partners": []
   },
@@ -1403,9 +1403,6 @@ window.ORD_DATA = [
       },
       {
         "material_id": "3-28"
-      },
-      {
-        "material_id": "0-4"
       }
     ],
     "key_code": "",
@@ -1460,7 +1457,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-14",
     "level": 4,
-    "name": "波魯薩利諾",
+    "name": "波魯薩利諾 黃猿",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -1507,7 +1504,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-16",
     "level": 4,
-    "name": "紅髮傑克",
+    "name": "紅髮傑克 香克斯",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -1595,8 +1592,8 @@ window.ORD_DATA = [
   {
     "character_id": "4-20",
     "level": 4,
-    "name": "娜美黑雲",
-    "kr_name": "娜美 크리마텍트",
+    "name": "娜美 天候棒",
+    "kr_name": "크리마텍트",
     "en_name": "",
     "materials": [
       {
@@ -1816,12 +1813,22 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "4-46",
+    "character_id": "4-30",
     "level": 4,
-    "name": "雷利",
+    "name": "鷹眼 喬拉可爾·密佛格",
     "kr_name": "",
     "en_name": "",
-    "materials": [],
+    "materials": [
+      {
+        "material_id": "3-20"
+      },
+      {
+        "material_id": "3-11"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
     "key_code": "",
     "remark": "",
     "major": "",
@@ -1946,7 +1953,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-36",
     "level": 4,
-    "name": "薩卡斯基",
+    "name": "薩卡斯基 赤犬",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -2076,28 +2083,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "4-30",
-    "level": 4,
-    "name": "鷹眼 喬拉可爾·密佛格",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "3-20"
-      },
-      {
-        "material_id": "3-11"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "4-42",
     "level": 4,
     "name": "鑽石喬茲",
@@ -2180,6 +2165,18 @@ window.ORD_DATA = [
         "material_id": "3-26"
       }
     ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "4-46",
+    "level": 4,
+    "name": "雷利",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [],
     "key_code": "",
     "remark": "",
     "major": "",
@@ -2606,37 +2603,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "5-40",
-    "level": 5,
-    "name": "砂糖",
-    "kr_name": "슈가 장난감의 지배자",
-    "en_name": "Sugar",
-    "materials": [
-      {
-        "material_id": "4-15"
-      },
-      {
-        "material_id": "4-39"
-      },
-      {
-        "material_id": "4-4"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "5-16",
     "level": 5,
     "name": "香吉士 西裝",
@@ -2660,28 +2626,6 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "5-39",
-    "level": 5,
-    "name": "香克斯 皇帝",
-    "kr_name": "샹크스 사황 '붉은머리'",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-16"
-      },
-      {
-        "material_id": "4-22"
-      },
-      {
-        "material_id": "4-17"
       }
     ],
     "key_code": "",
@@ -3348,6 +3292,59 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
+    "character_id": "5-39",
+    "level": 5,
+    "name": "香克斯 皇帝",
+    "kr_name": "샹크스 사황 '붉은머리'",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "4-16"
+      },
+      {
+        "material_id": "4-22"
+      },
+      {
+        "material_id": "4-17"
+      }
+    ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "5-40",
+    "level": 5,
+    "name": "砂糖",
+    "kr_name": "슈가 장난감의 지배자",
+    "en_name": "Sugar",
+    "materials": [
+      {
+        "material_id": "4-15"
+      },
+      {
+        "material_id": "4-39"
+      },
+      {
+        "material_id": "4-4"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
     "character_id": "6-1",
     "level": 6,
     "name": "千陽號",
@@ -3422,7 +3419,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-4",
     "level": 6,
-    "name": "史翠西",
+    "name": "絲媞希 斯圖西",
     "kr_name": "스튜시 Cp.0.환락가의 여왕",
     "en_name": "",
     "materials": [
@@ -3555,28 +3552,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "6-22",
-    "level": 6,
-    "name": "庫贊 青稚 隱藏",
-    "kr_name": "쿠잔 해군 대장 푸른 꿩",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-21"
-      },
-      {
-        "material_id": "4-42"
-      },
-      {
-        "material_id": "4-40"
-      }
-    ],
-    "key_code": "aokiji",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "6-10",
     "level": 6,
     "name": "海賊船",
@@ -3634,31 +3609,6 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "maxim",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "6-23",
-    "level": 6,
-    "name": "基拉 隱藏",
-    "kr_name": "킬러 초신성 - 살육무사",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-1"
-      },
-      {
-        "material_id": "3-29"
-      },
-      {
-        "material_id": "3-23"
-      },
-      {
-        "material_id": "3-2"
-      }
-    ],
-    "key_code": "killer",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -3805,6 +3755,28 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
+    "character_id": "6-19",
+    "level": 6,
+    "name": "薩波 隱藏",
+    "kr_name": "사보 용조권",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "4-41"
+      },
+      {
+        "material_id": "4-10"
+      },
+      {
+        "material_id": "4-37"
+      }
+    ],
+    "key_code": "sabo",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
     "character_id": "6-20",
     "level": 6,
     "name": "霜月龍馬 秋水",
@@ -3852,23 +3824,141 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "6-19",
+    "character_id": "6-22",
     "level": 6,
-    "name": "薩波 隱藏",
-    "kr_name": "사보 용조권",
+    "name": "庫贊 青稚 隱藏",
+    "kr_name": "쿠잔 해군 대장 푸른 꿩",
     "en_name": "",
     "materials": [
       {
-        "material_id": "4-41"
+        "material_id": "4-21"
       },
       {
-        "material_id": "4-10"
+        "material_id": "4-42"
       },
       {
-        "material_id": "4-37"
+        "material_id": "4-40"
       }
     ],
-    "key_code": "sabo",
+    "key_code": "aokiji",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "6-23",
+    "level": 6,
+    "name": "基拉 隱藏",
+    "kr_name": "킬러 초신성 - 살육무사",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "4-1"
+      },
+      {
+        "material_id": "3-29"
+      },
+      {
+        "material_id": "3-23"
+      },
+      {
+        "material_id": "3-2"
+      }
+    ],
+    "key_code": "killer",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "7-1",
+    "level": 7,
+    "name": "可雅拉 革命軍",
+    "kr_name": "코알라",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-7"
+      },
+      {
+        "material_id": "4-35"
+      },
+      {
+        "material_id": "2-4"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "koala",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "7-2",
+    "level": 7,
+    "name": "昆因",
+    "kr_name": "퀸",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-15"
+      },
+      {
+        "material_id": "4-17"
+      },
+      {
+        "material_id": "2-3"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "queen",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "7-3",
+    "level": 7,
+    "name": "黑色瑪利亞 誘惑",
+    "kr_name": "黑色瑪麗亞",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "7-3"
+      },
+      {
+        "material_id": "4-8"
+      },
+      {
+        "material_id": "3-12"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "blackmaria",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -3908,37 +3998,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "7-1",
-    "level": 7,
-    "name": "可雅拉 革命軍",
-    "kr_name": "코알라",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-7"
-      },
-      {
-        "material_id": "4-35"
-      },
-      {
-        "material_id": "2-4"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "koala",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "7-5",
     "level": 7,
     "name": "艾斯 炎帝",
@@ -3965,37 +4024,6 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "ace",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "7-2",
-    "level": 7,
-    "name": "昆因",
-    "kr_name": "퀸",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-15"
-      },
-      {
-        "material_id": "4-17"
-      },
-      {
-        "material_id": "2-3"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "queen",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -4038,56 +4066,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "7-3",
-    "level": 7,
-    "name": "黑色瑪利亞 誘惑",
-    "kr_name": "黑色瑪麗亞",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "7-3"
-      },
-      {
-        "material_id": "4-8"
-      },
-      {
-        "material_id": "3-12"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "blackmaria",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "8-5",
-    "level": 8,
-    "name": "加洛特 兔子",
-    "kr_name": "캐럿 스론 달의 사자",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "6-3"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "木頭*10",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "8-1",
     "level": 8,
     "name": "唐吉訶德 多弗朗明哥 暗黑經紀人",
@@ -4096,25 +4074,6 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "4-19"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "木頭*10",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "8-3",
-    "level": 8,
-    "name": "薇薇",
-    "kr_name": "비비 알라바스타의 왕녀",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-35"
       },
       {
         "material_id": "0-1"
@@ -4145,6 +4104,25 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
+    "character_id": "8-3",
+    "level": 8,
+    "name": "薇薇",
+    "kr_name": "비비 알라바스타의 왕녀",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "4-35"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "",
+    "remark": "木頭*10",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
     "character_id": "8-4",
     "level": 8,
     "name": "CP0 卡古",
@@ -4160,6 +4138,50 @@ window.ORD_DATA = [
     ],
     "key_code": "",
     "remark": "木頭*10",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "8-5",
+    "level": 8,
+    "name": "加洛特 兔子",
+    "kr_name": "캐럿 스론 달의 사자",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "6-3"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "",
+    "remark": "木頭*10",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "9-1",
+    "level": 9,
+    "name": "夏洛特 卡塔庫栗",
+    "kr_name": "샬롯 카타쿠리",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-18"
+      },
+      {
+        "material_id": "4-17"
+      },
+      {
+        "material_id": "4-32"
+      },
+      {
+        "material_id": "3-6"
+      }
+    ],
+    "key_code": "",
+    "remark": "30000金 + 木*5",
     "major": "",
     "suitable_partners": []
   },
@@ -4188,59 +4210,6 @@ window.ORD_DATA = [
     ],
     "key_code": "",
     "remark": "5000金 + 木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "9-5",
-    "level": 9,
-    "name": "艾茵 (Z)",
-    "kr_name": "아인",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-21"
-      },
-      {
-        "material_id": "4-22"
-      },
-      {
-        "material_id": "6-16"
-      },
-      {
-        "material_id": "3-14"
-      },
-      {
-        "material_id": "3-14"
-      },
-      {
-        "material_id": "3-14"
-      }
-    ],
-    "key_code": "",
-    "remark": "5000金 + 木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "9-9",
-    "level": 9,
-    "name": "克洛克達爾 沙鱷",
-    "kr_name": "크로커다일 사막의 악어",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "4-11"
-      },
-      {
-        "material_id": "8-3"
-      },
-      {
-        "material_id": "6-21"
-      }
-    ],
-    "key_code": "",
-    "remark": "5000金+木*5",
     "major": "",
     "suitable_partners": []
   },
@@ -4295,6 +4264,37 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
+    "character_id": "9-5",
+    "level": 9,
+    "name": "艾茵 (Z)",
+    "kr_name": "아인",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "4-21"
+      },
+      {
+        "material_id": "4-22"
+      },
+      {
+        "material_id": "6-16"
+      },
+      {
+        "material_id": "3-14"
+      },
+      {
+        "material_id": "3-14"
+      },
+      {
+        "material_id": "3-14"
+      }
+    ],
+    "key_code": "",
+    "remark": "5000金 + 木*5",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
     "character_id": "9-6",
     "level": 9,
     "name": "皇 (KING)",
@@ -4316,56 +4316,6 @@ window.ORD_DATA = [
     ],
     "key_code": "",
     "remark": "5000金 + 木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "9-1",
-    "level": 9,
-    "name": "夏洛特 卡塔庫栗",
-    "kr_name": "샬롯 카타쿠리",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-18"
-      },
-      {
-        "material_id": "4-17"
-      },
-      {
-        "material_id": "4-32"
-      },
-      {
-        "material_id": "3-6"
-      }
-    ],
-    "key_code": "",
-    "remark": "30000金 + 木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "9-10",
-    "level": 9,
-    "name": "馬可",
-    "kr_name": "마르코 흰수염 유산의 수호자",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-23"
-      },
-      {
-        "material_id": "5-27"
-      },
-      {
-        "material_id": "0-2"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "",
-    "remark": "鳳凰羽毛 + 5000金 + 木*5",
     "major": "",
     "suitable_partners": []
   },
@@ -4420,68 +4370,56 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-26",
-    "level": 10,
-    "name": "大和",
-    "kr_name": "",
+    "character_id": "9-9",
+    "level": 9,
+    "name": "克洛克達爾 沙鱷",
+    "kr_name": "크로커다일 사막의 악어",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-21"
+        "material_id": "4-11"
       },
       {
-        "material_id": "5-1"
+        "material_id": "8-3"
       },
       {
-        "material_id": "4-13"
-      },
-      {
-        "material_id": "3-17"
-      },
-      {
-        "material_id": "3-13"
-      },
-      {
-        "material_id": "10-1"
+        "material_id": "6-21"
       }
     ],
-    "key_code": "yamato tr",
-    "remark": "",
+    "key_code": "",
+    "remark": "5000金+木*5",
     "major": "",
     "suitable_partners": []
   },
   {
-    "character_id": "10-17",
-    "level": 10,
-    "name": "巴吉魯·霍金斯",
-    "kr_name": "바질 호킨스 운명을 점치는 마술사",
+    "character_id": "9-10",
+    "level": 9,
+    "name": "馬可",
+    "kr_name": "마르코 흰수염 유산의 수호자",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-22"
+        "material_id": "5-23"
       },
       {
-        "material_id": "5-11"
+        "material_id": "5-27"
       },
       {
-        "material_id": "4-14"
+        "material_id": "0-2"
       },
       {
-        "material_id": "4-4"
-      },
-      {
-        "material_id": "10-1"
+        "material_id": "0-1"
       }
     ],
-    "key_code": "hawkins tr",
-    "remark": "",
+    "key_code": "",
+    "remark": "鳳凰羽毛 + 5000金 + 木*5",
     "major": "",
     "suitable_partners": []
   },
   {
     "character_id": "10-1",
     "level": 10,
-    "name": "巴索羅繆·大熊 超越(唯一素材)",
+    "name": "大熊 超越(唯一素材)",
     "kr_name": "바솔로뮤 쿠마 마지막 의식을 가진 혁명군",
     "en_name": "",
     "materials": [],
@@ -4491,160 +4429,26 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-18",
+    "character_id": "10-2",
     "level": 10,
-    "name": "布魯克 靈魂之王",
-    "kr_name": "",
+    "name": "貝加龐克 (S-鯊魚)",
+    "kr_name": "닥터 베가펑크 (샤크) 세계 최고의 과학자",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-38"
+        "material_id": "23-2"
       },
       {
-        "material_id": "6-20"
+        "material_id": "6-4"
       },
       {
-        "material_id": "4-27"
-      },
-      {
-        "material_id": "3-5"
+        "material_id": "4-14"
       },
       {
         "material_id": "10-1"
       }
     ],
-    "key_code": "brook tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-23",
-    "level": 10,
-    "name": "白星公主",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-7"
-      },
-      {
-        "material_id": "6-11"
-      },
-      {
-        "material_id": "4-35"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "shirahoshi tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-28",
-    "level": 10,
-    "name": "吉貝爾 甚平 海俠",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-7"
-      },
-      {
-        "material_id": "5-38"
-      },
-      {
-        "material_id": "3-13"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "jinbe tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-33",
-    "level": 10,
-    "name": "托拉法爾加·羅",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-8"
-      },
-      {
-        "material_id": "5-26"
-      },
-      {
-        "material_id": "2-8"
-      },
-      {
-        "material_id": "2-8"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "law tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-34",
-    "level": 10,
-    "name": "佛朗基",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-3"
-      },
-      {
-        "material_id": "8-2"
-      },
-      {
-        "material_id": "3-18"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "franky tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-30",
-    "level": 10,
-    "name": "克比",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-29"
-      },
-      {
-        "material_id": "5-11"
-      },
-      {
-        "material_id": "4-6"
-      },
-      {
-        "material_id": "3-29"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "koby tr",
+    "key_code": "vegapunk tr",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -4653,9 +4457,22 @@ window.ORD_DATA = [
     "character_id": "10-3",
     "level": 10,
     "name": "貝加龐克 (S-蛇)",
-    "kr_name": "스네이크",
+    "kr_name": "닥터 베가펑크 (스네이크) 세계 최고의 과학자",
     "en_name": "",
-    "materials": [],
+    "materials": [
+      {
+        "material_id": "23-1"
+      },
+      {
+        "material_id": "6-4"
+      },
+      {
+        "material_id": "4-14"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
     "key_code": "vegapunk tr",
     "remark": "",
     "major": "",
@@ -4665,21 +4482,22 @@ window.ORD_DATA = [
     "character_id": "10-4",
     "level": 10,
     "name": "貝加龐克 (S-熊)",
-    "kr_name": "베어",
+    "kr_name": "닥터 베가펑크 (베어) 세계 최고의 과학자",
     "en_name": "",
-    "materials": [],
-    "key_code": "vegapunk tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-2",
-    "level": 10,
-    "name": "貝加龐克 (S-鯊魚)",
-    "kr_name": "닥터 베가펑크 (샤크) 세계 최고의 과학자",
-    "en_name": "",
-    "materials": [],
+    "materials": [
+      {
+        "material_id": "23-3"
+      },
+      {
+        "material_id": "6-4"
+      },
+      {
+        "material_id": "4-14"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
     "key_code": "vegapunk tr",
     "remark": "",
     "major": "",
@@ -4689,206 +4507,23 @@ window.ORD_DATA = [
     "character_id": "10-6",
     "level": 10,
     "name": "貝加龐克 (S-鷹)",
-    "kr_name": "호크",
-    "en_name": "",
-    "materials": [],
-    "key_code": "vegapunk tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-25",
-    "level": 10,
-    "name": "赤犬 薩卡斯基",
-    "kr_name": "",
+    "kr_name": "닥터 베가펑크 (호크) 세계 최고의 과학자",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-29"
+        "material_id": "23-4"
       },
       {
-        "material_id": "6-21"
-      },
-      {
-        "material_id": "3-13"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "akainu tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-32",
-    "level": 10,
-    "name": "波魯薩利諾 黃猿",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-37"
-      },
-      {
-        "material_id": "5-20"
+        "material_id": "6-4"
       },
       {
         "material_id": "4-14"
       },
       {
-        "material_id": "3-2"
-      },
-      {
-        "material_id": "3-26"
-      },
-      {
         "material_id": "10-1"
       }
     ],
-    "key_code": "kizaru tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-22",
-    "level": 10,
-    "name": "紅髮 香克斯",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-39"
-      },
-      {
-        "material_id": "6-17"
-      },
-      {
-        "material_id": "4-1"
-      },
-      {
-        "material_id": "3-30"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "shanks tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-21",
-    "level": 10,
-    "name": "香吉士",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-16"
-      },
-      {
-        "material_id": "5-18"
-      },
-      {
-        "material_id": "3-17"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "sanji tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-13",
-    "level": 10,
-    "name": "唐吉訶德 多弗朗明哥",
-    "kr_name": "도플라밍고 \"어둠의 조커\" 드레스로자의 악몽",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "8-1"
-      },
-      {
-        "material_id": "8-2"
-      },
-      {
-        "material_id": "6-16"
-      },
-      {
-        "material_id": "4-15"
-      },
-      {
-        "material_id": "2-6"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "joker tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-35",
-    "level": 10,
-    "name": "娜美",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-19"
-      },
-      {
-        "material_id": "5-14"
-      },
-      {
-        "material_id": "3-17"
-      },
-      {
-        "material_id": "3-26"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "nami tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-31",
-    "level": 10,
-    "name": "庫贊 青雉 前大將",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-25"
-      },
-      {
-        "material_id": "6-22"
-      },
-      {
-        "material_id": "3-12"
-      },
-      {
-        "material_id": "2-11"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "aokiji tr",
+    "key_code": "vegapunk tr",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -4950,31 +4585,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-15",
-    "level": 10,
-    "name": "馬歇爾·D·汀奇",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-24"
-      },
-      {
-        "material_id": "5-31"
-      },
-      {
-        "material_id": "4-4"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "teach tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "10-10",
     "level": 10,
     "name": "基德",
@@ -5008,7 +4618,7 @@ window.ORD_DATA = [
   {
     "character_id": "10-11",
     "level": 10,
-    "name": "蛇人魯夫",
+    "name": "魯夫 蛇人",
     "kr_name": "스네이크맨",
     "en_name": "",
     "materials": [
@@ -5034,26 +4644,188 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-29",
+    "character_id": "10-12",
     "level": 10,
-    "name": "喬巴",
-    "kr_name": "",
+    "name": "羅布·路基 CP0",
+    "kr_name": "루치",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-21"
+        "material_id": "5-36"
       },
       {
-        "material_id": "5-27"
+        "material_id": "6-19"
       },
       {
-        "material_id": "1-6"
+        "material_id": "3-12"
       },
       {
         "material_id": "10-1"
       }
     ],
-    "key_code": "chopper tr",
+    "key_code": "lucci tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-13",
+    "level": 10,
+    "name": "唐吉訶德 多弗朗明哥",
+    "kr_name": "도플라밍고 \"어둠의 조커\" 드레스로자의 악몽",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "8-1"
+      },
+      {
+        "material_id": "8-2"
+      },
+      {
+        "material_id": "6-16"
+      },
+      {
+        "material_id": "4-15"
+      },
+      {
+        "material_id": "2-6"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "joker tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-14",
+    "level": 10,
+    "name": "藤虎",
+    "kr_name": "후지토라",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "10-14"
+      },
+      {
+        "material_id": "6-2"
+      },
+      {
+        "material_id": "0-28"
+      },
+      {
+        "material_id": "2-11"
+      }
+    ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-15",
+    "level": 10,
+    "name": "馬歇爾·D·汀奇 黑鬍子",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-24"
+      },
+      {
+        "material_id": "5-31"
+      },
+      {
+        "material_id": "4-4"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "teach tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-16",
+    "level": 10,
+    "name": "魯夫 冥王弟子",
+    "kr_name": "몽키 · D · 루피 명왕 레일리의 제자",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-33"
+      },
+      {
+        "material_id": "5-2"
+      },
+      {
+        "material_id": "4-38"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "luffy tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-17",
+    "level": 10,
+    "name": "巴吉魯·霍金斯",
+    "kr_name": "바질 호킨스 운명을 점치는 마술사",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-22"
+      },
+      {
+        "material_id": "5-11"
+      },
+      {
+        "material_id": "4-14"
+      },
+      {
+        "material_id": "4-4"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "hawkins tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-18",
+    "level": 10,
+    "name": "布魯克 靈魂之王",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-38"
+      },
+      {
+        "material_id": "6-20"
+      },
+      {
+        "material_id": "4-27"
+      },
+      {
+        "material_id": "3-5"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "brook tr",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -5087,56 +4859,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-24",
-    "level": 10,
-    "name": "綠牛",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "6-15"
-      },
-      {
-        "material_id": "5-37"
-      },
-      {
-        "material_id": "3-30"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "ryokugyu tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-16",
-    "level": 10,
-    "name": "魯夫 冥王弟子",
-    "kr_name": "몽키 · D · 루피 명왕 레일리의 제자",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-33"
-      },
-      {
-        "material_id": "5-2"
-      },
-      {
-        "material_id": "4-38"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "luffy tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "10-20",
     "level": 10,
     "name": "薩波 革命軍參謀長",
@@ -5165,79 +4887,160 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "10-12",
+    "character_id": "10-21",
     "level": 10,
-    "name": "羅布·路基 CP0",
-    "kr_name": "루치",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-36"
-      },
-      {
-        "material_id": "6-19"
-      },
-      {
-        "material_id": "3-12"
-      },
-      {
-        "material_id": "10-1"
-      }
-    ],
-    "key_code": "lucci tr",
-    "remark": "",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "10-36",
-    "level": 10,
-    "name": "羅賓",
+    "name": "香吉士",
     "kr_name": "",
     "en_name": "",
     "materials": [
       {
-        "material_id": "5-36"
+        "material_id": "5-16"
       },
       {
-        "material_id": "5-30"
+        "material_id": "5-18"
       },
       {
-        "material_id": "3-12"
-      },
-      {
-        "material_id": "2-4"
+        "material_id": "3-17"
       },
       {
         "material_id": "10-1"
       }
     ],
-    "key_code": "robin tr",
+    "key_code": "sanji tr",
     "remark": "",
     "major": "",
     "suitable_partners": []
   },
   {
-    "character_id": "10-14",
+    "character_id": "10-22",
     "level": 10,
-    "name": "藤虎",
-    "kr_name": "후지토라",
+    "name": "紅髮 香克斯",
+    "kr_name": "",
     "en_name": "",
     "materials": [
       {
-        "material_id": "10-14"
+        "material_id": "5-39"
       },
       {
-        "material_id": "6-2"
+        "material_id": "6-17"
       },
       {
-        "material_id": "0-28"
+        "material_id": "4-1"
       },
       {
-        "material_id": "2-11"
+        "material_id": "3-30"
+      },
+      {
+        "material_id": "10-1"
       }
     ],
-    "key_code": "",
+    "key_code": "shanks tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-23",
+    "level": 10,
+    "name": "白星公主",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-7"
+      },
+      {
+        "material_id": "6-11"
+      },
+      {
+        "material_id": "4-35"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "shirahoshi tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-24",
+    "level": 10,
+    "name": "綠牛",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "6-15"
+      },
+      {
+        "material_id": "5-37"
+      },
+      {
+        "material_id": "3-30"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "ryokugyu tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-25",
+    "level": 10,
+    "name": "赤犬 薩卡斯基",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-29"
+      },
+      {
+        "material_id": "6-21"
+      },
+      {
+        "material_id": "3-13"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "akainu tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-26",
+    "level": 10,
+    "name": "大和",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-21"
+      },
+      {
+        "material_id": "5-1"
+      },
+      {
+        "material_id": "4-13"
+      },
+      {
+        "material_id": "3-17"
+      },
+      {
+        "material_id": "3-13"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "yamato tr",
     "remark": "",
     "major": "",
     "suitable_partners": []
@@ -5271,6 +5074,252 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
+    "character_id": "10-28",
+    "level": 10,
+    "name": "吉貝爾 甚平 海俠",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-7"
+      },
+      {
+        "material_id": "5-38"
+      },
+      {
+        "material_id": "3-13"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "jinbe tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-29",
+    "level": 10,
+    "name": "喬巴",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-21"
+      },
+      {
+        "material_id": "5-27"
+      },
+      {
+        "material_id": "1-6"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "chopper tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-30",
+    "level": 10,
+    "name": "克比",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-29"
+      },
+      {
+        "material_id": "5-11"
+      },
+      {
+        "material_id": "4-6"
+      },
+      {
+        "material_id": "3-29"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "koby tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-31",
+    "level": 10,
+    "name": "庫贊 青雉 前大將",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-25"
+      },
+      {
+        "material_id": "6-22"
+      },
+      {
+        "material_id": "3-12"
+      },
+      {
+        "material_id": "2-11"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "aokiji tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-32",
+    "level": 10,
+    "name": "波魯薩利諾 黃猿",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-37"
+      },
+      {
+        "material_id": "5-20"
+      },
+      {
+        "material_id": "4-14"
+      },
+      {
+        "material_id": "3-2"
+      },
+      {
+        "material_id": "3-26"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "kizaru tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-33",
+    "level": 10,
+    "name": "托拉法爾加·羅",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-8"
+      },
+      {
+        "material_id": "5-26"
+      },
+      {
+        "material_id": "2-8"
+      },
+      {
+        "material_id": "2-8"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "law tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-34",
+    "level": 10,
+    "name": "佛朗基",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-3"
+      },
+      {
+        "material_id": "8-2"
+      },
+      {
+        "material_id": "3-18"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "franky tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-35",
+    "level": 10,
+    "name": "娜美",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-19"
+      },
+      {
+        "material_id": "5-14"
+      },
+      {
+        "material_id": "3-17"
+      },
+      {
+        "material_id": "3-26"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "nami tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "10-36",
+    "level": 10,
+    "name": "羅賓",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-36"
+      },
+      {
+        "material_id": "5-30"
+      },
+      {
+        "material_id": "3-12"
+      },
+      {
+        "material_id": "2-4"
+      },
+      {
+        "material_id": "10-1"
+      }
+    ],
+    "key_code": "robin tr",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
     "character_id": "11-1",
     "level": 11,
     "name": "巴雷特",
@@ -5291,31 +5340,6 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "bullet im",
-    "remark": "木*10",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "11-13",
-    "level": 11,
-    "name": "卡普",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-32"
-      },
-      {
-        "material_id": "5-11"
-      },
-      {
-        "material_id": "5-28"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "garp im",
     "remark": "木*10",
     "major": "",
     "suitable_partners": []
@@ -5421,31 +5445,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "11-12",
-    "level": 11,
-    "name": "愛德華·紐蓋特 白鬍子",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-31"
-      },
-      {
-        "material_id": "5-2"
-      },
-      {
-        "material_id": "5-23"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "newgate im",
-    "remark": "木*10",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "11-6",
     "level": 11,
     "name": "獅鬼 (金獅子)",
@@ -5491,31 +5490,6 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "gaban im",
-    "remark": "木*10",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "11-11",
-    "level": 11,
-    "name": "戰國",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-34"
-      },
-      {
-        "material_id": "5-4"
-      },
-      {
-        "material_id": "5-36"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "sengoku im",
     "remark": "木*10",
     "major": "",
     "suitable_partners": []
@@ -5571,61 +5545,59 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "11-10",
+    "character_id": "11-11",
     "level": 11,
-    "name": "골 · D · 로져",
+    "name": "戰國",
     "kr_name": "",
     "en_name": "",
     "materials": [
       {
-        "material_id": "8-2"
-      },
-      {
         "material_id": "5-34"
       },
       {
-        "material_id": "3-27"
+        "material_id": "5-4"
       },
       {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
+        "material_id": "5-36"
       },
       {
         "material_id": "0-1"
       }
     ],
-    "key_code": "",
-    "remark": "",
+    "key_code": "sengoku im",
+    "remark": "木*10",
     "major": "",
     "suitable_partners": []
   },
   {
-    "character_id": "11-14",
+    "character_id": "11-12",
     "level": 11,
-    "name": "몽키 · D · 드래곤",
+    "name": "愛德華·紐蓋特 白鬍子",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-31"
+      },
+      {
+        "material_id": "5-2"
+      },
+      {
+        "material_id": "5-23"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "newgate im",
+    "remark": "木*10",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "11-13",
+    "level": 11,
+    "name": "卡普",
     "kr_name": "",
     "en_name": "",
     "materials": [
@@ -5633,44 +5605,17 @@ window.ORD_DATA = [
         "material_id": "5-32"
       },
       {
-        "material_id": "3-4"
+        "material_id": "5-11"
       },
       {
-        "material_id": "5-35"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
-      },
-      {
-        "material_id": "0-1"
+        "material_id": "5-28"
       },
       {
         "material_id": "0-1"
       }
     ],
-    "key_code": "",
-    "remark": "",
+    "key_code": "garp im",
+    "remark": "木*10",
     "major": "",
     "suitable_partners": []
   },
@@ -5731,43 +5676,6 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "12-10",
-    "level": 12,
-    "name": "巴其",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-19"
-      },
-      {
-        "material_id": "6-6"
-      },
-      {
-        "material_id": "4-16"
-      },
-      {
-        "material_id": "4-28"
-      },
-      {
-        "material_id": "3-3"
-      },
-      {
-        "material_id": "3-28"
-      },
-      {
-        "material_id": "3-14"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "buggy et",
-    "remark": "木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
     "character_id": "12-3",
     "level": 12,
     "name": "卡文迪許",
@@ -5819,28 +5727,6 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "oden et",
-    "remark": "木*5",
-    "major": "",
-    "suitable_partners": []
-  },
-  {
-    "character_id": "12-13",
-    "level": 12,
-    "name": "艾斯",
-    "kr_name": "",
-    "en_name": "",
-    "materials": [
-      {
-        "material_id": "7-5"
-      },
-      {
-        "material_id": "5-23"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "ace et",
     "remark": "木*5",
     "major": "",
     "suitable_partners": []
@@ -5900,6 +5786,102 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "tesoro et",
+    "remark": "木*5",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "12-8",
+    "level": 12,
+    "name": "霜月龍馬",
+    "kr_name": "霜月龍馬",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-8"
+      },
+      {
+        "material_id": "6-8"
+      },
+      {
+        "material_id": "6-20"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "ryuma et",
+    "remark": "木*5",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "12-9",
+    "level": 12,
+    "name": "薇薇",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "9-9"
+      },
+      {
+        "material_id": "8-3"
+      },
+      {
+        "material_id": "4-32"
+      },
+      {
+        "material_id": "4-22"
+      },
+      {
+        "material_id": "3-12"
+      },
+      {
+        "material_id": "3-18"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "vivi et",
+    "remark": "木*5",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "12-10",
+    "level": 12,
+    "name": "巴其",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-19"
+      },
+      {
+        "material_id": "6-6"
+      },
+      {
+        "material_id": "4-16"
+      },
+      {
+        "material_id": "4-28"
+      },
+      {
+        "material_id": "3-3"
+      },
+      {
+        "material_id": "3-28"
+      },
+      {
+        "material_id": "3-14"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "buggy et",
     "remark": "木*5",
     "major": "",
     "suitable_partners": []
@@ -5967,61 +5949,192 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "12-9",
+    "character_id": "12-13",
     "level": 12,
-    "name": "薇薇",
+    "name": "艾斯",
     "kr_name": "",
     "en_name": "",
     "materials": [
       {
-        "material_id": "9-9"
+        "material_id": "7-5"
       },
       {
-        "material_id": "8-3"
-      },
-      {
-        "material_id": "4-32"
-      },
-      {
-        "material_id": "4-22"
-      },
-      {
-        "material_id": "3-12"
-      },
-      {
-        "material_id": "3-18"
+        "material_id": "5-23"
       },
       {
         "material_id": "0-1"
       }
     ],
-    "key_code": "vivi et",
+    "key_code": "ace et",
     "remark": "木*5",
     "major": "",
     "suitable_partners": []
   },
   {
-    "character_id": "12-8",
-    "level": 12,
-    "name": "霜月龍馬",
-    "kr_name": "霜月龍馬",
+    "character_id": "16-1",
+    "level": 16,
+    "name": "K'(KOF)",
+    "kr_name": "",
     "en_name": "",
-    "materials": [
-      {
-        "material_id": "5-8"
-      },
-      {
-        "material_id": "6-8"
-      },
-      {
-        "material_id": "6-20"
-      },
-      {
-        "material_id": "0-1"
-      }
-    ],
-    "key_code": "ryuma et",
-    "remark": "木*5",
+    "materials": [],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-2",
+    "level": 16,
+    "name": "鳴人 仙人模式",
+    "kr_name": "나루토 선인모드",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-3",
+    "level": 16,
+    "name": "惠惠",
+    "kr_name": "메구밍",
+    "en_name": "Meguming",
+    "materials": [],
+    "key_code": "",
+    "remark": "konosuba",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-4",
+    "level": 16,
+    "name": "千斗五十鈴",
+    "kr_name": "센토 이스즈",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "甘城輝煌樂園救世主",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-5",
+    "level": 16,
+    "name": "上條當麻",
+    "kr_name": "신의손 - 카미조 토우마",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "魔法禁書目錄",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-6",
+    "level": 16,
+    "name": "夜神月",
+    "kr_name": "야가미 라이토",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "死亡筆記本",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-7",
+    "level": 16,
+    "name": "伊莉莎白",
+    "kr_name": "엘리자베스",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "銀魂",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-8",
+    "level": 16,
+    "name": "阮顏",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "永遠の7日之都",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-9",
+    "level": 16,
+    "name": "小岩井四葉",
+    "kr_name": "",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "四葉妹妹",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-10",
+    "level": 16,
+    "name": "諫山黃泉",
+    "kr_name": "",
+    "en_name": "ISAYAMA YOMI",
+    "materials": [],
+    "key_code": "",
+    "remark": "食靈",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-11",
+    "level": 16,
+    "name": "布洛妮婭·扎伊切克",
+    "kr_name": "",
+    "en_name": "BRONYA ZAYCHIK",
+    "materials": [],
+    "key_code": "",
+    "remark": "崩壞",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-12",
+    "level": 16,
+    "name": "黑崎一護",
+    "kr_name": "쿠로사키 이치고",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "死神",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-13",
+    "level": 16,
+    "name": "派蒙",
+    "kr_name": "페이몬",
+    "en_name": "",
+    "materials": [],
+    "key_code": "",
+    "remark": "原神",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "16-14",
+    "level": 16,
+    "name": "羽川翼",
+    "kr_name": "하네카와 츠바사",
+    "en_name": "HANEKAWA TSUBASA",
+    "materials": [],
+    "key_code": "",
+    "remark": "物語系列",
     "major": "",
     "suitable_partners": []
   },
@@ -6030,20 +6143,29 @@ window.ORD_DATA = [
     "level": 18,
     "name": "八雲紫",
     "kr_name": "야쿠모 유카리",
-    "en_name": "",
+    "en_name": "YAKUMO YUKARI",
     "materials": [
+      {
+        "material_id": "16-6"
+      },
       {
         "material_id": "0-32"
       },
       {
-        "material_id": "4-27"
+        "material_id": "7-6"
       },
       {
         "material_id": "3-4"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6055,45 +6177,60 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
+        "material_id": "16-1"
+      },
+      {
         "material_id": "0-32"
       },
       {
         "material_id": "7-1"
       },
       {
-        "material_id": "4-36"
+        "material_id": "6-21"
       },
       {
-        "material_id": "4-15"
+        "material_id": "5-40"
       },
       {
-        "material_id": "6-10"
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "咒術迴戰 10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
   {
     "character_id": "18-3",
     "level": 18,
-    "name": "日熊",
-    "kr_name": "히그마",
+    "name": "Sans",
+    "kr_name": "샌즈 지하 세계의 괴물",
     "en_name": "",
     "materials": [
       {
-        "material_id": "0-32"
+        "material_id": "16-3"
       },
       {
-        "material_id": "0-26"
+        "material_id": "6-16"
       },
       {
-        "material_id": "4-16"
+        "material_id": "6-22"
+      },
+      {
+        "material_id": "8-4"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6101,18 +6238,27 @@ window.ORD_DATA = [
     "character_id": "18-4",
     "level": 18,
     "name": "安妮亞·佛傑",
-    "kr_name": "아냐 포저",
+    "kr_name": "아냐 포저 작은 악마",
     "en_name": "",
     "materials": [
       {
-        "material_id": "4-15"
+        "material_id": "16-7"
+      },
+      {
+        "material_id": "5-40"
       },
       {
         "material_id": "6-4"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6124,39 +6270,57 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
+        "material_id": "16-12"
+      },
+      {
         "material_id": "0-32"
       },
       {
-        "material_id": "2-5"
+        "material_id": "7-5"
       },
       {
         "material_id": "4-30"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
   {
     "character_id": "18-6",
     "level": 18,
-    "name": "兩儀式",
+    "name": "兩儀式(空之境界)",
     "kr_name": "료우기 시키",
     "en_name": "",
     "materials": [
       {
+        "material_id": "16-10"
+      },
+      {
         "material_id": "6-8"
       },
       {
-        "material_id": "12-8"
+        "material_id": "6-20"
       },
       {
-        "material_id": "1-4"
+        "material_id": "5-19"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金+木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6164,18 +6328,27 @@ window.ORD_DATA = [
     "character_id": "18-7",
     "level": 18,
     "name": "波風水門",
-    "kr_name": "미나토",
+    "kr_name": "나미카제 미나토",
     "en_name": "",
     "materials": [
       {
-        "material_id": "8-1"
+        "material_id": "16-2"
       },
       {
-        "material_id": "9-4"
+        "material_id": "8-5"
+      },
+      {
+        "material_id": "5-12"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6187,17 +6360,26 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
-        "material_id": "0-25"
+        "material_id": "16-5"
+      },
+      {
+        "material_id": "5-1"
       },
       {
         "material_id": "5-34"
       },
       {
-        "material_id": "3-30"
+        "material_id": "5-33"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6205,9 +6387,12 @@ window.ORD_DATA = [
     "character_id": "18-9",
     "level": 18,
     "name": "重裝小兔 (布洛妮婭)",
-    "kr_name": "부릉냐",
+    "kr_name": "부릉냐 - 신비함",
     "en_name": "",
     "materials": [
+      {
+        "material_id": "16-11"
+      },
       {
         "material_id": "5-4"
       },
@@ -6215,11 +6400,17 @@ window.ORD_DATA = [
         "material_id": "6-1"
       },
       {
-        "material_id": "4-43"
+        "material_id": "8-2"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6228,8 +6419,11 @@ window.ORD_DATA = [
     "level": 18,
     "name": "魂魄妖夢",
     "kr_name": "콘파쿠 요우무",
-    "en_name": "",
+    "en_name": "Youmu Konpaku",
     "materials": [
+      {
+        "material_id": "16-8"
+      },
       {
         "material_id": "0-32"
       },
@@ -6237,11 +6431,17 @@ window.ORD_DATA = [
         "material_id": "5-25"
       },
       {
-        "material_id": "4-35"
+        "material_id": "8-3"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6253,14 +6453,23 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
-        "material_id": "9-6"
+        "material_id": "16-9"
       },
       {
-        "material_id": "3-4"
+        "material_id": "5-15"
+      },
+      {
+        "material_id": "5-3"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10000金 + 木*7",
     "major": "",
     "suitable_partners": []
   },
@@ -6268,17 +6477,76 @@ window.ORD_DATA = [
     "character_id": "18-12",
     "level": 18,
     "name": "禰豆子",
-    "kr_name": "네즈코",
+    "kr_name": "카마도 네즈코 오니",
     "en_name": "",
     "materials": [
       {
-        "material_id": "3-31"
+        "material_id": "16-14"
+      },
+      {
+        "material_id": "5-36"
       },
       {
         "material_id": "6-18"
       },
       {
         "material_id": "4-8"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "",
+    "remark": "10000金 + 木*7",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "18-13",
+    "level": 18,
+    "name": "山賊王",
+    "kr_name": "마운틴.D.히그마",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "16-4"
+      },
+      {
+        "material_id": "0-32"
+      },
+      {
+        "material_id": "5-35"
+      },
+      {
+        "material_id": "4-16"
+      },
+      {
+        "material_id": "0-9"
+      },
+      {
+        "material_id": "0-1"
+      }
+    ],
+    "key_code": "",
+    "remark": "10000金 + 木*7",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "23-1",
+    "level": 23,
+    "name": "漢考克-熾天使",
+    "kr_name": "S - 스네이크",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-13"
+      },
+      {
+        "material_id": "0-5"
       }
     ],
     "key_code": "",
@@ -6287,20 +6555,55 @@ window.ORD_DATA = [
     "suitable_partners": []
   },
   {
-    "character_id": "18-13",
-    "level": 18,
-    "name": "Sans",
-    "kr_name": "샌즈",
+    "character_id": "23-2",
+    "level": 23,
+    "name": "吉貝爾-熾天使",
+    "kr_name": "S - 샤크",
     "en_name": "",
     "materials": [
       {
-        "material_id": "0-12"
+        "material_id": "5-7"
       },
       {
-        "material_id": "4-21"
+        "material_id": "0-5"
+      }
+    ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "23-3",
+    "level": 23,
+    "name": "大熊-熾天使",
+    "kr_name": "S - 베어",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "5-3"
       },
       {
-        "material_id": "0-6"
+        "material_id": "0-5"
+      }
+    ],
+    "key_code": "",
+    "remark": "",
+    "major": "",
+    "suitable_partners": []
+  },
+  {
+    "character_id": "23-4",
+    "level": 23,
+    "name": "鷹眼 密佛格-熾天使",
+    "kr_name": "S - 호크",
+    "en_name": "",
+    "materials": [
+      {
+        "material_id": "6-17"
+      },
+      {
+        "material_id": "0-5"
       }
     ],
     "key_code": "",
