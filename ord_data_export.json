@@ -4962,7 +4962,7 @@
     "character_id": "11-1",
     "level": 11,
     "name": "巴雷特",
-    "kr_name": "불릿",
+    "kr_name": "더글라스 불릿 괴물의 후계자",
     "en_name": "",
     "materials": [
       {
@@ -4973,9 +4973,6 @@
       },
       {
         "material_id": "5-24"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "bullet im",
@@ -4986,8 +4983,8 @@
   {
     "character_id": "11-2",
     "level": 11,
-    "name": "多拉格 (龍)",
-    "kr_name": "드래곤",
+    "name": "多拉格 革命軍首領",
+    "kr_name": "몽키 · D · 드래곤 혁명군의 수장",
     "en_name": "",
     "materials": [
       {
@@ -4998,9 +4995,6 @@
       },
       {
         "material_id": "5-35"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "dragon im",
@@ -5011,8 +5005,8 @@
   {
     "character_id": "11-3",
     "level": 11,
-    "name": "席爾巴斯·雷利",
-    "kr_name": "",
+    "name": "席爾巴斯·雷利 冥王",
+    "kr_name": "실버즈 레일리 명왕",
     "en_name": "",
     "materials": [
       {
@@ -5023,9 +5017,6 @@
       },
       {
         "material_id": "5-13"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "rayleigh im",
@@ -5036,8 +5027,8 @@
   {
     "character_id": "11-4",
     "level": 11,
-    "name": "海道 (凱多)",
-    "kr_name": "카이도",
+    "name": "海道 百獸凱多",
+    "kr_name": "카이도 사황 '백수의 왕",
     "en_name": "",
     "materials": [
       {
@@ -5048,9 +5039,6 @@
       },
       {
         "material_id": "5-15"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "kaido im",
@@ -5061,8 +5049,8 @@
   {
     "character_id": "11-5",
     "level": 11,
-    "name": "捷特 (Z)",
-    "kr_name": "제트",
+    "name": "捷風 (Z) 澤法 鐵腕",
+    "kr_name": "제트 해군 스승 \"흑완의 Z",
     "en_name": "",
     "materials": [
       {
@@ -5073,9 +5061,6 @@
       },
       {
         "material_id": "5-40"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "Z im",
@@ -5086,8 +5071,8 @@
   {
     "character_id": "11-6",
     "level": 11,
-    "name": "獅鬼 (金獅子)",
-    "kr_name": "시키",
+    "name": "金獅子 獅鬼",
+    "kr_name": "금사자 시키 천신",
     "en_name": "",
     "materials": [
       {
@@ -5098,9 +5083,6 @@
       },
       {
         "material_id": "5-6"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "shiki im",
@@ -5112,7 +5094,7 @@
     "character_id": "11-7",
     "level": 11,
     "name": "賈班",
-    "kr_name": "스코퍼 가반",
+    "kr_name": "스코퍼 가반 로져 해적단의 검호",
     "en_name": "",
     "materials": [
       {
@@ -5123,9 +5105,6 @@
       },
       {
         "material_id": "5-4"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "gaban im",
@@ -5137,8 +5116,8 @@
     "character_id": "11-8",
     "level": 11,
     "name": "羅傑",
-    "kr_name": "로져",
-    "en_name": "",
+    "kr_name": "골 · D · 로져 해왕",
+    "en_name": "Roger",
     "materials": [
       {
         "material_id": "5-9"
@@ -5148,9 +5127,6 @@
       },
       {
         "material_id": "5-28"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "roger im",
@@ -5162,7 +5138,7 @@
     "character_id": "11-9",
     "level": 11,
     "name": "BIG MOM",
-    "kr_name": "빅맘",
+    "kr_name": "빅 맘 사황 강철 풍선",
     "en_name": "",
     "materials": [
       {
@@ -5173,12 +5149,9 @@
       },
       {
         "material_id": "5-18"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
-    "key_code": "BigMom Im",
+    "key_code": "bigmom im",
     "remark": "木*10",
     "major": "",
     "suitable_partners": []
@@ -5186,8 +5159,8 @@
   {
     "character_id": "11-11",
     "level": 11,
-    "name": "戰國",
-    "kr_name": "",
+    "name": "戰國 大佛",
+    "kr_name": "센고쿠 부처님",
     "en_name": "",
     "materials": [
       {
@@ -5198,9 +5171,6 @@
       },
       {
         "material_id": "5-36"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "sengoku im",
@@ -5211,8 +5181,8 @@
   {
     "character_id": "11-12",
     "level": 11,
-    "name": "愛德華·紐蓋特 白鬍子",
-    "kr_name": "",
+    "name": "愛德華·紐蓋特 白鬍子 舊世代主宰",
+    "kr_name": "에드워드 뉴게이트 한시대를 주름잡던 대해적",
     "en_name": "",
     "materials": [
       {
@@ -5236,8 +5206,8 @@
   {
     "character_id": "11-13",
     "level": 11,
-    "name": "卡普",
-    "kr_name": "",
+    "name": "卡普 海軍英雄",
+    "kr_name": "몽키 · D · 거프 해군영웅 주먹의 거프",
     "en_name": "",
     "materials": [
       {
@@ -5261,12 +5231,15 @@
   {
     "character_id": "12-1",
     "level": 12,
-    "name": "太陽神尼卡 (蛇超基底)",
+    "name": "魯夫 太陽神尼卡 (蛇人基底)",
     "kr_name": "니카 (뱀초)",
     "en_name": "",
     "materials": [
       {
         "material_id": "10-11"
+      },
+      {
+        "material_id": "5-8"
       },
       {
         "material_id": "4-1"
@@ -5275,21 +5248,18 @@
         "material_id": "2-5"
       },
       {
-        "material_id": "5-8"
-      },
-      {
-        "material_id": "0-1"
+        "material_id": "0-6"
       }
     ],
     "key_code": "nika et",
-    "remark": "特殊物品太陽神的遺跡 + 木*5",
+    "remark": "木*5",
     "major": "",
     "suitable_partners": []
   },
   {
     "character_id": "12-2",
     "level": 12,
-    "name": "太陽神尼卡 (超越基底)",
+    "name": "魯夫 太陽神尼卡",
     "kr_name": "니카 (루초)",
     "en_name": "",
     "materials": [
@@ -5306,11 +5276,11 @@
         "material_id": "2-5"
       },
       {
-        "material_id": "0-1"
+        "material_id": "0-6"
       }
     ],
     "key_code": "nika et",
-    "remark": "特殊物品太陽神的遺跡 + 木*5",
+    "remark": "木*5",
     "major": "",
     "suitable_partners": []
   },
@@ -5318,7 +5288,7 @@
     "character_id": "12-3",
     "level": 12,
     "name": "卡文迪許",
-    "kr_name": "카번딧슈",
+    "kr_name": "해적왕자-롬멜의 카마이타치 카벤딧슈",
     "en_name": "Cavendish",
     "materials": [
       {
@@ -5332,9 +5302,6 @@
       },
       {
         "material_id": "3-11"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "cavendish et",
@@ -5346,7 +5313,7 @@
     "character_id": "12-4",
     "level": 12,
     "name": "光月御田",
-    "kr_name": "오뎅",
+    "kr_name": "참된 호걸 코즈키 오뎅",
     "en_name": "Oden",
     "materials": [
       {
@@ -5360,9 +5327,6 @@
       },
       {
         "material_id": "4-25"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "oden et",
@@ -5373,8 +5337,8 @@
   {
     "character_id": "12-5",
     "level": 12,
-    "name": "美音 (Uta)",
-    "kr_name": "우타",
+    "name": "美音 (Uta) 世界歌姬",
+    "kr_name": "세계의 가희 우타",
     "en_name": "Uta",
     "materials": [
       {
@@ -5396,14 +5360,11 @@
         "material_id": "1-8"
       },
       {
-        "material_id": "0-1"
-      },
-      {
         "material_id": "0-7"
       }
     ],
     "key_code": "u-ta et",
-    "remark": "耳機 + 木*5",
+    "remark": "木*5",
     "major": "",
     "suitable_partners": []
   },
@@ -5411,7 +5372,7 @@
     "character_id": "12-6",
     "level": 12,
     "name": "泰佐羅 黃金果實",
-    "kr_name": "",
+    "kr_name": "황금제 길드 테조로",
     "en_name": "",
     "materials": [
       {
@@ -5422,9 +5383,6 @@
       },
       {
         "material_id": "6-15"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "tesoro et",
@@ -5435,8 +5393,8 @@
   {
     "character_id": "12-8",
     "level": 12,
-    "name": "霜月龍馬",
-    "kr_name": "霜月龍馬",
+    "name": "龍馬 傳說武士",
+    "kr_name": "전설의 사무라이 류마",
     "en_name": "",
     "materials": [
       {
@@ -5447,9 +5405,6 @@
       },
       {
         "material_id": "6-20"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "ryuma et",
@@ -5460,8 +5415,8 @@
   {
     "character_id": "12-9",
     "level": 12,
-    "name": "薇薇",
-    "kr_name": "",
+    "name": "薇薇 阿拉巴斯坦公主",
+    "kr_name": "알라바스타의 왕녀-ver파이러츠 네펠타리 비비",
     "en_name": "Vivi",
     "materials": [
       {
@@ -5481,9 +5436,6 @@
       },
       {
         "material_id": "3-18"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "vivi et",
@@ -5494,8 +5446,8 @@
   {
     "character_id": "12-10",
     "level": 12,
-    "name": "巴其",
-    "kr_name": "",
+    "name": "巴其 千兩小丑",
+    "kr_name": "천냥광대 버기",
     "en_name": "",
     "materials": [
       {
@@ -5518,9 +5470,6 @@
       },
       {
         "material_id": "3-14"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "buggy et",
@@ -5531,8 +5480,8 @@
   {
     "character_id": "12-11",
     "level": 12,
-    "name": "漢考克",
-    "kr_name": "",
+    "name": "漢考克 亞馬遜百合",
+    "kr_name": "아마존릴리의 여제 보아 핸콕",
     "en_name": "",
     "materials": [
       {
@@ -5549,9 +5498,6 @@
       },
       {
         "material_id": "3-8"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "hancock et",
@@ -5562,8 +5508,8 @@
   {
     "character_id": "12-12",
     "level": 12,
-    "name": "劍豪 鷹眼 密佛格",
-    "kr_name": "",
+    "name": "喬拉可爾·密佛格 鷹眼 大劍豪",
+    "kr_name": "세계 최강의 대검호 쥬라클 미호크",
     "en_name": "",
     "materials": [
       {
@@ -5580,9 +5526,6 @@
       },
       {
         "material_id": "6-10"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "mihawk et",
@@ -5593,8 +5536,8 @@
   {
     "character_id": "12-13",
     "level": 12,
-    "name": "艾斯",
-    "kr_name": "",
+    "name": "艾斯 火拳",
+    "kr_name": "화권의 포트거스.D.에이스",
     "en_name": "Ace",
     "materials": [
       {
