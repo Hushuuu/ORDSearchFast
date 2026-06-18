@@ -408,7 +408,8 @@ function initTreePage(records) {
       <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
         <div class="node-title">
           <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
-          ${titleMarkup} ${record.key_code ? '('+ record.key_code +')' : ''}
+          ${titleMarkup}
+          ${record.key_code ? '('+ record.key_code +')' : ''}
         </div>
         <div class="node-detail">
           <div style="display:none">角色 ID：${escapeHtml(record.character_id)}</div>
@@ -449,7 +450,7 @@ function initTreePage(records) {
       <li>
         <details class="branch-details">
           <summary class="branch-summary">
-            ${renderNodeCard(record)}
+            ${renderNodeCard(record, { navigateable: true })}
             <span class="branch-toggle-hint">
               <img style="vertical-align: middle" width="25" height="25" src="resource/arrow_drop_down.svg" alt="${depth === 1 ? '點擊收合 / 展開' : '點擊收合 / 展開'}">
             </span>
@@ -462,13 +463,13 @@ function initTreePage(records) {
 
   function renderUpwardSection(record) {
     const parents = indices.parentMap.get(record.character_id) || [];
-    toggleUpwardButton.classList.remove('is-hidden');
-    upwardContainer.classList.add('is-hidden');
+    //toggleUpwardButton.classList.remove('is-hidden');
+    //upwardContainer.classList.add('is-hidden');
 
     if (parents.length === 0) {
       toggleUpwardButton.textContent = '此角色沒有上層';
       toggleUpwardButton.disabled = true;
-      upwardContainer.innerHTML = '<div class="empty-state">目前沒有找到以上位為材料的配方。</div>';
+      upwardContainer.innerHTML = '<div class="empty-state">無上層角色</div>';
       return;
     }
 
@@ -476,7 +477,7 @@ function initTreePage(records) {
     toggleUpwardButton.textContent = `顯示上層（${parents.length} 筆）`;
     upwardContainer.innerHTML = `
       <div class="upward-card">
-        <h3>上層<span>(點擊角色可跳轉)</span></h3>
+        <h3><span>上層角色</span></h3>
         <ul class="upward-list">
           ${parents.map((parent) => `<li>${renderNodeCard(parent, { navigateable: true })}</li>`).join('')}
         </ul>
@@ -506,7 +507,7 @@ function initTreePage(records) {
     const directMaterials = record.materials || [];
     downwardContainer.innerHTML = `
       <div class="tree-card">
-        <h4>點擊往下展開</h4>
+        <h4>點擊卡片往下展開 或 名稱搜尋</h4>
         <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
             <div class="node-title">
               <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
@@ -547,22 +548,28 @@ function initTreePage(records) {
     renderTree(record);
   }
 
-  upwardContainer.addEventListener('click', (event) => {
+  function handleTreeNavigation(event){
+    // 1. 檢查使用者點擊的是不是帶有跳轉屬性的節點/按鈕
     const target = event.target.closest('[data-navigate-character]');
     if (!target) {
       return;
     }
 
+    // 2. 從索引中撈出該節點對應的角色完整資料
     const record = indices.byCharacterId.get(target.dataset.navigateCharacter);
     if (!record) {
       return;
     }
 
+    // 3. 跳轉與重刷邏輯
     levelFilter.value = String(record.level);
     syncTreeSelectOptions(record.character_id);
-    loadTree(record);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+    loadTree(record); // 這行會重新觸發 renderTree，把整棵樹（包含上下層）刷新
+    //window.scrollTo({ top: 220, behavior: 'smooth' }); // 捲回頂部
+    downwardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  upwardContainer.addEventListener('click', handleTreeNavigation);
+  downwardContainer.addEventListener('click', handleTreeNavigation);
 
   if (treeSelect) {
     treeSelect.on('change', (value) => {
@@ -669,7 +676,18 @@ function formatBaseMaterialsText(record, indices) {
   return resultSegments.join(' + ');
 }
 
-////////
+//resetTreeSearchButton
+const resetTreeSearchButton = document.getElementById('resetTreeSearchButton');
+function handleResetTreeSearchButton() {
+  document.getElementById('treeSearchSelect').tomselect.clear();
+  document.getElementById('treeLevelFilter').value = '';
+}
+if(resetTreeSearchButton){
+  document.getElementById('resetTreeSearchButton').addEventListener('click', handleResetTreeSearchButton);
+}
+
+
+////////end of tree page
 function initMaintenancePage(records) {
   const state = {
     records: cloneData(records),

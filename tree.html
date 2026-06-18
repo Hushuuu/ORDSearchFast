@@ -26,7 +26,7 @@
     <section class="panel">
       <div class="panel-header">
         <h1 class="panel-title">合成樹</h1>
-        <p class="panel-desc">呈現角色的合成樹結構，可逐層展開或收合。</p>
+        <p class="panel-desc">呈現角色的合成樹結構</p>
       </div>
       <div class="panel-body">
         <div class="controls-grid">
@@ -42,6 +42,7 @@
             <span class="field-label">操作</span>
             <div class="controls-actions">
               <button id="loadTreeButton" type="button">展開</button>
+              <button id="resetTreeSearchButton" type="button">重置條件</button>
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@
           <div class="controls-actions">
             <button id="toggleUpwardButton" type="button" class="secondary is-hidden">顯示向上 1 層</button>
           </div>
-          <div id="upwardContainer" class="is-hidden"></div>
+          <div id="upwardContainer"></div>
         </div>
       </div>
     </section>
