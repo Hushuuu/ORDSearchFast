@@ -50,7 +50,7 @@ window.ORD_DATA = [
   {
     "character_id": "0-6",
     "level": 0,
-    "name": "太陽神的遺跡",
+    "name": "太陽神的痕跡",
     "kr_name": "태양신의 흔적 니카 조합용 아이템",
     "en_name": "",
     "materials": [],
@@ -208,7 +208,7 @@ window.ORD_DATA = [
     "level": 1,
     "name": "騙人布",
     "kr_name": "",
-    "en_name": "",
+    "en_name": "Usopp",
     "materials": [],
     "key_code": "",
     "remark": "",
