@@ -1361,7 +1361,10 @@ window.ORD_DATA = [
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": [
+      "stl-1-1"
+    ]
   },
   {
     "character_id": "4-10",
