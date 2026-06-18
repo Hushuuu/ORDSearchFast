@@ -1602,7 +1602,6 @@ function initCompTreePage(records) {
     const directMaterials = record.materials || [];
     compDownwardContainer.innerHTML = `
       <div class="tree-card">
-        <h4>合成分解圖（點擊卡片內黃色名稱可切換至該角色樹）</h4>
         ${directMaterials.length === 0
           ? '<div class="empty-state">這個角色沒有可往下的材料。</div>'
           : `<ul class="tree-list">${directMaterials
@@ -1617,8 +1616,9 @@ function initCompTreePage(records) {
               .join('')}</ul>`}
       </div>
     `;
-    
-    renderCompUpwardSection(record);
+    if(compUpwardContainer){
+      renderCompUpwardSection(record);
+    }
   }
 
   // Render Tabs navigation
@@ -1664,17 +1664,20 @@ function initCompTreePage(records) {
     renderCompTree(record);
     compDownwardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-
-  compUpwardContainer.addEventListener('click', handleCompTreeNavigation);
+  if(compUpwardContainer){
+    compUpwardContainer.addEventListener('click', handleCompTreeNavigation);
+  }
   compDownwardContainer.addEventListener('click', handleCompTreeNavigation);
 
   // Upward Toggle
-  compToggleUpwardButton.addEventListener('click', () => {
-    compUpwardContainer.classList.toggle('is-hidden');
-    compToggleUpwardButton.textContent = compUpwardContainer.classList.contains('is-hidden')
-      ? compToggleUpwardButton.textContent.replace('隱藏', '顯示')
-      : compToggleUpwardButton.textContent.replace('顯示', '隱藏');
-  });
+  if (compToggleUpwardButton) {
+    compToggleUpwardButton.addEventListener('click', () => {
+      compUpwardContainer.classList.toggle('is-hidden');
+      compToggleUpwardButton.textContent = compUpwardContainer.classList.contains('is-hidden')
+        ? compToggleUpwardButton.textContent.replace('隱藏', '顯示')
+        : compToggleUpwardButton.textContent.replace('顯示', '隱藏');
+    });
+  }
 
   // Initial render
   renderTabs();
