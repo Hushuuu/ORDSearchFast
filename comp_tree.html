@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隊伍合成分析 - ORD</title>
+  <link rel="stylesheet" href="css/styles.css?v=260617003">
+</head>
+
+<body data-page="comp_tree">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">ORD 航海王隨機防禦</div>
+        <div class="brand-subtitle">隊伍合成樹分析</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
+        <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
+        <a class="nav-link" target="_blank" href="https://ordsearch.net/mix">官網</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h1 class="panel-title">隊伍合成分析</h1>
+        <p class="panel-desc">點擊下方角色頁簽以查看各自的合成樹</p>
+      </div>
+      <div class="panel-body">
+        <!-- 角色頁簽/標籤列 -->
+        <div id="compTreeTabs" class="comp-tree-tabs-container">
+          <!-- JS 動態生成標籤 -->
+        </div>
+
+        <div id="compTreeEmptyState" class="empty-state is-hidden" style="margin-top: 18px;">
+          請先在 <a href="comp.html" style="color: var(--primary-color); text-decoration: underline;">隊伍組成</a> 頁面選取角色並進行分析。
+        </div>
+
+        <!-- 合成樹呈現區 -->
+        <div id="compTreeContent" class="tree-panel-stack" style="margin-top: 18px;">
+          <!-- 隊伍總材料合計 -->
+          <div id="compTreeTeamSummary" class="team-tree-summary-card">
+            <h3 class="team-summary-title">隊伍總需求基礎材料合計</h3>
+            <div id="compTreeTeamMaterials" class="team-summary-materials-grid">
+              <!-- JS 動態生成 -->
+            </div>
+          </div>
+
+          <div id="compTreeResultTitle" class="summary-text" style="font-size: 1.15rem; font-weight: 700; color: #ffd28a;"></div>
+          <div id="compTreeRootSummary"></div>
+          <div id="compDownwardContainer"></div>
+          
+          <div class="controls-actions" style="margin-top: 12px;">
+            <button id="compToggleUpwardButton" type="button" class="secondary is-hidden">顯示向上 1 層</button>
+          </div>
+          <div id="compUpwardContainer" class="is-hidden" style="margin-top: 12px;"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/ord_data.js?v=260617003"></script>
+  <script src="js/app.js?v=260617003"></script>
+</body>
+
+</html>

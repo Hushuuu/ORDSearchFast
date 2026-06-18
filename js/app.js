@@ -1099,6 +1099,592 @@ function initMaintenancePage(records) {
   fillForm();
 }
 
+function initCompPage(records) {
+  const indices = createIndices(records);
+  
+  // Elements
+  const compSearchInput = document.getElementById('compSearchInput');
+  const levelCheckboxGroup = document.getElementById('levelCheckboxGroup');
+  const compSummaryText = document.getElementById('compSummaryText');
+  const compCharacterGroups = document.getElementById('compCharacterGroups');
+  const selectedTeamList = document.getElementById('selectedTeamList');
+  const teamMaterialsList = document.getElementById('teamMaterialsList');
+  const analyzeTeamBtn = document.getElementById('analyzeTeamBtn');
+  const clearTeamBtn = document.getElementById('clearTeamBtn');
+  const resetFiltersBtn = document.getElementById('resetFiltersBtn');
+
+  // State
+  let selectedTeamIds = [];
+  try {
+    selectedTeamIds = JSON.parse(localStorage.getItem('selectedTeamIds') || '[]');
+  } catch (e) {
+    selectedTeamIds = [];
+  }
+  // Sanity check: verify all ids exist in dataset
+  selectedTeamIds = selectedTeamIds.filter(id => indices.byCharacterId.has(id));
+
+  let checkedLevels = new Set();
+  let searchKeyword = '';
+
+  // Render Levels Checkboxes
+  function renderLevelCheckboxes() {
+    levelCheckboxGroup.innerHTML = '';
+    const sortedLevels = Object.entries(LEVEL_LABELS)
+      .map(([level, label]) => ({ level: Number(level), label }))
+      .sort((a, b) => a.level - b.level);
+
+    sortedLevels.forEach(({ level, label }) => {
+      const checkboxLabel = document.createElement('label');
+      checkboxLabel.className = 'checkbox-badge';
+      checkboxLabel.innerHTML = `
+        <input type="checkbox" value="${level}" ${checkedLevels.has(level) ? 'checked' : ''}>
+        <span class="checkbox-badge-label badge-${level}">${level}｜${label}</span>
+      `;
+      
+      const input = checkboxLabel.querySelector('input');
+      input.addEventListener('change', () => {
+        if (input.checked) {
+          checkedLevels.add(level);
+        } else {
+          checkedLevels.delete(level);
+        }
+        renderCharactersList();
+      });
+      levelCheckboxGroup.appendChild(checkboxLabel);
+    });
+  }
+
+  // Calculate and Render Team Panel
+  function renderTeamPanel() {
+    // 1. Selected characters
+    if (selectedTeamIds.length === 0) {
+      selectedTeamList.innerHTML = '<div class="empty-state">尚未選取任何角色。</div>';
+    } else {
+      selectedTeamList.innerHTML = selectedTeamIds.map(id => {
+        const record = indices.byCharacterId.get(id);
+        if (!record) return '';
+        return `
+          <div class="team-member-card">
+            <div class="team-member-info">
+              <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 8px; font-size: 0.75rem;">${getLevelLabel(record.level)}</span>
+              <span class="team-member-name">${escapeHtml(record.name)}</span>
+            </div>
+            <button class="team-member-remove" data-id="${escapeHtml(id)}" type="button" title="移出隊伍">&times;</button>
+          </div>
+        `;
+      }).join('');
+
+      // Add remove listeners
+      selectedTeamList.querySelectorAll('.team-member-remove').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const id = btn.dataset.id;
+          selectedTeamIds = selectedTeamIds.filter(x => x !== id);
+          localStorage.setItem('selectedTeamIds', JSON.stringify(selectedTeamIds));
+          renderTeamPanel();
+          renderCharactersList(); // Update checkboxes in main list
+        });
+      });
+    }
+
+    // 2. Base materials
+    const totalCounts = new Map();
+    selectedTeamIds.forEach(id => {
+      const record = indices.byCharacterId.get(id);
+      if (record) {
+        getBaseMaterialQuantities(record, indices, totalCounts);
+      }
+    });
+
+    const level0Items = [];
+    const level1Items = [];
+
+    totalCounts.forEach((count, charId) => {
+      const record = indices.byCharacterId.get(charId);
+      const name = record ? record.name : charId;
+      const lvl = record ? record.level : 0;
+      const item = { id: charId, name, count, level: lvl };
+      
+      if (lvl === 1) {
+        level1Items.push(item);
+      } else if (lvl === 0) {
+        level0Items.push(item);
+      }
+    });
+
+    // Sort by name
+    level1Items.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+    level0Items.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+
+    if (level1Items.length === 0 && level0Items.length === 0) {
+      teamMaterialsList.innerHTML = '<span class="muted">無</span>';
+    } else {
+      let html = '';
+      if (level1Items.length > 0) {
+        html += `
+          <div class="materials-group">
+            <h4 class="materials-subgroup-title" style="margin: 4px 0 8px; font-size: 0.85rem; color: #ffd28a;">角色材料 (常見)</h4>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              ${level1Items.map(item => `
+                <div class="materials-item">
+                  <span>${escapeHtml(item.name)}</span>
+                  <span class="item-qty">x${item.count}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+      if (level0Items.length > 0) {
+        html += `
+          <div class="materials-group" style="margin-top: 12px;">
+            <h4 class="materials-subgroup-title" style="margin: 4px 0 8px; font-size: 0.85rem; color: #ffd28a;">特殊物品</h4>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              ${level0Items.map(item => `
+                <div class="materials-item">
+                  <span>${escapeHtml(item.name)}</span>
+                  <span class="item-qty">x${item.count}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+      teamMaterialsList.innerHTML = html;
+    }
+  }
+
+  // Render Characters List Grouped by Level
+  function renderCharactersList() {
+    // Filter records
+    const filteredRecords = indices.records.filter(record => {
+      // 1. Level filter (if any levels checked)
+      if (checkedLevels.size > 0 && !checkedLevels.has(record.level)) {
+        return false;
+      }
+      // 2. Search keyword
+      if (searchKeyword) {
+        return getSearchableText(record, indices).includes(searchKeyword);
+      }
+      return true;
+    });
+
+    compSummaryText.textContent = `符合條件：${filteredRecords.length} / ${indices.records.length} 筆`;
+
+    if (filteredRecords.length === 0) {
+      compCharacterGroups.innerHTML = '<div class="empty-state">沒有符合條件的角色。</div>';
+      return;
+    }
+
+    // Group by level
+    const groups = new Map();
+    filteredRecords.forEach(record => {
+      if (!groups.has(record.level)) {
+        groups.set(record.level, []);
+      }
+      groups.get(record.level).push(record);
+    });
+
+    // Sort group levels
+    const sortedLevels = Array.from(groups.keys()).sort((a, b) => a - b);
+
+    compCharacterGroups.innerHTML = sortedLevels.map(level => {
+      const groupRecords = groups.get(level);
+      const levelLabel = getLevelLabel(level);
+      
+      const cardsHtml = groupRecords.map(record => {
+        const isSelected = selectedTeamIds.includes(record.character_id);
+        const materialsText = record.materials && record.materials.length > 0
+          ? record.materials.map(m => resolveRecordLabel(m.material_id, indices)).join(' + ')
+          : '無';
+
+        return `
+          <div class="char-card ${isSelected ? 'selected' : ''}" data-id="${escapeHtml(record.character_id)}">
+            <div class="char-card-checkbox-wrapper">
+              <input type="checkbox" class="char-card-checkbox" ${isSelected ? 'checked' : ''} data-id="${escapeHtml(record.character_id)}">
+            </div>
+            <div class="char-card-content">
+              <div class="char-card-name-row">
+                <span class="char-card-name">${escapeHtml(record.name)}</span>
+                <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 8px; font-size: 0.72rem;">${escapeHtml(levelLabel)}</span>
+              </div>
+              <div class="char-card-materials" title="${escapeHtml(materialsText)}">
+                材料：${escapeHtml(materialsText)}
+              </div>
+              ${record.remark ? `<div class="char-card-remark">${escapeHtml(record.remark)}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+        <section class="char-group-section">
+          <div class="char-group-header">
+            <h3 class="char-group-title">
+              <span class="badge badge-${level}" style="min-width: unset; padding: 4px 10px; font-size: 0.85rem;">${levelLabel}</span>
+            </h3>
+            <span class="char-group-count">${groupRecords.length} 個角色</span>
+          </div>
+          <div class="char-group-grid">
+            ${cardsHtml}
+          </div>
+        </section>
+      `;
+    }).join('');
+
+    // Add card toggle listeners
+    compCharacterGroups.querySelectorAll('.char-card').forEach(card => {
+      const id = card.dataset.id;
+      
+      const toggleSelect = () => {
+        const index = selectedTeamIds.indexOf(id);
+        if (index > -1) {
+          selectedTeamIds.splice(index, 1);
+        } else {
+          selectedTeamIds.push(id);
+        }
+        localStorage.setItem('selectedTeamIds', JSON.stringify(selectedTeamIds));
+        renderTeamPanel();
+        
+        // Toggle card selected class and checkbox checked state directly for fast feedback
+        const checkbox = card.querySelector('.char-card-checkbox');
+        const isSelectedNow = selectedTeamIds.includes(id);
+        card.classList.toggle('selected', isSelectedNow);
+        if (checkbox) checkbox.checked = isSelectedNow;
+      };
+
+      card.addEventListener('click', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.closest('.char-card-checkbox-wrapper')) {
+          // Checkbox change event is handled by checkbox click or card click
+          return;
+        }
+        toggleSelect();
+      });
+
+      const checkbox = card.querySelector('.char-card-checkbox');
+      if (checkbox) {
+        checkbox.addEventListener('change', () => {
+          toggleSelect();
+        });
+      }
+    });
+  }
+
+  // Attach search and buttons events
+  compSearchInput.addEventListener('input', (e) => {
+    searchKeyword = e.target.value.trim().toLowerCase();
+    renderCharactersList();
+  });
+
+  resetFiltersBtn.addEventListener('click', () => {
+    compSearchInput.value = '';
+    searchKeyword = '';
+    checkedLevels.clear();
+    // Reset inputs visually
+    levelCheckboxGroup.querySelectorAll('input').forEach(input => {
+      input.checked = false;
+    });
+    renderCharactersList();
+  });
+
+  clearTeamBtn.addEventListener('click', () => {
+    if (selectedTeamIds.length === 0) return;
+    if (confirm('確定清空目前的隊伍嗎？')) {
+      selectedTeamIds = [];
+      localStorage.setItem('selectedTeamIds', JSON.stringify(selectedTeamIds));
+      renderTeamPanel();
+      renderCharactersList();
+    }
+  });
+
+  analyzeTeamBtn.addEventListener('click', () => {
+    if (selectedTeamIds.length === 0) {
+      alert('請先在角色庫中選取角色加入隊伍！');
+      return;
+    }
+    sessionStorage.setItem('selectedTeamIds', JSON.stringify(selectedTeamIds));
+    window.location.href = 'comp_tree.html';
+  });
+
+  // Init
+  renderLevelCheckboxes();
+  renderTeamPanel();
+  renderCharactersList();
+}
+
+function initCompTreePage(records) {
+  const indices = createIndices(records);
+  
+  // Elements
+  const compTreeTabs = document.getElementById('compTreeTabs');
+  const compTreeEmptyState = document.getElementById('compTreeEmptyState');
+  const compTreeContent = document.getElementById('compTreeContent');
+  const compTreeResultTitle = document.getElementById('compTreeResultTitle');
+  const compTreeRootSummary = document.getElementById('compTreeRootSummary');
+  const compDownwardContainer = document.getElementById('compDownwardContainer');
+  const compToggleUpwardButton = document.getElementById('compToggleUpwardButton');
+  const compUpwardContainer = document.getElementById('compUpwardContainer');
+  const compTreeTeamMaterials = document.getElementById('compTreeTeamMaterials');
+
+  // State
+  let selectedTeamIds = [];
+  try {
+    selectedTeamIds = JSON.parse(sessionStorage.getItem('selectedTeamIds') || '[]');
+  } catch (e) {
+    selectedTeamIds = [];
+  }
+  // Sanity check: verify all ids exist in dataset
+  selectedTeamIds = selectedTeamIds.filter(id => indices.byCharacterId.has(id));
+
+  if (selectedTeamIds.length === 0) {
+    compTreeEmptyState.classList.remove('is-hidden');
+    compTreeContent.classList.add('is-hidden');
+    return;
+  }
+
+  compTreeEmptyState.classList.add('is-hidden');
+  compTreeContent.classList.remove('is-hidden');
+
+  // Calculate team total materials
+  const totalCounts = new Map();
+  selectedTeamIds.forEach(id => {
+    const record = indices.byCharacterId.get(id);
+    if (record) {
+      getBaseMaterialQuantities(record, indices, totalCounts);
+    }
+  });
+
+  const level0Items = [];
+  const level1Items = [];
+
+  totalCounts.forEach((count, charId) => {
+    const record = indices.byCharacterId.get(charId);
+    const name = record ? record.name : charId;
+    const lvl = record ? record.level : 0;
+    const item = { id: charId, name, count, level: lvl };
+    
+    if (lvl === 1) {
+      level1Items.push(item);
+    } else if (lvl === 0) {
+      level0Items.push(item);
+    }
+  });
+
+  level1Items.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+  level0Items.sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant'));
+
+  function renderTeamTotalMaterials() {
+    if (!compTreeTeamMaterials) return;
+    if (level1Items.length === 0 && level0Items.length === 0) {
+      compTreeTeamMaterials.innerHTML = '<div class="muted">無需求材料</div>';
+      return;
+    }
+
+    const itemsHtml = [...level1Items, ...level0Items].map(item => `
+      <div class="team-summary-material-item" style="border-left: 3px solid ${item.level === 1 ? 'var(--primary-color)' : 'var(--muted-color)'};">
+        <span class="name" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</span>
+        <span class="qty">x${item.count}</span>
+      </div>
+    `).join('');
+
+    compTreeTeamMaterials.innerHTML = itemsHtml;
+  }
+
+  let activeIndex = 0;
+  let currentlyViewedRecord = null;
+
+  // Node card renderer (adapted)
+  function renderCompNodeCard(record, options = {}) {
+    const titleMarkup = options.navigateable
+      ? `<button type="button" class="tree-node-action" data-navigate-character="${escapeHtml(record.character_id)}">${escapeHtml(record.name)}</button>`
+      : `<strong>${escapeHtml(record.name)}</strong>`;
+
+    return `
+      <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
+        <div class="node-title">
+          <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
+          ${titleMarkup}
+          ${record.key_code ? '('+ record.key_code +')' : ''}
+        </div>
+        <div class="node-detail">
+          <div>材料：${escapeHtml(getMaterialNames(record, indices).join('、') || '無')}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Downward branch recursive renderer (adapted)
+  function renderCompDownwardBranch(record, trailCharacterIds, depth) {
+    const nextTrail = new Set(trailCharacterIds);
+    nextTrail.add(record.character_id);
+    const materials = record.materials || [];
+
+    if (materials.length === 0) {
+      return `<li>${renderCompNodeCard(record)}</li>`;
+    }
+
+    const childrenMarkup = materials
+      .map((material) => {
+        const childRecord = getPrimaryRecord(material.material_id, indices);
+        if (!childRecord) {
+          return `<li><div class="node-card placeholder"><div class="node-title"><strong>${escapeHtml(material.material_id)}</strong></div><div class="node-detail">查無對應資料</div></div></li>`;
+        }
+
+        if (nextTrail.has(childRecord.character_id)) {
+          return `<li>
+            ${renderCompNodeCard(childRecord)}
+            <div class="status-line">此節點與上層屬於同一角色 ID，已停止繼續展開避免循環。</div>
+          </li>`;
+        }
+
+        return renderCompDownwardBranch(childRecord, nextTrail, depth + 1);
+      })
+      .join('');
+
+    return `
+      <li>
+        <details class="branch-details">
+          <summary class="branch-summary">
+            ${renderCompNodeCard(record, { navigateable: true })}
+            <span class="branch-toggle-hint">
+              <img style="vertical-align: middle" width="25" height="25" src="resource/arrow_drop_down.svg" alt="點擊收合 / 展開">
+            </span>
+          </summary>
+          <ul class="tree-list">${childrenMarkup}</ul>
+        </details>
+      </li>
+    `;
+  }
+
+  // Upward section renderer (adapted)
+  function renderCompUpwardSection(record) {
+    const parents = indices.parentMap.get(record.character_id) || [];
+    
+    if (parents.length === 0) {
+      compToggleUpwardButton.textContent = '此角色沒有上層';
+      compToggleUpwardButton.disabled = true;
+      compUpwardContainer.innerHTML = '<div class="empty-state">無上層角色</div>';
+      return;
+    }
+
+    compToggleUpwardButton.disabled = false;
+    compToggleUpwardButton.textContent = `顯示上層（${parents.length} 筆）`;
+    compUpwardContainer.innerHTML = `
+      <div class="upward-card">
+        <h3><span>上層角色</span></h3>
+        <ul class="upward-list">
+          ${parents.map((parent) => `<li>${renderCompNodeCard(parent, { navigateable: true })}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
+  // Render tree function (adapted)
+  function renderCompTree(record) {
+    currentlyViewedRecord = record;
+    compTreeResultTitle.textContent = `${record.name}｜${getLevelLabel(record.level)} | KR: ${escapeHtml(record.kr_name || '')} | EN: ${escapeHtml(record.en_name || '')}`;
+    
+    compTreeRootSummary.innerHTML = `
+      <div class="tree-card" style="margin-bottom: 12px;">
+        <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
+            <div class="node-title">
+              <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
+              ${record.name} ${record.key_code ? '('+ record.key_code +')' : ''}
+            </div>
+            <div class="node-detail">
+              <div>備註：${escapeHtml(record.remark || '無')}</div>
+              <div>總材料：${escapeHtml(formatBaseMaterialsText(record, indices))}</div>
+            </div>
+        </div>
+      </div>
+    `;
+
+    const directMaterials = record.materials || [];
+    compDownwardContainer.innerHTML = `
+      <div class="tree-card">
+        <h4>合成分解圖（點擊卡片內黃色名稱可切換至該角色樹）</h4>
+        ${directMaterials.length === 0
+          ? '<div class="empty-state">這個角色沒有可往下的材料。</div>'
+          : `<ul class="tree-list">${directMaterials
+              .map((material) => {
+                const childRecord = getPrimaryRecord(material.material_id, indices);
+                if (!childRecord) {
+                  return `<li><div class="node-card placeholder"><div class="node-title"><strong>${escapeHtml(material.material_id)}</strong></div><div class="node-detail">查無對應資料</div></div></li>`;
+                }
+
+                return renderCompDownwardBranch(childRecord, new Set([record.character_id]), 1);
+              })
+              .join('')}</ul>`}
+      </div>
+    `;
+    
+    renderCompUpwardSection(record);
+  }
+
+  // Render Tabs navigation
+  function renderTabs() {
+    compTreeTabs.innerHTML = selectedTeamIds.map((id, idx) => {
+      const record = indices.byCharacterId.get(id);
+      if (!record) return '';
+      return `
+        <button type="button" class="comp-tree-tab-btn ${idx === activeIndex ? 'active' : ''}" data-index="${idx}">
+          <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 6px; font-size: 0.72rem;">${getLevelLabel(record.level)}</span>
+          <span>${escapeHtml(record.name)}</span>
+        </button>
+      `;
+    }).join('');
+
+    // Attach listeners
+    compTreeTabs.querySelectorAll('.comp-tree-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = Number(btn.dataset.index);
+        activeIndex = idx;
+        renderTabs();
+        
+        // Hide upward section on tab switch by default
+        compUpwardContainer.classList.add('is-hidden');
+        
+        const activeRecord = indices.byCharacterId.get(selectedTeamIds[activeIndex]);
+        if (activeRecord) {
+          renderCompTree(activeRecord);
+        }
+      });
+    });
+  }
+
+  // Synthesis tree node navigation
+  function handleCompTreeNavigation(event) {
+    const target = event.target.closest('[data-navigate-character]');
+    if (!target) return;
+
+    const record = indices.byCharacterId.get(target.dataset.navigateCharacter);
+    if (!record) return;
+
+    // Load clicked character tree, keeping active tab the same
+    renderCompTree(record);
+    compDownwardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  compUpwardContainer.addEventListener('click', handleCompTreeNavigation);
+  compDownwardContainer.addEventListener('click', handleCompTreeNavigation);
+
+  // Upward Toggle
+  compToggleUpwardButton.addEventListener('click', () => {
+    compUpwardContainer.classList.toggle('is-hidden');
+    compToggleUpwardButton.textContent = compUpwardContainer.classList.contains('is-hidden')
+      ? compToggleUpwardButton.textContent.replace('隱藏', '顯示')
+      : compToggleUpwardButton.textContent.replace('顯示', '隱藏');
+  });
+
+  // Initial render
+  renderTabs();
+  renderTeamTotalMaterials();
+  const firstRecord = indices.byCharacterId.get(selectedTeamIds[0]);
+  if (firstRecord) {
+    renderCompTree(firstRecord);
+  }
+}
+
 function initApp() {
   markActiveNav();
 
@@ -1111,6 +1697,10 @@ function initApp() {
     initTreePage(records);
   } else if (page === 'maintenance') {
     initMaintenancePage(records);
+  } else if (page === 'comp') {
+    initCompPage(records);
+  } else if (page === 'comp_tree') {
+    initCompTreePage(records);
   }
 
   showMaintenanceNav();

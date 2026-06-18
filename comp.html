@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隊伍組成 - ORD</title>
+  <link rel="stylesheet" href="css/styles.css?v=260617003">
+</head>
+
+<body data-page="comp">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">ORD 航海王隨機防禦</div>
+        <div class="brand-subtitle">隊伍組成與材料分析</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
+        <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
+        <a class="nav-link" target="_blank" href="https://ordsearch.net/mix">官網</a>
+      </nav>
+    </header>
+
+    <div class="page-grid comp-layout">
+      <!-- 隊伍面板 (左側/側邊欄) -->
+      <aside class="panel team-panel">
+        <div class="panel-header">
+          <h2 class="panel-title">我的隊伍</h2>
+          <p class="panel-desc">已選取的隊伍角色</p>
+        </div>
+        <div class="panel-body team-body">
+          <div id="selectedTeamList" class="team-list-container">
+            <div class="empty-state">尚未選取任何角色。</div>
+          </div>
+          
+          <div class="team-divider"></div>
+          
+          <div class="team-materials-section">
+            <h3 class="materials-title">所需 Level 1 / 0 基礎材料</h3>
+            <div id="teamMaterialsList" class="materials-list">
+              <span class="muted">無</span>
+            </div>
+          </div>
+
+          <div class="team-actions">
+            <button id="analyzeTeamBtn" class="success full-width-btn" type="button">分析隊伍 (合成樹)</button>
+            <button id="clearTeamBtn" class="secondary full-width-btn" type="button" style="margin-top: 8px;">清空隊伍</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 角色篩選與列表 (右側) -->
+      <main class="panel characters-panel">
+        <div class="panel-header">
+          <h1 class="panel-title">角色庫</h1>
+          <p class="panel-desc">可勾選多重篩選條件並選擇角色加入隊伍</p>
+        </div>
+        <div class="panel-body">
+          <!-- 篩選器 -->
+          <div class="comp-controls">
+            <div class="controls-row">
+              <div class="field-group">
+                <span class="field-label">搜尋角色名稱 / 材料 / 備註</span>
+                <input id="compSearchInput" class="field-input" type="text" placeholder="輸入中文、英文、韓文或金鑰">
+              </div>
+            </div>
+            
+            <div class="controls-row" style="margin-top: 14px;">
+              <div class="field-group">
+                <span class="field-label">稀有度篩選 (可複選)</span>
+                <div id="levelCheckboxGroup" class="checkbox-badge-grid">
+                  <!-- JS 動態生成稀有度複選框 -->
+                </div>
+              </div>
+            </div>
+
+            <div class="controls-row" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div id="compSummaryText" class="summary-text">載入中...</div>
+              <button id="resetFiltersBtn" class="secondary" type="button">重置篩選</button>
+            </div>
+          </div>
+
+          <!-- 角色列表 (分組顯示) -->
+          <div id="compCharacterGroups" class="character-groups-stack">
+            <!-- JS 動態生成各等級分組 -->
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="js/ord_data.js?v=260617003"></script>
+  <script src="js/app.js?v=260617003"></script>
+</body>
+
+</html>
