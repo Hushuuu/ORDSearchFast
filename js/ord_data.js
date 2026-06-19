@@ -80,7 +80,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "累積存檔次數 / 擊敗任務「琵卡」/ 地圖右側門擊破+擊敗大將",
     "major": "",
     "suitable_partners": []
   },

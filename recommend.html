@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORD 合成推薦</title>
+  <link rel="stylesheet" href="css/tom-select.css">
+  <link rel="stylesheet" href="css/styles.css?v=260619001">
+</head>
+
+<body data-page="recommend">
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">ORD 合成推薦</div>
+        <div class="brand-subtitle">根據現有角色，推薦最接近的合成</div>
+      </div>
+      <nav class="nav-tabs" aria-label="主要導覽">
+        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
+        <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
+        <a class="nav-link" data-page="recommend" href="recommend.html">合成推薦</a>
+        <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
+        <a class="nav-link" target="_blank" href="https://ordsearch.net/mix">官網</a>
+      </nav>
+    </header>
+
+    <section class="panel">
+      <!-- <div class="panel-header">
+        <h1 class="panel-title"></h1>
+        <p class="panel-desc"></p>
+      </div> -->
+      <div class="panel-body">
+        <div class="controls-grid" style="">
+          <label class="field-group">
+            <span class="field-label">目標稀有度</span>
+            <select id="recommendTargetLevel" class="field-select"></select>
+          </label>
+          <div class="field-group" style="grid-column: span 2;">
+            <span class="field-label">擁有其他角色</span>
+            <select id="recommendOwnedSelect" multiple class=""></select>
+            <div class="helper-text"></div>
+          </div>
+          <div class="field-group">
+            <span class="field-label">操作</span>
+            <div class="controls-actions">
+              <button id="recommendRefreshBtn" type="button">重新推薦</button>
+              <button id="recommendResetBtn" type="button" class="secondary">重置條件</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-bar">
+          <div id="recommendSummary" class="summary-text"></div>
+          <div class="helper-text"></div>
+        </div>
+
+        <div class="recommend-grid">
+          <section class="panel" style="margin-top: 12px;">
+            <div class="panel-header">
+              <h2 class="panel-title">擁有基本角色</h2>
+            </div>
+            <div id="recommendLv1Grid" class="recommend-count-grid"></div>
+          </section>
+
+          <section class="panel" style="margin-top: 12px;">
+            <div class="panel-header">
+              <h2 class="panel-title">推薦結果</h2>
+              <p class="panel-desc">點x可推薦其他角色</p>
+            </div>
+            <div id="recommendResultList" class="recommend-result-list"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/ord_data.js?v=260619001"></script>
+  <script src="js/tom-select.complete.min.js"></script>
+  <script src="js/shared/app-shared.js?v=260619001"></script>
+  <script src="js/pages/recommend-page.js?v=260619001"></script>
+  <script src="js/app.js?v=260619001"></script>
+</body>
+
+</html>

@@ -7,7 +7,8 @@
     initTreePage,
     initMaintenancePage,
     initCompPage,
-    initCompTreePage
+    initCompTreePage,
+    initRecommendPage
   } = window.ORDApp;
 
   function initApp() {
@@ -26,6 +27,8 @@
       initCompPage(records);
     } else if (page === 'comp_tree') {
       initCompTreePage(records);
+    } else if (page === 'recommend') {
+      initRecommendPage(records);
     }
 
     showMaintenanceNav();
