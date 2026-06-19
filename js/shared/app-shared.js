@@ -215,7 +215,7 @@
       record.major,
       getLevelLabel(record.level),
       ...getMaterialNames(record, indices),
-      ...(record.skill_types || []),
+      //...(record.skill_types || []), //先不要查技能
       ...getSkillTypeLabels(record.skill_types),
       ...(record.suitable_partners || []).map((partner) => resolveRecordLabel(partner.character_id, indices))
     ]

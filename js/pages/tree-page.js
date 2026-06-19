@@ -173,7 +173,7 @@
       const directMaterials = record.materials || [];
       downwardContainer.innerHTML = `
         <div class="tree-card">
-          <h4>點擊卡片往下展開 或 名稱搜尋</h4>
+          <h4>點擊卡片往下展開或點名稱搜尋</h4>
           <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
             <div class="node-title">
               <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
