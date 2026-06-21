@@ -4946,6 +4946,9 @@ window.ORD_DATA = [
       },
       {
         "material_id": "2-11"
+      },
+      {
+        "material_id": "10-1"
       }
     ],
     "key_code": "fujitora tr",
