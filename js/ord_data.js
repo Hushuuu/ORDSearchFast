@@ -3258,7 +3258,7 @@ window.ORD_DATA = [
   {
     "character_id": "5-39",
     "level": 5,
-    "name": "香克斯 四皇",
+    "name": "紅髮 香克斯 四皇",
     "kr_name": "샹크스 사황 '붉은머리'",
     "en_name": "",
     "materials": [
@@ -3552,7 +3552,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
-        "material_id": "4-16"
+        "material_id": "5-39"
       },
       {
         "material_id": "3-3"
@@ -4934,7 +4934,10 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [
       {
-        "material_id": "10-14"
+        "material_id": "2-11"
+      },
+      {
+        "material_id": "5-37"
       },
       {
         "material_id": "6-2"

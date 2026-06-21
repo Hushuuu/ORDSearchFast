@@ -597,6 +597,114 @@ button.success {
   flex-wrap: wrap;
 }
 
+.recommend-card-top strong {
+  flex: 1 1 220px;
+}
+
+.recommend-material-details {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+}
+
+.recommend-material-summary {
+  padding: 10px 12px;
+  gap: 10px;
+}
+
+.recommend-material-summary-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.recommend-material-summary-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted-color);
+  letter-spacing: 0;
+}
+
+.recommend-material-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.recommend-material-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  font-size: 0.72rem;
+  padding: 3px 8px;
+}
+
+.recommend-material-chip-label {
+  min-width: 0;
+}
+
+.recommend-owned-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.18);
+  color: #bbf7d0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+
+.recommend-material-body {
+  padding: 0 12px 12px;
+}
+
+.recommend-material-tree {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recommend-material-tree > li {
+  margin: 0;
+}
+
+.recommend-material-branch {
+  border-radius: 10px;
+}
+
+.recommend-material-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  flex-direction: row !important;
+}
+
+.recommend-material-row--leaf {
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.recommend-material-row--missing {
+  color: var(--muted-color);
+}
+
+.recommend-material-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  min-width: 0;
+}
+
 .recommend-card-meta {
   color: var(--muted-color);
   font-size: 0.95rem;
