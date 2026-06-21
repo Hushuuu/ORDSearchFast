@@ -97,6 +97,7 @@
 
   function formatRequiredBaseMaterialsFromCounts(counts, indices) {
     const segments = [...counts.entries()]
+      .filter(([, count]) => count > 0)
       .sort((left, right) => {
         const leftName = (getPrimaryRecord(left[0], indices)?.name || left[0]).localeCompare((getPrimaryRecord(right[0], indices)?.name || right[0]), 'zh-Hant');
         return leftName || left[0].localeCompare(right[0]);
