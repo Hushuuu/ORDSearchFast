@@ -129,27 +129,6 @@ button.success {
   font-size: 0.95rem;
 }
 
-.nav-tabs {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  padding: 10px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--border-color);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text-color);
-  font-weight: 600;
-}
-
-.nav-link.active {
-  background: rgba(245, 158, 11, 0.18);
-  border-color: rgba(245, 158, 11, 0.45);
-  color: #ffd28a;
-}
-
 .panel {
   background: rgba(31, 41, 55, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.08);

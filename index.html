@@ -5,30 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 速查列表</title>
-  <link rel="stylesheet" href="css/styles.css?v=260621003">
+  <link rel="stylesheet" href="css/styles.css?v=260622001">
+  <script src="js/shared/wc-navbar.js?v=260622001"></script>
 </head>
 
 <body data-page="lookup">
   <div class="app-shell">
     <header class="topbar">
       <div class="brand">
-        <div class="brand-title">ORD 航海王隨機防禦</div>
-        <div class="brand-subtitle">ver. 2.305[R] updated. 2026/06/19 </div>
+        <div class="brand-title">ORD 航海王隨機防禦合成表</div>
+        <div class="brand-subtitle">ver. 2.305[R] updated. 2026/06/22 </div>
       </div>
-      <nav class="nav-tabs" aria-label="主要導覽">
-        <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
-        <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
-        <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
-        <a class="nav-link" data-page="recommend" href="recommend.html">合成推薦</a>
-        <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
-        <a class="nav-link" target="_blank" href="https://ordsearch.net/mix">官網</a>
-      </nav>
+      <my-navbar></my-navbar>
     </header>
 
     <section class="panel">
       <div class="panel-header">
         <h1 class="panel-title">速查列表</h1>
-        <p class="panel-desc">支援直接搜尋角色 / 素材。名稱可點擊快速回查，功能按鈕可切到合成樹頁。</p>
+        <p class="panel-desc">搜尋角色 / 素材。名稱可點擊回查，功能按鈕可切到合成樹頁面。</p>
       </div>
       <div class="panel-body">
         <div class="controls-grid">
@@ -38,7 +32,7 @@
           </label>
           <label class="field-group">
             <span class="field-label">搜尋</span>
-            <input id="searchInput" class="field-input" type="text" placeholder="輸入中文、英文、韓文、或材料">
+            <input id="searchInput" class="field-input" type="text" placeholder="">
           </label>
           <div class="field-group">
             <span class="field-label">操作</span>
@@ -59,7 +53,7 @@
               <tr>
                 <th>稀有度</th>
                 <th>名稱</th>
-                <th>所需材料</th>
+                <th>材料</th>
                 <th>金鑰</th>
                 <th>備註</th>
                 <th>功能</th>
@@ -72,10 +66,10 @@
     </section>
   </div>
 
-  <script src="js/ord_data.js?v=260621003"></script>
-  <script src="js/shared/app-shared.js?v=260621003"></script>
-  <script src="js/pages/lookup-page.js?v=260621003"></script>
-  <script src="js/app.js?v=260621003"></script>
+  <script src="js/ord_data.js?v=260622001"></script>
+  <script src="js/shared/app-shared.js?v=260622001"></script>
+  <script src="js/pages/lookup-page.js?v=260622001"></script>
+  <script src="js/app.js?v=260622001"></script>
 </body>
 
 </html>

@@ -19,7 +19,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "故事第8間房子機率掉落",
+    "remark": "故事第8間機率掉落",
     "major": "",
     "suitable_partners": []
   },
@@ -31,7 +31,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "故事第5間房子機率掉落",
+    "remark": "故事第5間機率掉落",
     "major": "",
     "suitable_partners": []
   },
@@ -43,7 +43,7 @@ window.ORD_DATA = [
     "en_name": "Greenblood",
     "materials": [],
     "key_code": "",
-    "remark": "熾天使用(故事蛋頭島完成掉落)，限God/Nightmare難度",
+    "remark": "限God/Nightmare難度，故事蛋頭島完成獲得，加頂級角色攻擊或用在熾天使角色",
     "major": "",
     "suitable_partners": [],
     "skill_types": []
@@ -68,7 +68,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "UTA用，故事第6間房子機率掉落",
+    "remark": "UTA用(故事第6間機率掉落)",
     "major": "",
     "suitable_partners": []
   },
@@ -80,7 +80,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "累積存檔次數 / 擊敗任務「琵卡」/ 地圖右側門擊破+擊敗大將",
+    "remark": "累積存檔次數/擊敗任務「琵卡/地圖右側門擊破+擊敗大將/選特定記錄指針可購買特性",
     "major": "",
     "suitable_partners": []
   },
@@ -92,7 +92,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "賭博",
     "major": "",
     "suitable_partners": []
   },
@@ -104,7 +104,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "賭博",
     "major": "",
     "suitable_partners": []
   },
@@ -297,7 +297,7 @@ window.ORD_DATA = [
     "level": 2,
     "name": "波特卡斯·D·艾斯",
     "kr_name": "",
-    "en_name": "",
+    "en_name": "Ace",
     "materials": [
       {
         "material_id": "1-8"
@@ -433,7 +433,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "賭博或使用月光摩利亞殺怪取得?",
+    "remark": "Z賭博或用月光摩利亞殺怪取得",
     "major": "",
     "suitable_partners": []
   },
@@ -782,7 +782,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "Z賭博機率獲得",
     "major": "",
     "suitable_partners": []
   },
@@ -1334,7 +1334,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "故事第七回合獎勵",
+    "remark": "故事第7間獎勵(唯一素材)",
     "major": "",
     "suitable_partners": []
   },
@@ -2138,7 +2138,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-42",
     "level": 4,
-    "name": "鑽石喬茲",
+    "name": "鑽石裘斯",
     "kr_name": "죠즈 흰수염 3번대 대장 다이아몬드",
     "en_name": "",
     "materials": [
@@ -2235,7 +2235,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "航海日誌取得或抽取",
+    "remark": "特定記錄指針取得或用古船機率交換",
     "major": "",
     "suitable_partners": []
   },
@@ -2257,7 +2257,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*5",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2282,7 +2282,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2310,7 +2310,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2337,7 +2337,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2389,7 +2389,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2417,7 +2417,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2443,7 +2443,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2471,7 +2471,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2513,7 +2513,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2542,7 +2542,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2569,7 +2569,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2595,7 +2595,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2623,7 +2623,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2649,7 +2649,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2677,7 +2677,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": []
   },
@@ -2699,7 +2699,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2751,7 +2751,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*5",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2781,7 +2781,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2809,7 +2809,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2889,7 +2889,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2916,7 +2916,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2942,7 +2942,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2970,7 +2970,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2997,7 +2997,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3025,7 +3025,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3052,7 +3052,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3113,7 +3113,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*5",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3141,7 +3141,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3222,7 +3222,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3275,7 +3275,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3302,7 +3302,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "木*3",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4151,9 +4151,6 @@ window.ORD_DATA = [
       {
         "material_id": "4-19"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4174,9 +4171,6 @@ window.ORD_DATA = [
       {
         "material_id": "4-43"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4197,9 +4191,6 @@ window.ORD_DATA = [
       {
         "material_id": "4-35"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4219,9 +4210,6 @@ window.ORD_DATA = [
       {
         "material_id": "4-44"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4242,9 +4230,6 @@ window.ORD_DATA = [
       {
         "material_id": "6-3"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4548,9 +4533,6 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-2"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "",
@@ -4567,12 +4549,12 @@ window.ORD_DATA = [
   {
     "character_id": "10-1",
     "level": 10,
-    "name": "大熊 (超越唯一素材)",
+    "name": "大熊 (超越素材)",
     "kr_name": "바솔로뮤 쿠마 마지막 의식을 가진 혁명군",
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "(唯一素材)",
+    "remark": "故事第10間完成取得(唯一素材)",
     "major": "",
     "suitable_partners": []
   },
@@ -6009,9 +5991,6 @@ window.ORD_DATA = [
       },
       {
         "material_id": "5-23"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "newgate im",
@@ -6040,9 +6019,6 @@ window.ORD_DATA = [
       },
       {
         "material_id": "5-28"
-      },
-      {
-        "material_id": "0-1"
       }
     ],
     "key_code": "garp im",
@@ -6459,9 +6435,6 @@ window.ORD_DATA = [
       {
         "material_id": "5-23"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "ace et",
     "remark": "木*5",
@@ -6481,7 +6454,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "拳皇系列",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6497,7 +6470,7 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "",
+    "remark": "火影忍者",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6637,7 +6610,7 @@ window.ORD_DATA = [
     "en_name": "BRONYA ZAYCHIK",
     "materials": [],
     "key_code": "",
-    "remark": "崩壞",
+    "remark": "崩壞系列",
     "major": "",
     "suitable_partners": []
   },
@@ -6708,12 +6681,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 東方Project",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6748,12 +6718,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "咒術迴戰 10000金 + 木*7",
+    "remark": "10000金 + 木*7 咒術迴戰",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6783,12 +6750,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 Undertale",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6815,12 +6779,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 間諜家家酒",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6854,12 +6815,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 死神",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6889,12 +6847,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金+木*7",
+    "remark": "10000金+木*7 空之境界",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6922,12 +6877,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 火影忍者",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6960,12 +6912,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 JoJo",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6998,12 +6947,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 崩壞系列",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -7035,12 +6981,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 東方Project",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -7068,12 +7011,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 一拳超人",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -7106,12 +7046,9 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
-    "remark": "10000金 + 木*7",
+    "remark": "10000金 + 木*7 鬼滅之刃",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -7143,9 +7080,6 @@ window.ORD_DATA = [
       {
         "material_id": "0-9"
       },
-      {
-        "material_id": "0-1"
-      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7",

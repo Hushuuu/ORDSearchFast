@@ -178,7 +178,7 @@
             return `
               <div class="team-member-card">
                 <div class="team-member-info">
-                  <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 8px; font-size: 0.75rem;">${getLevelLabel(record.level)}</span>
+                  <span class="badge badge-${record.level}" style="min-width: unset;width:56px ; padding: 2px 8px; font-size: 0.75rem;">${getLevelLabel(record.level)}</span>
                   <span class="team-member-name">${escapeHtml(record.name)}</span>
                 </div>
                 <button class="team-member-remove" data-id="${escapeHtml(id)}" type="button" title="移出隊伍">&times;</button>
@@ -257,7 +257,7 @@
                   <div class="char-card-content">
                     <div class="char-card-name-row">
                       <span class="char-card-name">${escapeHtml(record.name)}</span>
-                      <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 8px; font-size: 0.72rem;">${escapeHtml(levelLabel)}</span>
+                      <span class="badge badge-${record.level}" style="min-width: unset;width:56px; padding: 2px 8px; font-size: 0.72rem;">${escapeHtml(levelLabel)}</span>
                     </div>
                     <div class="char-card-materials" title="${escapeHtml(materialsText)}">
                       材料：${escapeHtml(materialsText)}
@@ -273,7 +273,7 @@
             <section class="char-group-section">
               <div class="char-group-header">
                 <h3 class="char-group-title">
-                  <span class="badge badge-${level}" style="min-width: unset; padding: 4px 10px; font-size: 0.85rem;">${levelLabel}</span>
+                  <span class="badge badge-${level}" style="min-width: unset;width:56px; padding: 4px 10px; font-size: 0.85rem;">${levelLabel}</span>
                 </h3>
                 <span class="char-group-count">${groupRecords.length} 個角色</span>
               </div>
@@ -381,8 +381,6 @@
     const compTreeResultTitle = document.getElementById('compTreeResultTitle');
     const compTreeRootSummary = document.getElementById('compTreeRootSummary');
     const compDownwardContainer = document.getElementById('compDownwardContainer');
-    const compToggleUpwardButton = document.getElementById('compToggleUpwardButton');
-    const compUpwardContainer = document.getElementById('compUpwardContainer');
     const compTreeTeamMaterials = document.getElementById('compTreeTeamMaterials');
 
     let selectedTeamIds = readStoredArray(sessionStorage, 'selectedTeamIds').filter((id) => indices.byCharacterId.has(id));
@@ -463,28 +461,6 @@
       `;
     }
 
-    function renderCompUpwardSection(record) {
-      const parents = indices.parentMap.get(record.character_id) || [];
-
-      if (parents.length === 0) {
-        compToggleUpwardButton.textContent = '此角色沒有上層';
-        compToggleUpwardButton.disabled = true;
-        compUpwardContainer.innerHTML = '<div class="empty-state">無上層角色</div>';
-        return;
-      }
-
-      compToggleUpwardButton.disabled = false;
-      compToggleUpwardButton.textContent = `顯示上層（${parents.length} 筆）`;
-      compUpwardContainer.innerHTML = `
-        <div class="upward-card">
-          <h3><span>上層角色</span></h3>
-          <ul class="upward-list">
-            ${parents.map((parent) => `<li>${renderCompNodeCard(parent, { navigateable: true })}</li>`).join('')}
-          </ul>
-        </div>
-      `;
-    }
-
     function renderCompTree(record) {
       compTreeResultTitle.textContent = `${record.name}｜${getLevelLabel(record.level)} | KR: ${escapeHtml(record.kr_name || '')} | EN: ${escapeHtml(record.en_name || '')}`;
 
@@ -520,10 +496,6 @@
                 .join('')}</ul>`}
         </div>
       `;
-
-      if (compUpwardContainer && compToggleUpwardButton) {
-        renderCompUpwardSection(record);
-      }
     }
 
     function renderTabs() {
@@ -536,7 +508,7 @@
 
           return `
             <button type="button" class="comp-tree-tab-btn ${index === activeIndex ? 'active' : ''}" data-index="${index}">
-              <span class="badge badge-${record.level}" style="min-width: unset; padding: 2px 6px; font-size: 0.72rem;">${getLevelLabel(record.level)}</span>
+              <span class="badge badge-${record.level}" style="min-width: unset;width:56px; padding: 2px 6px; font-size: 0.72rem;">${getLevelLabel(record.level)}</span>
               <span>${escapeHtml(record.name)}</span>
             </button>
           `;
@@ -547,10 +519,6 @@
         button.addEventListener('click', () => {
           activeIndex = Number(button.dataset.index);
           renderTabs();
-
-          if (compUpwardContainer) {
-            compUpwardContainer.classList.add('is-hidden');
-          }
 
           const activeRecord = indices.byCharacterId.get(selectedTeamIds[activeIndex]);
           if (activeRecord) {
@@ -575,19 +543,7 @@
       compDownwardContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    if (compUpwardContainer) {
-      compUpwardContainer.addEventListener('click', handleCompTreeNavigation);
-    }
     compDownwardContainer.addEventListener('click', handleCompTreeNavigation);
-
-    if (compToggleUpwardButton && compUpwardContainer) {
-      compToggleUpwardButton.addEventListener('click', () => {
-        compUpwardContainer.classList.toggle('is-hidden');
-        compToggleUpwardButton.textContent = compUpwardContainer.classList.contains('is-hidden')
-          ? compToggleUpwardButton.textContent.replace('隱藏', '顯示')
-          : compToggleUpwardButton.textContent.replace('顯示', '隱藏');
-      });
-    }
 
     renderTabs();
     compTreeTeamMaterials.innerHTML = renderTeamSummaryMaterials(level1Items, level0Items);
