@@ -70,6 +70,7 @@ class MyNavbar extends HTMLElement {
     <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
     <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
     <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
+    <a class="nav-link" data-page="comp_tree" href="comp_tree.html">我的隊伍</a>
     <a class="nav-link" data-page="recommend" href="recommend.html">合成推薦</a>
     <a class="nav-link" style="display: none;" data-page="maintenance" href="maintenance.html">資料維護</a>
     <a class="nav-link" target="_blank" href="https://ordsearch.net/mix">官網</a>

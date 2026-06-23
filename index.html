@@ -14,7 +14,15 @@
     <header class="topbar">
       <div class="brand">
         <div class="brand-title">ORD 航海王隨機防禦合成表</div>
-        <div class="brand-subtitle">ver. 2.305[R] updated. 2026/06/22 </div>
+        <div class="brand-subtitle">
+          <span>ver. 2.305[R] | updated. 2026/06/25 </span>
+          <span style="">
+            | Contact Author
+            <a href="#" onclick="openEmail()">
+              <img src="resource/mail.svg" alt="Contact Me">
+            </a>
+          </span>
+        </div>
       </div>
       <my-navbar></my-navbar>
     </header>
@@ -70,6 +78,17 @@
   <script src="js/shared/app-shared.js?v=260622001"></script>
   <script src="js/pages/lookup-page.js?v=260622001"></script>
   <script src="js/app.js?v=260622001"></script>
+  <script>
+    function openEmail() {
+      const user = "jim";
+      const domain = "nijidakku.cc";
+      const subject = encodeURIComponent("【ODR網站使用者來信】");
+
+      // 當使用者點擊時，瀏覽器才會動態組合並打開 Gmail 網頁版
+      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + user + "@" + domain + "&su=" + subject, "_blank");
+    }
+
+  </script>
 </body>
 
 </html>
