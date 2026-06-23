@@ -517,7 +517,10 @@
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": [
+      "stl-4-2"
+    ]
   },
   {
     "character_id": "3-3",
@@ -1024,7 +1027,10 @@
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": [
+      "stl-4-2"
+    ]
   },
   {
     "character_id": "3-26",
@@ -1334,7 +1340,7 @@
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "故事第七回合獎勵",
+    "remark": "故事第7間獎勵(唯一素材)",
     "major": "",
     "suitable_partners": []
   },
@@ -2138,7 +2144,7 @@
   {
     "character_id": "4-42",
     "level": 4,
-    "name": "鑽石喬茲",
+    "name": "鑽石裘斯",
     "kr_name": "죠즈 흰수염 3번대 대장 다이아몬드",
     "en_name": "",
     "materials": [
@@ -2974,7 +2980,6 @@
     "major": "",
     "suitable_partners": [],
     "skill_types": [
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1"
     ]
@@ -4549,12 +4554,12 @@
   {
     "character_id": "10-1",
     "level": 10,
-    "name": "大熊 (超越唯一素材)",
+    "name": "大熊 (超越素材)",
     "kr_name": "바솔로뮤 쿠마 마지막 의식을 가진 혁명군",
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "(唯一素材)",
+    "remark": "故事第10間完成取得(唯一素材)",
     "major": "",
     "suitable_partners": []
   },
@@ -4939,7 +4944,6 @@
     "suitable_partners": [],
     "skill_types": [
       "stl-1-5",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-2"
     ]
@@ -5002,7 +5006,6 @@
     "skill_types": [
       "stl-1-5",
       "stl-2-2",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1",
       "stl-5-2"
@@ -5406,7 +5409,6 @@
     "skill_types": [
       "stl-1-2",
       "stl-1-5",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1",
       "stl-5-2",

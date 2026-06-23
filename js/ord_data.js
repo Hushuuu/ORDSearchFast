@@ -517,7 +517,10 @@ window.ORD_DATA = [
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": [
+      "stl-4-2"
+    ]
   },
   {
     "character_id": "3-3",
@@ -1024,7 +1027,10 @@ window.ORD_DATA = [
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": [
+      "stl-4-2"
+    ]
   },
   {
     "character_id": "3-26",
@@ -2974,7 +2980,6 @@ window.ORD_DATA = [
     "major": "",
     "suitable_partners": [],
     "skill_types": [
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1"
     ]
@@ -4150,7 +4155,7 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "4-19"
-      },
+      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4170,7 +4175,7 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "4-43"
-      },
+      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4190,7 +4195,7 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "4-35"
-      },
+      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4209,7 +4214,7 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "4-44"
-      },
+      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4229,7 +4234,7 @@ window.ORD_DATA = [
     "materials": [
       {
         "material_id": "6-3"
-      },
+      }
     ],
     "key_code": "",
     "remark": "木頭*10",
@@ -4939,7 +4944,6 @@ window.ORD_DATA = [
     "suitable_partners": [],
     "skill_types": [
       "stl-1-5",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-2"
     ]
@@ -5002,7 +5006,6 @@ window.ORD_DATA = [
     "skill_types": [
       "stl-1-5",
       "stl-2-2",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1",
       "stl-5-2"
@@ -5406,7 +5409,6 @@ window.ORD_DATA = [
     "skill_types": [
       "stl-1-2",
       "stl-1-5",
-      "stl-4-2",
       "stl-4-4",
       "stl-5-1",
       "stl-5-2",
@@ -6434,7 +6436,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "5-23"
-      },
+      }
     ],
     "key_code": "ace et",
     "remark": "木*5",
@@ -6680,7 +6682,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 東方Project",
@@ -6717,7 +6719,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 咒術迴戰",
@@ -6749,7 +6751,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 Undertale",
@@ -6778,7 +6780,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 間諜家家酒",
@@ -6814,7 +6816,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 死神",
@@ -6846,7 +6848,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金+木*7 空之境界",
@@ -6876,7 +6878,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 火影忍者",
@@ -6911,7 +6913,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 JoJo",
@@ -6946,7 +6948,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 崩壞系列",
@@ -6980,7 +6982,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 東方Project",
@@ -7010,7 +7012,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 一拳超人",
@@ -7045,7 +7047,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7 鬼滅之刃",
@@ -7079,7 +7081,7 @@ window.ORD_DATA = [
       },
       {
         "material_id": "0-9"
-      },
+      }
     ],
     "key_code": "",
     "remark": "10000金 + 木*7",
