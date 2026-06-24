@@ -156,6 +156,38 @@
     return 0;
   }
 
+  // 分析角色結構，計算「背包有的分數」與「總分數」，用於評估推薦優先度。
+  function analyzeStructure(record, inventory, indices,status = { scoreOwned: 0, scoreTotal: 0 }, visited = new Set()) {
+    if (!record || visited.has(record.character_id)) return { scoreOwned: 0, scoreTotal: 0 };
+    visited.add(record.character_id);
+
+    // 定義權重：等級越高，權重呈指數型放大（例如 2 的 level 次方）
+    const weight = Math.pow(2.5, record.level);
+    status.scoreTotal += weight;
+
+    const available = inventory.get(record.character_id) || 0;
+    if (available > 0) {
+      inventory.set(record.character_id, available - 1);
+      status.scoreOwned += weight; // 背包有，拿到這個素材的分數！
+      visited.delete(record.character_id);
+      return status;
+    }
+
+    // 背包沒有，代表這是個缺口，但我們繼續往下看「子材料」幫我們湊了多少完成度
+    const materials = record.materials || [];
+    if (materials.length && record.level > 1) {
+      materials.forEach((material) => {
+        const childRecord = indices.byCharacterId.get(material.material_id);
+        if (childRecord) {
+          analyzeStructure(childRecord, inventory, indices, status, visited);
+        }
+      });
+    }
+
+    visited.delete(record.character_id);
+    return status;
+  }
+
   function renderMaterialPreview(record, inventory, indices) {
     const materials = record.materials || [];
     if (!materials.length) {
@@ -395,6 +427,11 @@
           const candidates = records
             .filter((record) => record.level === targetLevel && !defaultDismissedIds.includes(record.character_id))
             .map((record) => {
+              // 1. 計算完成度分數
+              const stats = analyzeStructure(record, new Map(inventory), indices);
+              const completionRatio = (stats.scoreTotal > 0 ? (stats.scoreOwned / stats.scoreTotal) : 0).toFixed(7);  
+              console.log(`Analyzed ${record.name} (ID: ${record.character_id}) - Score Owned: ${stats.scoreOwned}, Score Total: ${stats.scoreTotal}, Completion Ratio: ${completionRatio}`);  
+              // 2. 計算缺口
               const requiredCounts = collectRequiredBaseMaterialsCounts(record.character_id, new Map(inventory), indices);
               const missingTierCounts = collectMissingTierCountsFromRecord(record, new Map(inventory), indices);
               return {
@@ -402,9 +439,15 @@
                 requiredCounts,
                 requiredText: formatRequiredBaseMaterialsFromCounts(requiredCounts, indices),
                 missingTierCounts,
+                completionRatio,
               };
             })
             .sort((left, right) => {
+              // 🌟 排序策略 1：優先推薦「完成度（Ratio）最高」的（從 1.0 降序到 0.0）
+              if (right.completionRatio !== left.completionRatio) {
+                return right.completionRatio - left.completionRatio;
+              }
+              // 🌟 排序策略 2：如果完成度一樣，再比對缺口分布（先比高難度缺口）
               const shortageCompare = compareMissingTierCounts(left.missingTierCounts, right.missingTierCounts, shortagePriorityLevels);
               if (shortageCompare !== 0) {
                 return shortageCompare;
