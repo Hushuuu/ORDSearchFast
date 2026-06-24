@@ -473,6 +473,8 @@
           `
         )
         .join('');
+        //scroll to top
+        //resultList.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function setOwnedCardCount(level, characterId, delta) {

@@ -43,7 +43,7 @@ window.ORD_DATA = [
     "en_name": "Greenblood",
     "materials": [],
     "key_code": "",
-    "remark": "限God/Nightmare難度，故事蛋頭島完成獲得，加頂級角色攻擊或用在熾天使角色",
+    "remark": "限God/Nightmare難度，故事蛋頭島完成獲得，用在頂級或熾天使角色",
     "major": "",
     "suitable_partners": [],
     "skill_types": []
@@ -80,9 +80,10 @@ window.ORD_DATA = [
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "累積存檔次數/擊敗任務「琵卡/地圖右側門擊破+擊敗大將/選特定記錄指針可購買特性",
+    "remark": "累積存檔次數/擊敗琵卡/地圖右側門擊破+大將/選特定記錄指針可購買",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": []
   },
   {
     "character_id": "0-9",
@@ -1547,7 +1548,7 @@ window.ORD_DATA = [
   {
     "character_id": "4-16",
     "level": 4,
-    "name": "紅髮傑克 香克斯",
+    "name": "紅髮 香克斯",
     "kr_name": "샹크스 붉은머리 해적단 선장",
     "en_name": "Shanks",
     "materials": [
@@ -1564,7 +1565,8 @@ window.ORD_DATA = [
     "key_code": "",
     "remark": "",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": []
   },
   {
     "character_id": "4-17",
@@ -2273,7 +2275,7 @@ window.ORD_DATA = [
   {
     "character_id": "5-2",
     "level": 5,
-    "name": "巴托洛米奧 傳說",
+    "name": "巴托洛米奧 超新星",
     "kr_name": "바르토로메오 신예 초신성",
     "en_name": "",
     "materials": [
@@ -3444,7 +3446,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-5",
     "level": 6,
-    "name": "白鬍子白鯨號",
+    "name": "白鯨號 白鬍子船",
     "kr_name": "모비딕 호 사황 흰수염의 흰고래",
     "en_name": "",
     "materials": [
@@ -3554,7 +3556,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-9",
     "level": 6,
-    "name": "雷德佛斯號 香克斯船",
+    "name": "紅色勢力號 香克斯船",
     "kr_name": "레드포스 호 사황 샹크스의 붉은용",
     "en_name": "",
     "materials": [
@@ -3626,7 +3628,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-12",
     "level": 6,
-    "name": "神·艾涅爾 方舟麥克辛",
+    "name": "方舟箴言 神·艾涅爾",
     "kr_name": "갓 에넬 방주 맥심",
     "en_name": "",
     "materials": [
@@ -3718,7 +3720,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-15",
     "level": 6,
-    "name": "綠牛",
+    "name": "荒牧 綠牛",
     "kr_name": "료쿠규 '신' 해군대장",
     "en_name": "Ryokugyu",
     "materials": [
@@ -3777,7 +3779,7 @@ window.ORD_DATA = [
   {
     "character_id": "6-17",
     "level": 6,
-    "name": "喬拉可爾·密佛格  鷹眼 隱藏",
+    "name": "喬拉可爾·密佛格  鷹眼 克拉伊卡納島",
     "kr_name": "쥬라클 미호크 매의 눈",
     "en_name": "",
     "materials": [
@@ -4318,7 +4320,7 @@ window.ORD_DATA = [
   {
     "character_id": "9-3",
     "level": 9,
-    "name": "亞爾麗塔",
+    "name": "亞爾麗塔 滑嫩果實",
     "kr_name": "알비다 쇠몽둥이",
     "en_name": "",
     "materials": [
@@ -5981,7 +5983,7 @@ window.ORD_DATA = [
   {
     "character_id": "11-12",
     "level": 11,
-    "name": "愛德華·紐蓋特 白鬍子 舊世代主宰",
+    "name": "愛德華·紐蓋特 白鬍子 世代主宰",
     "kr_name": "에드워드 뉴게이트 한시대를 주름잡던 대해적",
     "en_name": "",
     "materials": [
