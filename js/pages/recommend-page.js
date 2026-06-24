@@ -332,7 +332,7 @@
     const shortagePriorityLevels = [...new Set(records.map((record) => Number(record.level)).filter((level) => Number.isFinite(level) && level >= 0))]
       .sort((left, right) => right - left);
     const hasTomSelect = typeof window.TomSelect === 'function';
-    const defaultTargetLevels = new Set([5]);
+    const defaultTargetLevels = new Set([]);
     const ownedCountState = {
       1: new Map(),
       2: new Map(),
@@ -445,6 +445,9 @@
         : Array.from(ownedSelect.selectedOptions).map((option) => option.value);
       const inventory = createInventoryMap(records, ownedCountState, selectedOwnedIds);
 
+      renderOwnedTabs();
+      renderOwnedPanels();
+
       if (selectedTargetLevels.length === 0) {
         summary.textContent = '請先選擇至少一個目標稀有度。';
         resultList.innerHTML = '<div class="empty-state">請先選擇至少一個目標稀有度。</div>';
@@ -493,8 +496,7 @@
 
       const targetLabelText = selectedTargetLevels.map((level) => `${level}｜${getLevelLabel(level)}`).join('、');
       //summary.textContent = `目標稀有度：${targetLabelText || '未選擇'}｜${resultGroups.reduce((sum, group) => sum + group.candidates.length, 0)} 筆結果`;
-      renderOwnedTabs();
-      renderOwnedPanels();
+
 
       if (resultGroups.length === 0) {
         resultList.innerHTML = '<div class="empty-state">此條件沒有可推薦的角色。</div>';
@@ -511,8 +513,11 @@
               </div>
               <div class="recommend-result-group-body">
                 ${group.candidates
-                  .map(({ record, requiredText }) => `
+                  .map(({ record, requiredText, completionRatio }) => `
                     <article class="recommend-card">
+                      <div class="card-top-progress-container">
+                        <div class="card-top-progress-bar" style="width: ${((completionRatio || 0) * 100).toFixed(2)}%;"></div>
+                      </div>
                       <div class="recommend-card-top">
                         <span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span>
                         <strong>${escapeHtml(record.name)} ${record.key_code ? `(${escapeHtml(record.key_code)})` : ''}</strong>
@@ -576,7 +581,7 @@
 
     resetButton.addEventListener('click', () => {
       dismissedCharacterIds = new Set();
-      targetState.selectedTargetLevels = new Set([5]);
+      targetState.selectedTargetLevels = defaultTargetLevels;
       targetState.activeOwnedLevel = 1;
       ownedCountState[1].clear();
       ownedCountState[2].clear();

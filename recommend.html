@@ -6,8 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 合成推薦</title>
   <link rel="stylesheet" href="css/tom-select.css">
-  <link rel="stylesheet" href="css/styles.css?v=260622001">
-  <script src="js/shared/wc-navbar.js?v=260622001"></script>
+  <link rel="stylesheet" href="css/styles.css?v=260624001">
+  <script src="js/shared/wc-navbar.js?v=260624001"></script>
+  <style>
+    /* 2. 頂部進度條外殼（灰色軌道） */
+    .card-top-progress-container {
+      width: 100%;
+      height: 4px;
+      /* 裝飾條寬度，4px ~ 6px 最精緻 */
+      background-color: rgba(0, 0, 0, 0.08);
+      /* 淡淡的灰色軌道，亦可改成 transparent 完全隱形 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      /* 確保在最上層 */
+    }
+
+    /* 3. 頂部進度條主體（充滿漸層色） */
+    .card-top-progress-bar {
+      height: 100%;
+      /* 航海王/手遊風的經典亮眼漸層（從極光青綠到活力橘紅，你可以依喜好調整顏色） */
+      background: linear-gradient(90deg, #11998e 0%, #38ef7d 50%, #ff9f43 100%);
+
+      /* 如果希望進度條帶有一點發光質感，可以加上這行（選用） */
+      box-shadow: 0 1px 4px rgba(56, 239, 125, 0.5);
+
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      /* 讓進度條抽動時更滑順 */
+    }
+
+    /* 4. 微調：因為頂部多了 4px 的條，你原本的 card-top 可以適度補一點 padding-top */
+    .recommend-card-top {
+      padding-top: 12px;
+      /* 依你實際視覺畫面微調，避免文字離頂部太近 */
+    }
+  </style>
 </head>
 
 <body data-page="recommend">
@@ -71,11 +105,11 @@
     </section>
   </div>
 
-  <script src="js/ord_data.js?v=260622001"></script>
+  <script src="js/ord_data.js?v=260624001"></script>
   <script src="js/tom-select.complete.min.js"></script>
-  <script src="js/shared/app-shared.js?v=260622001"></script>
-  <script src="js/pages/recommend-page.js?v=260622001"></script>
-  <script src="js/app.js?v=260622001"></script>
+  <script src="js/shared/app-shared.js?v=260624001"></script>
+  <script src="js/pages/recommend-page.js?v=260624001"></script>
+  <script src="js/app.js?v=260624001"></script>
 </body>
 
 </html>

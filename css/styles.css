@@ -641,6 +641,8 @@ button.success {
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(17, 24, 39, 0.62);
+  position: relative;
+  overflow: hidden;
 }
 
 .recommend-card-top {
