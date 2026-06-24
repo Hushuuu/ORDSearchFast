@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 速查列表</title>
+  <link rel="manifest" href="/manifest.json">
+  <script src="/pwa-init.js"></script>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/resource/192x192.png">
+
   <link rel="stylesheet" href="css/styles.css?v=260624001">
   <script src="js/shared/wc-navbar.js?v=260624001"></script>
 </head>
@@ -87,7 +93,6 @@
       // 當使用者點擊時，瀏覽器才會動態組合並打開 Gmail 網頁版
       window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + user + "@" + domain + "&su=" + subject, "_blank");
     }
-
   </script>
 </body>
 
