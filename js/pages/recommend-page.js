@@ -116,15 +116,18 @@
     visited.add(record.character_id);
 
     const available = inventory.get(record.character_id) || 0;
-    if (available > 0) {
+    if (available > 0) { //背包有這支
       inventory.set(record.character_id, available - 1);
       visited.delete(record.character_id);
       return counts;
     }
 
+    // 無論它是高等級還是低等級，只要背包沒有，就立刻幫它的等級缺口 +1
+    counts.set(record.level, (counts.get(record.level) || 0) + 1);
+
     const materials = record.materials || [];
     if (!materials.length || record.level <= 1) {
-      counts.set(record.level, (counts.get(record.level) || 0) + 1);
+      //counts.set(record.level, (counts.get(record.level) || 0) + 1);
       visited.delete(record.character_id);
       return counts;
     }
@@ -134,7 +137,7 @@
       if (childRecord) {
         collectMissingTierCountsFromRecord(childRecord, inventory, indices, counts, visited);
       } else {
-        counts.set(record.level, (counts.get(record.level) || 0) + 1);
+        //counts.set(record.level, (counts.get(record.level) || 0) + 1);
       }
     });
 
@@ -425,7 +428,7 @@
         resultList.innerHTML = '<div class="empty-state">此條件沒有可推薦的角色。</div>';
         return;
       }
-
+      console.log('resultGroups',resultGroups)
       resultList.innerHTML = resultGroups
         .map(
           (group) => `
