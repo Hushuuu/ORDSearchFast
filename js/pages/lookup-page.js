@@ -87,9 +87,9 @@
             <tr>
               <td data-label="稀有度"><span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span></td>
               <td data-mobile="${escapeHtml(getLevelLabel(record.level))}" data-label="單位名稱" data-keycode="${record.key_code ? '(' + record.key_code + ')' : ''}">${createNameStack(record)}</td>
-              <td data-label="所需材料">
+              <td data-label="材料">
                 <div class="cell-mobile-label">
-                  <span class="label-text">所需材料</span>
+                  <span class="label-text">材料</span>
                   <a class="link-button mobile-action-btn" href="tree.html?character=${encodeURIComponent(record.character_id)}">
                     <img style="vertical-align: middle" width="20" height="16" src="resource/mitre.svg" alt="合成樹">
                   </a>

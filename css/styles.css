@@ -1135,7 +1135,7 @@ button.success {
     content: attr(data-mobile) "\A" attr(data-keycode);
     white-space: pre-line;
     position: absolute;
-    top: 10px;
+    top: 35%;
     left: 0;
     width: 78px;
     color: var(--muted-color);
@@ -1159,10 +1159,7 @@ button.success {
     top: 10px;         /* 貼齊你原本 before 的 top */
     left: 0;           /* 貼齊你原本 before 的 left */
     width: 78px;       /* 寬度跟你原本的 before 一致 */
-    
-    /* 改用 flex 讓文字與按鈕上下垂直排列 */
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 6px;          /* 文字與按鈕的間距 */
   }

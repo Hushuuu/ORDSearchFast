@@ -397,9 +397,10 @@
     let activeIndex = 0;
 
     function renderCompNodeCard(record, options = {}) {
-      const titleMarkup = options.navigateable
-        ? `<button type="button" class="tree-node-action" data-navigate-character="${escapeHtml(record.character_id)}">${escapeHtml(record.name)}</button>`
-        : `<strong>${escapeHtml(record.name)}</strong>`;
+      // const titleMarkup = options.navigateable
+      //   ? `<button type="button" class="tree-node-action" data-navigate-character="${escapeHtml(record.character_id)}">${escapeHtml(record.name)}</button>`
+      //   : `<strong>${escapeHtml(record.name)}</strong>`;
+      const titleMarkup = `<strong>${escapeHtml(record.name)}</strong>`; // 隊伍組成後不須點進角色
 
       return `
         <div class="node-card ${record.level === 0 ? 'placeholder' : ''}">
