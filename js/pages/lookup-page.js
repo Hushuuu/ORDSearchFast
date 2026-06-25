@@ -86,8 +86,18 @@
           (record) => `
             <tr>
               <td data-label="稀有度"><span class="badge badge-${record.level}">${escapeHtml(getLevelLabel(record.level))}</span></td>
-              <td data-label="單位名稱">${createNameStack(record)}</td>
-              <td data-label="所需材料">${createMaterialChips(record, indices)}</td>
+              <td data-mobile="${escapeHtml(getLevelLabel(record.level))}" data-label="單位名稱" data-keycode="${record.key_code ? '(' + record.key_code + ')' : ''}">${createNameStack(record)}</td>
+              <td data-label="所需材料">
+                <div class="cell-mobile-label">
+                  <span class="label-text">所需材料</span>
+                  <a class="link-button mobile-action-btn" href="tree.html?character=${encodeURIComponent(record.character_id)}">
+                    <img style="vertical-align: middle" width="20" height="16" src="resource/mitre.svg" alt="合成樹">
+                  </a>
+                </div>
+                <div class="cell-content">
+                  ${createMaterialChips(record, indices)}
+                </div>
+              </td>
               <td data-label="金鑰">${record.key_code ? escapeHtml(record.key_code) : '<span class="muted">-</span>'}</td>
               <td data-label="備註">${record.remark ? escapeHtml(record.remark) : '<span class="muted">-</span>'}</td>
               <td data-label="功能">
@@ -109,10 +119,23 @@
 
       searchInput.value = target.dataset.searchName || '';
       render();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      //window.scrollTo({ top: 0, behavior: 'smooth' });
+      searchInput.scrollIntoView({
+        behavior: 'smooth', // 平滑滾動，如果想要瞬間跳過去可以改成 'auto'
+        block: 'start'      // 滾動到該元素的「頂部」
+      });
     });
+    // 1. 新增防抖函數
+    function debounce(func, delay = 150) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
 
-    searchInput.addEventListener('input', render);
+    // 2. 修改原本的事件監聽（將 render 包起來）
+    searchInput.addEventListener('input', debounce(render, 300));
     levelFilter.addEventListener('change', render);
     clearButton.addEventListener('click', () => {
       searchInput.value = '';

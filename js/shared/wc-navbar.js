@@ -67,7 +67,7 @@ class MyNavbar extends HTMLElement {
 }
 </style>
 <nav class="nav-tabs" aria-label="主要導覽">
-    <a class="nav-link" data-page="lookup" href="index.html">速查列表</a>
+    <a class="nav-link" data-page="lookup" href="index.html">總覽表</a>
     <a class="nav-link" data-page="tree" href="tree.html">合成樹</a>
     <a class="nav-link" data-page="comp" href="comp.html">隊伍組成</a>
     <a class="nav-link" data-page="comp_tree" href="comp_tree.html">我的隊伍</a>

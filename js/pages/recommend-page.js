@@ -10,7 +10,7 @@
   } = window.ORDApp;
 
   function buildTargetLevelOptions(records) {
-    const levels = [...new Set(records.map((record) => Number(record.level)).filter((level) => Number.isFinite(level) && level >= 2))]
+    const levels = [...new Set(records.map((record) => Number(record.level)).filter((level) => Number.isFinite(level) && level > 2))]
       .sort((left, right) => left - right);
 
     return levels.map((level) => ({ value: level, label: `${level}｜${getLevelLabel(level)}` }));

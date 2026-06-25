@@ -2243,9 +2243,10 @@
     "en_name": "",
     "materials": [],
     "key_code": "",
-    "remark": "特定記錄指針取得或用古船機率交換",
+    "remark": "特定記錄指針/古船機率交換/故事第10間獎勵可選擇",
     "major": "",
-    "suitable_partners": []
+    "suitable_partners": [],
+    "skill_types": []
   },
   {
     "character_id": "5-1",

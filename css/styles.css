@@ -1095,6 +1095,9 @@ button.success {
   }
 }
 
+.cell-mobile-label {
+  display: none;
+}
 @media (max-width: 900px) {
   .app-shell {
     width: min(100%, calc(100% - 16px));
@@ -1128,8 +1131,9 @@ button.success {
     position: relative;
   }
 
-  .data-table td::before {
-    content: attr(data-label);
+  .data-table td:not(.material-column)::before {
+    content: attr(data-mobile) "\A" attr(data-keycode);
+    white-space: pre-line;
     position: absolute;
     top: 10px;
     left: 0;
@@ -1137,6 +1141,45 @@ button.success {
     color: var(--muted-color);
     font-size: 0.85rem;
     font-weight: 700;
+  }
+
+  /* 隱藏資料列的第 1, 4, 5, 6 個 td */
+  .data-table td:nth-child(1),
+  .data-table td:nth-child(4),
+  .data-table td:nth-child(5),
+  .data-table td:nth-child(6) {
+    display: none;
+  }
+  .material-chip{
+    font-size: 0.7rem;
+  }
+  /* 用來精準模擬原本 ::before 的絕對定位 */
+  .data-table td .cell-mobile-label {
+    position: absolute;
+    top: 10px;         /* 貼齊你原本 before 的 top */
+    left: 0;           /* 貼齊你原本 before 的 left */
+    width: 78px;       /* 寬度跟你原本的 before 一致 */
+    
+    /* 改用 flex 讓文字與按鈕上下垂直排列 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;          /* 文字與按鈕的間距 */
+  }
+
+  /* 模擬原本 before 的文字樣式 */
+  .data-table td .cell-mobile-label .label-text {
+    color: var(--muted-color);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  /* 手機版合成樹按鈕微調 */
+  .data-table td .cell-mobile-label .mobile-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
   }
 }
 
