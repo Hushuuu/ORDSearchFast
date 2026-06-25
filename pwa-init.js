@@ -34,7 +34,7 @@
 if ('serviceWorker' in navigator) {
   // 💡 改成等網頁完全載入、靜態資源都處理完後，才在背景默默註冊 SW
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=260625006')
+    navigator.serviceWorker.register('/sw.js?v=260625007')
       .then(reg => console.log('SW 註冊成功'))
       .catch(err => console.error('SW 註冊失敗', err));
   });
