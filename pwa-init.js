@@ -34,17 +34,19 @@
 if ('serviceWorker' in navigator) {
   // 💡 改成等網頁完全載入、靜態資源都處理完後，才在背景默默註冊 SW
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js?v=260625007')
+    navigator.serviceWorker.register('/sw.js?v=260625008')
       .then(reg => console.log('SW 註冊成功'))
       .catch(err => console.error('SW 註冊失敗', err));
   });
-
+  let hasController = !!navigator.serviceWorker.controller;
   let refreshing = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     if (refreshing) return;
-    refreshing = true;
-    if (confirm('網站已發布新版本，是否立即更新？')) {
-      window.location.reload();
+    if(hasController){
+      refreshing = true;
+      if (confirm('網站已發布新版本，是否立即更新？')) {
+        window.location.reload();
+      }
     }
   });
 }
