@@ -463,7 +463,7 @@
               // 1. 計算完成度分數
               const stats = analyzeStructure(record, new Map(inventory), indices, undefined,undefined,true);
               const completionRatio = (stats.scoreTotal > 0 ? (stats.scoreOwned / stats.scoreTotal) : 0).toFixed(7);  
-              console.log(`Analyzed ${record.name} (ID: ${record.character_id}) - Score Owned: ${stats.scoreOwned}, Score Total: ${stats.scoreTotal}, Completion Ratio: ${completionRatio}`);  
+              //console.log(`Analyzed ${record.name} (ID: ${record.character_id}) - Score Owned: ${stats.scoreOwned}, Score Total: ${stats.scoreTotal}, Completion Ratio: ${completionRatio}`);  
               // 2. 計算缺口
               const requiredCounts = collectRequiredBaseMaterialsCounts(record.character_id, new Map(inventory), indices);
               const missingTierCounts = collectMissingTierCountsFromRecord(record, new Map(inventory), indices, undefined, undefined, true);
@@ -503,7 +503,7 @@
         resultList.innerHTML = '<div class="empty-state">此條件沒有可推薦的角色。</div>';
         return;
       }
-      console.log('resultGroups',resultGroups)
+      //console.log('resultGroups',resultGroups)
       resultList.innerHTML = resultGroups
         .map(
           (group) => `
