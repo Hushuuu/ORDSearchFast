@@ -445,7 +445,7 @@
     }
 
     // 檢查是否有任何一隊有資料
-    const hasAnyData = [0, 1, 2].some(idx => 
+    const hasAnyData = [0, 1, 2, 3, 4].some(idx => 
       readStoredArray(localStorage, getTeamStorageKey(idx)).filter((id) => indices.byCharacterId.has(id)).length > 0
     );
 

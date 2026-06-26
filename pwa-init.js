@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // 註冊時也可以帶版本號，強迫瀏覽器檢查 sw.js 是否更新
-    navigator.serviceWorker.register('/sw.js?v=260626002')
+    navigator.serviceWorker.register('/sw.js?v=260626003')
       .then(reg => {
         console.log('SW 註冊成功');
         
