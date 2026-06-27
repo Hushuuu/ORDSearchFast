@@ -516,7 +516,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "3防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -877,7 +877,9 @@ window.ORD_DATA = [
     "remark": "",
     "major": "",
     "suitable_partners": [],
-    "skill_types": []
+    "skill_types": [
+      "stl-4-1"
+    ]
   },
   {
     "character_id": "3-19",
@@ -1026,7 +1028,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "3防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -1274,7 +1276,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2041,7 +2043,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "10防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2227,7 +2229,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "",
+    "remark": "5防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2291,7 +2293,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 12防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2398,7 +2400,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 15防(boss 40)",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2480,7 +2482,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 33防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2632,7 +2634,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 5防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2708,7 +2710,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2760,7 +2762,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*5",
+    "remark": "木*5 | 15防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2790,7 +2792,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 27防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2925,7 +2927,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 30防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -2951,7 +2953,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 18防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3005,7 +3007,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 22防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3060,7 +3062,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 15防(boss 30)",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3090,7 +3092,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 10防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3149,7 +3151,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木*3",
+    "remark": "木*3 | 技18防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3491,7 +3493,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "ivankov",
-    "remark": "",
+    "remark": "11防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3572,7 +3574,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "redforce",
-    "remark": "",
+    "remark": "20防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3710,7 +3712,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "Bonkurei",
-    "remark": "",
+    "remark": "11防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3739,7 +3741,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "ryokugyu",
-    "remark": "",
+    "remark": "25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3767,7 +3769,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "vergo",
-    "remark": "",
+    "remark": "技15防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3795,7 +3797,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "mihawk",
-    "remark": "",
+    "remark": "25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3818,7 +3820,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "rebecca",
-    "remark": "",
+    "remark": "18防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3845,7 +3847,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "sabo",
-    "remark": "",
+    "remark": "20防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -3957,7 +3959,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "killer",
-    "remark": "",
+    "remark": "12防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4014,7 +4016,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "queen",
-    "remark": "木*3",
+    "remark": "木*3 | 技20防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4201,7 +4203,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "木頭*10",
+    "remark": "木頭*10 | 11防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4270,7 +4272,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "30000金 + 木*5",
+    "remark": "30000金 + 木*5 | 30防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4431,7 +4433,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "5000金 + 木*5",
+    "remark": "5000金 + 木*5 | 技30防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4475,7 +4477,7 @@ window.ORD_DATA = [
     "level": 9,
     "name": "蕾貝卡",
     "kr_name": "레베카 콜로세움 전설의 후예",
-    "en_name": "",
+    "en_name": "Rebecca",
     "materials": [
       {
         "material_id": "6-18"
@@ -4488,7 +4490,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "5000金 + 木*5",
+    "remark": "5000金 + 木*5 | 38防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4517,7 +4519,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "",
-    "remark": "5000金+木*5",
+    "remark": "5000金+木*5 | 25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4769,7 +4771,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "zoro tr",
-    "remark": "能力點 * 4 升一次 + 道具秋水再升一次",
+    "remark": "35防 | 能力點 * 4  + 秋水可升兩次",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -4908,7 +4910,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "joker tr",
-    "remark": "",
+    "remark": "技60",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5038,7 +5040,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "hawkins tr",
-    "remark": "",
+    "remark": "25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5108,7 +5110,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "tashigi tr",
-    "remark": "",
+    "remark": "特性升級 25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5142,7 +5144,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "sabo tr",
-    "remark": "",
+    "remark": "30防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5273,7 +5275,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "ryokugyu tr",
-    "remark": "",
+    "remark": "35防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5339,7 +5341,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "yamato tr",
-    "remark": "",
+    "remark": "25防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5373,7 +5375,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "usopp tr",
-    "remark": "",
+    "remark": "22防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5439,7 +5441,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "chopper tr",
-    "remark": "",
+    "remark": "50防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5678,7 +5680,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "robin tr",
-    "remark": "",
+    "remark": "45防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5766,7 +5768,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "rayleigh im",
-    "remark": "木*10",
+    "remark": "木*10 | 20防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5855,7 +5857,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "shiki im",
-    "remark": "木*10",
+    "remark": "木*10 | 技10防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5884,13 +5886,13 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "gaban im",
-    "remark": "木*10",
+    "remark": "木*10 |  60防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
       "stl-1-3",
       "stl-2-2",
-      "stl-4-2",
+      "stl-4-4",
       "stl-5-1",
       "stl-6-2",
       "stl-6-3"
@@ -5914,7 +5916,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "roger im",
-    "remark": "木*10",
+    "remark": "木*10 | 60防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -5999,7 +6001,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "newgate im",
-    "remark": "木*10",
+    "remark": "木*10 | 45防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6062,7 +6064,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "nika et",
-    "remark": "木*5",
+    "remark": "木*5 | 35防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6097,7 +6099,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "nika et",
-    "remark": "木*5",
+    "remark": "木*5 | 35防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6129,7 +6131,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "cavendish et",
-    "remark": "木*5",
+    "remark": "木*5 | 35防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6349,7 +6351,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "buggy et",
-    "remark": "木*5",
+    "remark": "木*5 | 30防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [
@@ -6383,7 +6385,7 @@ window.ORD_DATA = [
       }
     ],
     "key_code": "hancock et",
-    "remark": "木*5",
+    "remark": "木*5 | 45防",
     "major": "",
     "suitable_partners": [],
     "skill_types": [

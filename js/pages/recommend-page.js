@@ -8,6 +8,7 @@
     getLevelLabel,
     getPrimaryRecord,
     getSkillTypeLabels,
+    getSkillTypeLabel,
     createSkillTypeOptions,
   } = window.ORDApp;
 
@@ -482,6 +483,9 @@
         summary.textContent = '請先選擇至少一個目標稀有度。';
         resultList.innerHTML = '<div class="empty-state">請先選擇至少一個目標稀有度。</div>';
         return;
+      }else{
+        summary.textContent = `已選擇：${selectedTargetLevels.map((level) => `${level}｜${getLevelLabel(level)}`).join(', ')}，
+        技能：${selectedTargetSkillTypes.length > 0 ? selectedTargetSkillTypes.map((s)=> `${getSkillTypeLabel(s)}`).join(', ') : '無'}`;
       }
 
       const resultGroups = selectedTargetLevels
@@ -526,10 +530,6 @@
         })
         .filter((group) => group.candidates.length > 0);
 
-      const targetLabelText = selectedTargetLevels.map((level) => `${level}｜${getLevelLabel(level)}`).join('、');
-      //summary.textContent = `目標稀有度：${targetLabelText || '未選擇'}｜${resultGroups.reduce((sum, group) => sum + group.candidates.length, 0)} 筆結果`;
-
-
       if (resultGroups.length === 0) {
         resultList.innerHTML = '<div class="empty-state">此條件沒有可推薦的角色。</div>';
         return;
@@ -538,9 +538,9 @@
       resultList.innerHTML = resultGroups
         .map(
           (group) => `
-            <section class="recommend-result-group">
+            <section class="recommend-result-group" data-level="${group.targetLevel}">
               <div class="recommend-result-group-head">
-                <h3 class="recommend-result-group-title">${escapeHtml(`${group.targetLevel}｜${getLevelLabel(group.targetLevel)}`)}</h3>
+                <!--<h3 class="recommend-result-group-title">${escapeHtml(`${group.targetLevel}｜${getLevelLabel(group.targetLevel)}`)}</h3>-->
                 <span style="display: none;" class="recommend-result-group-count">${group.candidates.length}</span>
               </div>
               <div class="recommend-result-group-body">
@@ -590,6 +590,56 @@
         .join('');
         //scroll to top
         //resultList.scrollTo({ top: 0, behavior: 'smooth' });
+      //render selected level tab
+      const recommendLevelTab = document.getElementById('recommendLevelTab');
+      let hasActiveTab = document.querySelector('.recommend-level-tab.active');
+      if (recommendLevelTab) {
+        recommendLevelTab.innerHTML = [...targetState.selectedTargetLevels].sort((left, right) => left - right)
+          .map((level) => `<a class="recommend-level-tab ${hasActiveTab && Number(hasActiveTab.dataset.level) === level ? 'active' : ''}" data-level="${level}">
+           ${level} | ${escapeHtml(getLevelLabel(level))}</a>`)
+          .join('');
+      }
+      document.querySelectorAll('.recommend-level-tab').forEach((button) => {
+        button.addEventListener('click', () => {
+          const level = Number(button.dataset.level);
+          if (isNaN(level)) {
+            return;
+          }
+          // 1. 先清除所有按鈕的 active，並將當前點擊的按鈕加上 active
+          document.querySelectorAll('.recommend-level-tab').forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // 2. 切換群組的顯示狀態 (精簡寫法：使用 toggle 第二個參數)
+          document.querySelectorAll('.recommend-result-group').forEach((group) => {
+            const isMatch = Number(group.dataset.level) === level;
+            group.classList.toggle('collapsed', !isMatch); 
+          });
+        });
+      });
+      hasActiveTab = document.querySelector('.recommend-level-tab.active');
+      if(!hasActiveTab){
+        console.log('first tab default')
+        const firstTab = document.querySelector('.recommend-level-tab');
+        if (firstTab) {
+          firstTab.classList.add('active');
+          const level = Number(firstTab.dataset.level);
+          document.querySelectorAll('.recommend-result-group').forEach((group) => {
+            group.classList.add('collapsed');
+            if (Number(group.dataset.level) === level) {
+              group.classList.remove('collapsed');
+            }
+          });
+        }
+      }else{
+        const level = Number(hasActiveTab.dataset.level);
+        document.querySelectorAll('.recommend-result-group').forEach((group) => {
+          group.classList.add('collapsed');
+          if (Number(group.dataset.level) === level) {
+            group.classList.remove('collapsed');
+          }
+        });
+      }
+      ///
     }
 
     function setOwnedCardCount(level, characterId, delta) {
@@ -630,9 +680,9 @@
         });
       }
       renderTargetLevelCheckboxes();
-      console.log('重置技能篩選');
+      //console.log('重置技能篩選');
       renderSkillTypeCheckboxes();
-      console.log('重置技能篩選renderSkillTypeCheckboxes');
+      //console.log('重置技能篩選renderSkillTypeCheckboxes');
       renderRecommendations();
       //重置條件區顯示
       const filterSections = document.querySelectorAll('.controls-grid .field-group');
@@ -693,6 +743,16 @@
         collapseFilterButton.innerText = collapseFilterButton.innerText === '收合條件' ? '展開條件' : '收合條件';
       }
     });
+    const recommendOwnedTitle = document.getElementById('recommendOwnedTitle');
+    if (recommendOwnedTitle) {
+      recommendOwnedTitle.addEventListener('click', () => {
+        const ownedPanel = document.querySelector('#recommendOwnedPanels');
+        if (ownedPanel) {
+          ownedPanel.classList.toggle('collapsed');
+        }
+      });
+    }
+
   }
 
   window.ORDApp.initRecommendPage = initRecommendPage;
