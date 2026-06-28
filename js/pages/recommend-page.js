@@ -265,7 +265,7 @@
         const owned = (inventory.get(childRecord.character_id) || 0) > 0;
         const ownedMark = owned ? '<span class="recommend-owned-mark" aria-label="已擁有">✓</span>' : '';
         const summaryContent = `
-          <span class="badge badge-${childRecord.level}">${escapeHtml(getLevelLabel(childRecord.level))}</span>
+          <span class="recommend-material-chip badge badge-${childRecord.level}">${escapeHtml(getLevelLabel(childRecord.level))}</span>
           <strong class="recommend-material-name">${escapeHtml(childRecord.name)}</strong>
           ${ownedMark}
         `;
@@ -557,6 +557,9 @@
                       </div>
                       <div>
                         <span>${getSkillTypeLabels(record.skill_types).map((label) => `<span class="badge-skill-type">${escapeHtml(label)}</span>`).join('/')}</span>
+                      </div>
+                      <div style="margin-top: -10px; margin-bottom: -5px;">
+                        <span class="badge-skill-type">${escapeHtml(record.remark)}</span>
                       </div>
                       <details class="branch-details recommend-material-details">
                         <summary class="branch-summary recommend-material-summary">
