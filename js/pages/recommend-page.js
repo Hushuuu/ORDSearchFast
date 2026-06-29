@@ -99,11 +99,17 @@
   }
 
   function formatRequiredBaseMaterialsFromCounts(counts, indices) {
+    const sortId = ['1-8','1-5','1-4','1-9','1-3','1-6','1-2','1-7','1-1']
     const segments = [...counts.entries()]
       .filter(([, count]) => count > 0)
       .sort((left, right) => {
-        const leftName = (getPrimaryRecord(left[0], indices)?.name || left[0]).localeCompare((getPrimaryRecord(right[0], indices)?.name || right[0]), 'zh-Hant');
-        return leftName || left[0].localeCompare(right[0]);
+        const leftId = left[0];
+        const rightId = right[0];
+        let leftIndex = sortId.indexOf(leftId);
+        let rightIndex = sortId.indexOf(rightId);
+        if (leftIndex === -1) leftIndex = Infinity;
+        if (rightIndex === -1) rightIndex = Infinity;
+        return leftIndex - rightIndex;
       })
       .map(([materialId, count]) => `${getPrimaryRecord(materialId, indices)?.name || materialId}*${count}`);
 
@@ -330,7 +336,14 @@
     const refreshButton = document.getElementById('recommendRefreshBtn');
     const resetButton = document.getElementById('recommendResetBtn');
     const collapseFilterButton = document.getElementById('collapseFilterBtn');
-    const level1Records = [...records.filter((record) => record.level === 1)].sort(compareRecords);
+    const level1Records = [...records.filter((record) => record.level === 1)].sort((left, right) => {
+      const sortId = ['1-8','1-5','1-4','1-9','1-3','1-6','1-2','1-7','1-1'];
+      let leftIndex = sortId.indexOf(left.character_id);
+      let rightIndex = sortId.indexOf(right.character_id);
+      if (leftIndex === -1) leftIndex = Infinity;
+      if (rightIndex === -1) rightIndex = Infinity;
+      return leftIndex - rightIndex;
+    });
     const level2Records = [...records.filter((record) => record.level === 2)].sort(compareRecords);
     const extraRecords = [...records.filter((record) => record.level > 2)].sort(compareRecords);
     const targetOptions = buildTargetLevelOptions(records);
@@ -409,6 +422,7 @@
     }
 
     function renderOwnedPanels() {
+      console.log('lv1',level1Records)
       ownedPanels.innerHTML = [
         { level: 1, records: level1Records },
         { level: 2, records: level2Records },

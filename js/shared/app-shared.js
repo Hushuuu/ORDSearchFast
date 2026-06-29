@@ -87,7 +87,7 @@
     'stl-4-1': '減少魔防',
     'stl-4-2': '減少物防',
     'stl-4-3': '無視防禦',
-    'stl-4-4': '攻擊減防',
+    'stl-4-4': '破甲(有上限)',
     // 控制與異常狀態
     'stl-5-1': '單體暈',
     'stl-5-2': '範圍暈',
@@ -100,6 +100,13 @@
     // 恢復與續航
     'stl-7-1': '魔力回復',
     'stl-7-2': '生命回復',
+    // OP標記
+    // 'stl-8-1': 'OP主力-物理',
+    // 'stl-8-2': 'OP主力-魔法',
+    // 'stl-8-3': 'OP輔助-物理',
+    // 'stl-8-4': 'OP輔助-控制',
+  }
+  const MAJOR_LABELS = {
   }
   
 
@@ -343,9 +350,17 @@
     if (countsMap.size === 0) {
       return '無基礎材料';
     }
+    const customSortId = ['1-8','1-5','1-4','1-9','1-3','1-6','1-2','1-7','1-1'];
+    const sortedCounts = Array.from(countsMap).sort((a, b) => {
+      let leftIndex = customSortId.indexOf(a[0]);
+      let rightIndex = customSortId.indexOf(b[0]);
+      if (leftIndex === -1) leftIndex = Infinity;
+      if (rightIndex === -1) rightIndex = Infinity;
+      return leftIndex - rightIndex;
+    });
 
     const resultSegments = [];
-    countsMap.forEach((count, characterId) => {
+    sortedCounts.forEach(([characterId, count]) => {
       const childRecord = indices.byCharacterId.get(characterId);
       const name = childRecord ? childRecord.name : characterId;
       resultSegments.push(`${name} * ${count}`);
@@ -394,8 +409,14 @@
         level0Items.push(item);
       }
     });
-
-    level1Items.sort((left, right) => left.name.localeCompare(right.name, 'zh-Hant'));
+    const sortId = ['1-8','1-5','1-4','1-9','1-3','1-6','1-2','1-7','1-1']
+    level1Items.sort((left, right) => {
+      const leftIndex = sortId.indexOf(left.id);
+      const rightIndex = sortId.indexOf(right.id);
+      if (leftIndex === -1) leftIndex = Infinity;
+      if (rightIndex === -1) rightIndex = Infinity;
+      return leftIndex - rightIndex;
+    });
     level0Items.sort((left, right) => left.name.localeCompare(right.name, 'zh-Hant'));
 
     return { totalCounts, level0Items, level1Items };

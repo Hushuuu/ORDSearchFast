@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ORD 合成推薦</title>
   <link rel="manifest" href="/manifest.json">
-  <script src="/pwa-init.js?v=260627002"></script>
+  <script src="/pwa-init.js?v=260629001"></script>
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="apple-touch-icon" href="/resource/192x192.png">
   <link rel="stylesheet" href="css/tom-select.css">
-  <link rel="stylesheet" href="css/styles.css?v=260627002">
-  <script src="js/shared/wc-navbar.js?v=260627002"></script>
+  <link rel="stylesheet" href="css/styles.css?v=260629001">
+  <script src="js/shared/wc-navbar.js?v=260629001"></script>
   <style>
     /* 2. 頂部進度條外殼（灰色軌道） */
     .card-top-progress-container {
@@ -46,13 +46,16 @@
       padding-top: 12px;
       /* 依你實際視覺畫面微調，避免文字離頂部太近 */
     }
+
     .field-group.collapsed {
       display: none;
     }
-    .collapsed{
+
+    .collapsed {
       display: none;
     }
-    .recommend-level-tab{
+
+    .recommend-level-tab {
       background-color: #2a2a2a;
       color: #888;
       border: 1px solid #444;
@@ -60,11 +63,12 @@
       cursor: pointer;
       transition: all 0.2s;
       width: 80px;
-      margin-top:5px;
-      margin-bottom:5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       padding: 5px;
     }
-    .recommend-level-tab.active{
+
+    .recommend-level-tab.active {
       background-color: var(--primary-color, #ffd28a);
       color: #121212;
       border-color: var(--primary-color, #ffd28a);
@@ -123,7 +127,7 @@
             <div class="panel-header">
               <h2 class="panel-title" id="recommendOwnedTitle">
                 擁有基本角色
-                <img src="resource/arrow_drop_down.svg"/>
+                <img src="resource/arrow_drop_down.svg" />
               </h2>
             </div>
             <div id="recommendOwnedTabs" class="recommend-owned-tabs"></div>
@@ -143,11 +147,11 @@
     </section>
   </div>
 
-  <script src="js/ord_data.js?v=260627002"></script>
+  <script src="js/ord_data.js?v=260629001"></script>
   <script src="js/tom-select.complete.min.js"></script>
-  <script src="js/shared/app-shared.js?v=260627002"></script>
-  <script src="js/pages/recommend-page.js?v=260627002"></script>
-  <script src="js/app.js?v=260627002"></script>
+  <script src="js/shared/app-shared.js?v=260629001"></script>
+  <script src="js/pages/recommend-page.js?v=260629001"></script>
+  <script src="js/app.js?v=260629001"></script>
 </body>
 
 </html>
